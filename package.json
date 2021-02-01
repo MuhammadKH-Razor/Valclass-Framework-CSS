@@ -1,0 +1,28 @@
+{
+  "name": "vallclass-compiler",
+  "version": "1.0.0",
+  "description": "vallClass merupakan complier untuk menerjemahkan suatu class pada component di HMTL yang dimana akan terjadi suatu validasi terhadap kelas tersebut dan dibandingkan dengan yang tersedia pada object di kode javascript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Muhammad Khoirul Huda - DevStack",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/joi": "^17.1.1",
+    "babel-cli": "^6.26.0",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "env": "0.0.2",
+    "eslint": "^7.18.0",
+    "eval": "^0.1.4",
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "http": "0.0.1-security",
+    "js-beautify": "^1.13.5",
+    "nodemon": "^2.0.7",
+    "webpack": "^5.18.0",
+    "webpack-cli": "^4.4.0"
+  }
+}
