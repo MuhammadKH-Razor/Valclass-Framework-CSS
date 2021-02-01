@@ -1,0 +1,356 @@
+# list semua kelas yang tersedia dalam mode vss (Valclass style sheet)
+
+
+#COMPONENTS
+
+=> vss-navbar
+=> vss-jumbotron
+=> vss-sidebar-left
+=> vss-sidebar-right
+=> vss-section
+=> vss-card
+=> vss-btn
+=> vss-search-input
+=> vss-search-textarea
+=> vss-footer
+
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+#PROPERTY MARGIN
+
+=======> MARGIN <========
+
+=> vss-m
+=> vss-m-1
+=> vss-m-2
+=> vss-m-3
+=> vss-m-4
+
+=======> MARGIN TOP <========
+
+=> vss-mt 
+=> vss-mt-1
+=> vss-mt-2
+=> vss-mt-3
+=> vss-mt-4
+
+=======> MARGIN LEFT <========
+
+=> vss-ml 
+=> vss-ml-1
+=> vss-ml-2
+=> vss-ml-3
+=> vss-ml-3
+
+=======> MARGIN RIGHT <========
+
+=> vss-mr 
+=> vss-mr-1
+=> vss-mr-2
+=> vss-mr-3
+=> vss-mr-4
+
+=======> MARGIN BOTTOM <========
+
+=> vss-mb 
+=> vss-mb-1
+=> vss-mb-2
+=> vss-mb-3
+=> vss-mb-4
+
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+#PROPERTY PADDING
+
+=======> PADDING <========
+
+=> vss-pd
+=> vss-pd-1
+=> vss-pd-2
+=> vss-pd-3
+=> vss-pd-4
+
+=======> PADDING TOP <========
+
+=> vss-pt 
+=> vss-pt-1
+=> vss-pt-2
+=> vss-pt-3
+=> vss-pt-4
+
+=======> PADDING LEFT <========
+
+=> vss-pl 
+=> vss-pl-1
+=> vss-pl-2
+=> vss-pl-3
+=> vss-pl-3
+
+=======> PADDING RIGHT <========
+
+=> vss-pr 
+=> vss-pr-1
+=> vss-pr-2
+=> vss-pr-3
+=> vss-pr-4
+
+=======> PADDING BOTTOM <========
+
+=> vss-pb 
+=> vss-pb-1
+=> vss-pb-2
+=> vss-pb-3
+=> vss-pb-4
+
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+#PROPERTY TLRB
+
+=======> TOP <========
+
+=> vss-t
+=> vss-t-1
+=> vss-t-2
+=> vss-t-3
+=> vss-t-4
+
+=======> LEFT <========
+
+=> vss-l
+=> vss-l-1
+=> vss-l-2
+=> vss-l-3
+=> vss-l-4
+
+=======> LEFT <========
+
+=> vss-r
+=> vss-r-1
+=> vss-r-2
+=> vss-r-3
+=> vss-r-4
+
+=======> BOTTOM <========
+
+=> vss-b
+=> vss-b-1
+=> vss-b-2
+=> vss-b-3
+=> vss-b-4
+
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+#PROPERTY TEXT
+
+=======> ALIGN <========
+
+=> vss-text-align-center
+=> vss-text-align-left
+=> vss-text-align-right
+
+=======> SHADOW <========
+
+=> vss-text-shadow
+=> vss-text-shadow-sm
+=> vss-text-shadow-md
+=> vss-text-shadow-lg
+=> vss-text-shadow-xl
+
+=======> SHADOW <========
+
+=> vss-text-shadow
+=> vss-text-shadow-sm
+=> vss-text-shadow-md
+=> vss-text-shadow-lg
+=> vss-text-shadow-xl
+
+=======> DECORATION <========
+
+=> vss-text-decoration-none
+=> vss-text-decoration-underline
+=> vss-text-decoration-line-through
+=> vss-text-decoration-line-no-underline
+
+=======> TEXT COLOR <========
+
+[RED]
+=> vss-text-red
+=> vss-text-red-1
+=> vss-text-red-2
+=> vss-text-red-3
+=> vss-text-red-4
+=> vss-text-red-full
+[GREEN]
+=> vss-text-green
+=> vss-text-green-1
+=> vss-text-green-2
+=> vss-text-green-3
+=> vss-text-green-4
+=> vss-text-green-full
+[BLACK]
+=> vss-text-black
+=> vss-text-black-1
+=> vss-text-black-2
+=> vss-text-black-3
+=> vss-text-black-4
+=> vss-text-black-full
+[GRAY]
+=> vss-text-gray
+=> vss-text-gray-1
+=> vss-text-gray-2
+=> vss-text-gray-3
+=> vss-text-gray-4
+=> vss-text-gray-full
+[BLUE]
+=> vss-text-blue
+=> vss-text-blue-1
+=> vss-text-blue-2
+=> vss-text-blue-3
+=> vss-text-blue-4
+=> vss-text-blue-full
+[WHITE]
+=> vss-text-blue
+=> vss-text-blue-1
+=> vss-text-blue-2
+=> vss-text-blue-3
+=> vss-text-blue-4
+=> vss-text-blue-full
+[YELLOW]
+=> vss-text-yellow
+=> vss-text-yellow-1
+=> vss-text-yellow-2
+=> vss-text-yellow-3
+=> vss-text-yellow-4
+=> vss-text-yellow-full
+[BROWN]
+=> vss-text-brown
+=> vss-text-brown-1
+=> vss-text-brown-2
+=> vss-text-brown-3
+=> vss-text-brown-4
+=> vss-text-brown-full
+[PURPLE]
+=> vss-text-brown
+=> vss-text-brown-1
+=> vss-text-brown-2
+=> vss-text-brown-3
+=> vss-text-brown-4
+=> vss-text-brown-full
+[PINK]
+=> vss-text-pink
+=> vss-text-pink-1
+=> vss-text-pink-2
+=> vss-text-pink-3
+=> vss-text-pink-4
+=> vss-text-pink-full
+[ORANGE]
+=> vss-text-orange
+=> vss-text-orange-1
+=> vss-text-orange-2
+=> vss-text-orange-3
+=> vss-text-orange-4
+=> vss-text-orange-full
+
+=======> TEXT OPACITY <========
+
+=> vss-text-opacity
+=> vss-text-opacity-1
+=> vss-text-opacity-2
+=> vss-text-opacity-3
+=> vss-text-opacity-4
+=> vss-text-opacity-full
+
+=======> TEXT TRANSFORM <========
+
+=> vss-text-uppercase
+=> vss-text-lowercase
+=> vss-text-capitalize
+=> vss-text-normal-case
+
+=======> LINE HEGHT <========
+
+=> vss-text-lh
+=> vss-text-lh-1
+=> vss-text-lh-2
+=> vss-text-lh-3
+=> vss-text-lh-4
+=> vss-text-lh-none
+=> vss-text-lh-tight
+=> vss-text-lh-snug
+=> vss-text-lh-normal
+=> vss-text-lh-relaxed
+=> vss-text-lh-loose
+
+=======> LIST STYLE <========
+
+=> vss-text-list-none
+=> vss-text-list-disc
+=> vss-text-list-decimal
+
+=======> LETTER SPACING <========
+
+=> vss-text-letter
+=> vss-text-letter-1
+=> vss-text-letter-2
+=> vss-text-letter-3
+=> vss-text-letter-4
+=> vss-text-letter-tighter
+=> vss-text-letter-tight
+=> vss-text-letter-normal
+=> vss-text-letter-wide
+=> vss-text-letter-wider
+=> vss-text-letter-widest
+
+=======> WORD SPACING <========
+
+=> vss-text-word
+=> vss-text-word-1
+=> vss-text-word-2
+=> vss-text-word-3
+=> vss-text-word-4
+
+=======> WHITESPACE <========
+
+=> vss-text-whitespace-normal
+=> vss-text-whitespace-nowrap
+=> vss-text-whitespace-pre
+=> vss-text-whitespace-pre-line
+=> vss-text-whitespace-pre-wrap
+
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+#PROPERTY WIDTH
+
+=======> WIDTH <========
+
+=> vss-w-0
+=> vss-w-1
+=> vss-w-2
+=> vss-w-3
+=> vss-w-4
+=> vss-w-auto
+=> vss-w-full
+=> vss-w-full-screen
+=> vss-w-full-max-content
+=> vss-w-full-min-content
+
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+#PROPERTY HEIGHT
+
+=======> HEIGHT <========
+
+=> vss-h-0
+=> vss-h-1
+=> vss-h-2
+=> vss-h-3
+=> vss-h-4
+=> vss-h-auto
+=> vss-h-full
+=> vss-h-full-screen

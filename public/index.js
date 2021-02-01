@@ -23,7 +23,7 @@ var js = [
     './js/component.js',
     './js/element.js',
     './js/typography.js',
-    './js/selector.js'
+    './js/property.js'
 ],
 
 script = document.createElement('script'),
