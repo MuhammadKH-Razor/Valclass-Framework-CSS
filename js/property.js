@@ -170,37 +170,6 @@ if (document.querySelector('div') ||
     document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
 }
 
-
-
-// khusus untuk text-color ================================================== //
-
-if (document.querySelector('div') ||
-    document.querySelector('h1') ||
-    document.querySelector('h2') ||
-    document.querySelector('h3') ||
-    document.querySelector('h4') ||
-    document.querySelector('h5') ||
-    document.querySelector('h6') ||
-    document.querySelector('p') ||
-    document.querySelector('small') ||
-    document.querySelector('span') ||
-    document.querySelector('section') ||
-    document.querySelector('video') ||
-    document.querySelector('audio') ||
-    document.querySelector('code') ||
-    document.querySelector('pre') ||
-    document.querySelector('sub') ||
-    document.querySelector('sup') ||
-    document.querySelector('mark').classList.contains('v-text-danger')) {
-
-    let styles = ` 
-                .v-text-danger { 
-                color: red;
-            }`;
-
-    document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
-}
-
 if (document.querySelector('div') ||
     document.querySelector('h1') ||
     document.querySelector('h2') ||
