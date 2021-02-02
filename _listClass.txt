@@ -1,18 +1,18 @@
-# list semua kelas yang tersedia dalam mode vss (Valclass style sheet)
+# list semua kelas yang tersedia dalam mode v (Valclass style sheet)
 
 
 #COMPONENTS
 
-=> vss-navbar
-=> vss-jumbotron
-=> vss-sidebar-left
-=> vss-sidebar-right
-=> vss-section
-=> vss-card
-=> vss-btn
-=> vss-search-input
-=> vss-search-textarea
-=> vss-footer
+=> v-navbar
+=> v-jumbotron
+=> v-sidebar-left
+=> v-sidebar-right
+=> v-section
+=> v-card
+=> v-btn
+=> v-search-input
+=> v-search-textarea
+=> v-footer
 
 
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
@@ -21,43 +21,43 @@
 
 =======> MARGIN <========
 
-=> vss-m
-=> vss-m-1
-=> vss-m-2
-=> vss-m-3
-=> vss-m-4
+=> v-m
+=> v-m-1
+=> v-m-2
+=> v-m-3
+=> v-m-4
 
 =======> MARGIN TOP <========
 
-=> vss-mt 
-=> vss-mt-1
-=> vss-mt-2
-=> vss-mt-3
-=> vss-mt-4
+=> v-mt 
+=> v-mt-1
+=> v-mt-2
+=> v-mt-3
+=> v-mt-4
 
 =======> MARGIN LEFT <========
 
-=> vss-ml 
-=> vss-ml-1
-=> vss-ml-2
-=> vss-ml-3
-=> vss-ml-3
+=> v-ml 
+=> v-ml-1
+=> v-ml-2
+=> v-ml-3
+=> v-ml-3
 
 =======> MARGIN RIGHT <========
 
-=> vss-mr 
-=> vss-mr-1
-=> vss-mr-2
-=> vss-mr-3
-=> vss-mr-4
+=> v-mr 
+=> v-mr-1
+=> v-mr-2
+=> v-mr-3
+=> v-mr-4
 
 =======> MARGIN BOTTOM <========
 
-=> vss-mb 
-=> vss-mb-1
-=> vss-mb-2
-=> vss-mb-3
-=> vss-mb-4
+=> v-mb 
+=> v-mb-1
+=> v-mb-2
+=> v-mb-3
+=> v-mb-4
 
 
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
@@ -66,43 +66,43 @@
 
 =======> PADDING <========
 
-=> vss-pd
-=> vss-pd-1
-=> vss-pd-2
-=> vss-pd-3
-=> vss-pd-4
+=> v-pd
+=> v-pd-1
+=> v-pd-2
+=> v-pd-3
+=> v-pd-4
 
 =======> PADDING TOP <========
 
-=> vss-pt 
-=> vss-pt-1
-=> vss-pt-2
-=> vss-pt-3
-=> vss-pt-4
+=> v-pt 
+=> v-pt-1
+=> v-pt-2
+=> v-pt-3
+=> v-pt-4
 
 =======> PADDING LEFT <========
 
-=> vss-pl 
-=> vss-pl-1
-=> vss-pl-2
-=> vss-pl-3
-=> vss-pl-3
+=> v-pl 
+=> v-pl-1
+=> v-pl-2
+=> v-pl-3
+=> v-pl-3
 
 =======> PADDING RIGHT <========
 
-=> vss-pr 
-=> vss-pr-1
-=> vss-pr-2
-=> vss-pr-3
-=> vss-pr-4
+=> v-pr 
+=> v-pr-1
+=> v-pr-2
+=> v-pr-3
+=> v-pr-4
 
 =======> PADDING BOTTOM <========
 
-=> vss-pb 
-=> vss-pb-1
-=> vss-pb-2
-=> vss-pb-3
-=> vss-pb-4
+=> v-pb 
+=> v-pb-1
+=> v-pb-2
+=> v-pb-3
+=> v-pb-4
 
 
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
@@ -111,35 +111,35 @@
 
 =======> TOP <========
 
-=> vss-t
-=> vss-t-1
-=> vss-t-2
-=> vss-t-3
-=> vss-t-4
+=> v-t
+=> v-t-1
+=> v-t-2
+=> v-t-3
+=> v-t-4
 
 =======> LEFT <========
 
-=> vss-l
-=> vss-l-1
-=> vss-l-2
-=> vss-l-3
-=> vss-l-4
+=> v-l
+=> v-l-1
+=> v-l-2
+=> v-l-3
+=> v-l-4
 
 =======> LEFT <========
 
-=> vss-r
-=> vss-r-1
-=> vss-r-2
-=> vss-r-3
-=> vss-r-4
+=> v-r
+=> v-r-1
+=> v-r-2
+=> v-r-3
+=> v-r-4
 
 =======> BOTTOM <========
 
-=> vss-b
-=> vss-b-1
-=> vss-b-2
-=> vss-b-3
-=> vss-b-4
+=> v-b
+=> v-b-1
+=> v-b-2
+=> v-b-3
+=> v-b-4
 
 
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
@@ -148,178 +148,178 @@
 
 =======> ALIGN <========
 
-=> vss-text-align-center
-=> vss-text-align-left
-=> vss-text-align-right
+=> v-text-align-center
+=> v-text-align-left
+=> v-text-align-right
 
 =======> SHADOW <========
 
-=> vss-text-shadow
-=> vss-text-shadow-sm
-=> vss-text-shadow-md
-=> vss-text-shadow-lg
-=> vss-text-shadow-xl
+=> v-text-shadow
+=> v-text-shadow-sm
+=> v-text-shadow-md
+=> v-text-shadow-lg
+=> v-text-shadow-xl
 
 =======> SHADOW <========
 
-=> vss-text-shadow
-=> vss-text-shadow-sm
-=> vss-text-shadow-md
-=> vss-text-shadow-lg
-=> vss-text-shadow-xl
+=> v-text-shadow
+=> v-text-shadow-sm
+=> v-text-shadow-md
+=> v-text-shadow-lg
+=> v-text-shadow-xl
 
 =======> DECORATION <========
 
-=> vss-text-decoration-none
-=> vss-text-decoration-underline
-=> vss-text-decoration-line-through
-=> vss-text-decoration-line-no-underline
+=> v-text-decoration-none
+=> v-text-decoration-underline
+=> v-text-decoration-line-through
+=> v-text-decoration-line-no-underline
 
 =======> TEXT COLOR <========
 
 [RED]
-=> vss-text-red
-=> vss-text-red-1
-=> vss-text-red-2
-=> vss-text-red-3
-=> vss-text-red-4
-=> vss-text-red-full
+=> v-text-red
+=> v-text-red-1
+=> v-text-red-2
+=> v-text-red-3
+=> v-text-red-4
+=> v-text-red-full
 [GREEN]
-=> vss-text-green
-=> vss-text-green-1
-=> vss-text-green-2
-=> vss-text-green-3
-=> vss-text-green-4
-=> vss-text-green-full
+=> v-text-green
+=> v-text-green-1
+=> v-text-green-2
+=> v-text-green-3
+=> v-text-green-4
+=> v-text-green-full
 [BLACK]
-=> vss-text-black
-=> vss-text-black-1
-=> vss-text-black-2
-=> vss-text-black-3
-=> vss-text-black-4
-=> vss-text-black-full
+=> v-text-black
+=> v-text-black-1
+=> v-text-black-2
+=> v-text-black-3
+=> v-text-black-4
+=> v-text-black-full
 [GRAY]
-=> vss-text-gray
-=> vss-text-gray-1
-=> vss-text-gray-2
-=> vss-text-gray-3
-=> vss-text-gray-4
-=> vss-text-gray-full
+=> v-text-gray
+=> v-text-gray-1
+=> v-text-gray-2
+=> v-text-gray-3
+=> v-text-gray-4
+=> v-text-gray-full
 [BLUE]
-=> vss-text-blue
-=> vss-text-blue-1
-=> vss-text-blue-2
-=> vss-text-blue-3
-=> vss-text-blue-4
-=> vss-text-blue-full
+=> v-text-blue
+=> v-text-blue-1
+=> v-text-blue-2
+=> v-text-blue-3
+=> v-text-blue-4
+=> v-text-blue-full
 [WHITE]
-=> vss-text-blue
-=> vss-text-blue-1
-=> vss-text-blue-2
-=> vss-text-blue-3
-=> vss-text-blue-4
-=> vss-text-blue-full
+=> v-text-blue
+=> v-text-blue-1
+=> v-text-blue-2
+=> v-text-blue-3
+=> v-text-blue-4
+=> v-text-blue-full
 [YELLOW]
-=> vss-text-yellow
-=> vss-text-yellow-1
-=> vss-text-yellow-2
-=> vss-text-yellow-3
-=> vss-text-yellow-4
-=> vss-text-yellow-full
+=> v-text-yellow
+=> v-text-yellow-1
+=> v-text-yellow-2
+=> v-text-yellow-3
+=> v-text-yellow-4
+=> v-text-yellow-full
 [BROWN]
-=> vss-text-brown
-=> vss-text-brown-1
-=> vss-text-brown-2
-=> vss-text-brown-3
-=> vss-text-brown-4
-=> vss-text-brown-full
+=> v-text-brown
+=> v-text-brown-1
+=> v-text-brown-2
+=> v-text-brown-3
+=> v-text-brown-4
+=> v-text-brown-full
 [PURPLE]
-=> vss-text-brown
-=> vss-text-brown-1
-=> vss-text-brown-2
-=> vss-text-brown-3
-=> vss-text-brown-4
-=> vss-text-brown-full
+=> v-text-brown
+=> v-text-brown-1
+=> v-text-brown-2
+=> v-text-brown-3
+=> v-text-brown-4
+=> v-text-brown-full
 [PINK]
-=> vss-text-pink
-=> vss-text-pink-1
-=> vss-text-pink-2
-=> vss-text-pink-3
-=> vss-text-pink-4
-=> vss-text-pink-full
+=> v-text-pink
+=> v-text-pink-1
+=> v-text-pink-2
+=> v-text-pink-3
+=> v-text-pink-4
+=> v-text-pink-full
 [ORANGE]
-=> vss-text-orange
-=> vss-text-orange-1
-=> vss-text-orange-2
-=> vss-text-orange-3
-=> vss-text-orange-4
-=> vss-text-orange-full
+=> v-text-orange
+=> v-text-orange-1
+=> v-text-orange-2
+=> v-text-orange-3
+=> v-text-orange-4
+=> v-text-orange-full
 
 =======> TEXT OPACITY <========
 
-=> vss-text-opacity
-=> vss-text-opacity-1
-=> vss-text-opacity-2
-=> vss-text-opacity-3
-=> vss-text-opacity-4
-=> vss-text-opacity-full
+=> v-text-opacity
+=> v-text-opacity-1
+=> v-text-opacity-2
+=> v-text-opacity-3
+=> v-text-opacity-4
+=> v-text-opacity-full
 
 =======> TEXT TRANSFORM <========
 
-=> vss-text-uppercase
-=> vss-text-lowercase
-=> vss-text-capitalize
-=> vss-text-normal-case
+=> v-text-uppercase
+=> v-text-lowercase
+=> v-text-capitalize
+=> v-text-normal-case
 
 =======> LINE HEGHT <========
 
-=> vss-text-lh
-=> vss-text-lh-1
-=> vss-text-lh-2
-=> vss-text-lh-3
-=> vss-text-lh-4
-=> vss-text-lh-none
-=> vss-text-lh-tight
-=> vss-text-lh-snug
-=> vss-text-lh-normal
-=> vss-text-lh-relaxed
-=> vss-text-lh-loose
+=> v-text-lh
+=> v-text-lh-1
+=> v-text-lh-2
+=> v-text-lh-3
+=> v-text-lh-4
+=> v-text-lh-none
+=> v-text-lh-tight
+=> v-text-lh-snug
+=> v-text-lh-normal
+=> v-text-lh-relaxed
+=> v-text-lh-loose
 
 =======> LIST STYLE <========
 
-=> vss-text-list-none
-=> vss-text-list-disc
-=> vss-text-list-decimal
+=> v-text-list-none
+=> v-text-list-disc
+=> v-text-list-decimal
 
 =======> LETTER SPACING <========
 
-=> vss-text-letter
-=> vss-text-letter-1
-=> vss-text-letter-2
-=> vss-text-letter-3
-=> vss-text-letter-4
-=> vss-text-letter-tighter
-=> vss-text-letter-tight
-=> vss-text-letter-normal
-=> vss-text-letter-wide
-=> vss-text-letter-wider
-=> vss-text-letter-widest
+=> v-text-letter
+=> v-text-letter-1
+=> v-text-letter-2
+=> v-text-letter-3
+=> v-text-letter-4
+=> v-text-letter-tighter
+=> v-text-letter-tight
+=> v-text-letter-normal
+=> v-text-letter-wide
+=> v-text-letter-wider
+=> v-text-letter-widest
 
 =======> WORD SPACING <========
 
-=> vss-text-word
-=> vss-text-word-1
-=> vss-text-word-2
-=> vss-text-word-3
-=> vss-text-word-4
+=> v-text-word
+=> v-text-word-1
+=> v-text-word-2
+=> v-text-word-3
+=> v-text-word-4
 
 =======> WHITESPACE <========
 
-=> vss-text-whitespace-normal
-=> vss-text-whitespace-nowrap
-=> vss-text-whitespace-pre
-=> vss-text-whitespace-pre-line
-=> vss-text-whitespace-pre-wrap
+=> v-text-whitespace-normal
+=> v-text-whitespace-nowrap
+=> v-text-whitespace-pre
+=> v-text-whitespace-pre-line
+=> v-text-whitespace-pre-wrap
 
 
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
@@ -328,16 +328,16 @@
 
 =======> WIDTH <========
 
-=> vss-w-0
-=> vss-w-1
-=> vss-w-2
-=> vss-w-3
-=> vss-w-4
-=> vss-w-auto
-=> vss-w-full
-=> vss-w-full-screen
-=> vss-w-full-max-content
-=> vss-w-full-min-content
+=> v-w-0
+=> v-w-1
+=> v-w-2
+=> v-w-3
+=> v-w-4
+=> v-w-auto
+=> v-w-full
+=> v-w-full-screen
+=> v-w-full-max-content
+=> v-w-full-min-content
 
 
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
@@ -346,14 +346,14 @@
 
 =======> HEIGHT <========
 
-=> vss-h-0
-=> vss-h-1
-=> vss-h-2
-=> vss-h-3
-=> vss-h-4
-=> vss-h-auto
-=> vss-h-full
-=> vss-h-full-screen
+=> v-h-0
+=> v-h-1
+=> v-h-2
+=> v-h-3
+=> v-h-4
+=> v-h-auto
+=> v-h-full
+=> v-h-full-screen
 
 
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
@@ -362,61 +362,61 @@
 
 =======> SIZE <========
 
-=> vss-size-h1
-=> vss-size-h2
-=> vss-size-h3
-=> vss-size-h4
-=> vss-size-h5
-=> vss-size-h6
-=> vss-size-sm
-=> vss-size-md
-=> vss-size-lg
-=> vss-size-xl
+=> v-size-h1
+=> v-size-h2
+=> v-size-h3
+=> v-size-h4
+=> v-size-h5
+=> v-size-h6
+=> v-size-sm
+=> v-size-md
+=> v-size-lg
+=> v-size-xl
 
 =======> FAMILY <========
 
-=> vss-font-roboto
-=> vss-font-poppins
-=> vss-font-montsreet
-=> vss-font-raleway
+=> v-font-roboto
+=> v-font-poppins
+=> v-font-montsreet
+=> v-font-raleway
 
 =======> STYLE <========
 
-=> vss-h-0
-=> vss-h-1
-=> vss-h-2
-=> vss-h-3
-=> vss-h-4
-=> vss-h-auto
-=> vss-h-full
-=> vss-h-full-screen
+=> v-h-0
+=> v-h-1
+=> v-h-2
+=> v-h-3
+=> v-h-4
+=> v-h-auto
+=> v-h-full
+=> v-h-full-screen
 
 =======> WEIGHT <========
 
-=> vss-weight-100
-=> vss-weight-200
-=> vss-weight-300
-=> vss-weight-400
-=> vss-weight-500
-=> vss-weight-600
-=> vss-weight-700
-=> vss-weight-800
-=> vss-weight-normal
-=> vss-weight-bold
-=> vss-weight-bolder
-=> vss-weight-lighter
+=> v-weight-100
+=> v-weight-200
+=> v-weight-300
+=> v-weight-400
+=> v-weight-500
+=> v-weight-600
+=> v-weight-700
+=> v-weight-800
+=> v-weight-normal
+=> v-weight-bold
+=> v-weight-bolder
+=> v-weight-lighter
 
 =======> STRECTH <========
 
-=> vss-strecth-condensed
-=> vss-strecth-expanded
-=> vss-strecth-extra-condensed
-=> vss-strecth-extra-expanded
-=> vss-strecth-semi-condensed
-=> vss-strecth-semi-expanded
-=> vss-strecth-narower
-=> vss-strecth-wider
-=> vss-strecth-normal
+=> v-strecth-condensed
+=> v-strecth-expanded
+=> v-strecth-extra-condensed
+=> v-strecth-extra-expanded
+=> v-strecth-semi-condensed
+=> v-strecth-semi-expanded
+=> v-strecth-narower
+=> v-strecth-wider
+=> v-strecth-normal
 
 
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
@@ -425,57 +425,57 @@
 
 =======> RADIUS <========
 
-=> vss-rounded-sm
-=> vss-rounded-md
-=> vss-rounded-lg
-=> vss-rounded-full
+=> v-rounded-sm
+=> v-rounded-md
+=> v-rounded-lg
+=> v-rounded-full
 
 =======> WIDTH <========
 
-=> vss-rounded-sm
-=> vss-rounded-md
-=> vss-rounded-lg
-=> vss-rounded-full
+=> v-rounded-sm
+=> v-rounded-md
+=> v-rounded-lg
+=> v-rounded-full
 
 =======> COLOR <========
 
-=> vss-border-danger
-=> vss-border-info
-=> vss-border-primary
-=> vss-border-warning
-=> vss-border-dark
-=> vss-border-secondary
-=> vss-border-light
-=> vss-border-pink
-=> vss-border-purple
-=> vss-border-orange
+=> v-border-danger
+=> v-border-info
+=> v-border-primary
+=> v-border-warning
+=> v-border-dark
+=> v-border-secondary
+=> v-border-light
+=> v-border-pink
+=> v-border-purple
+=> v-border-orange
 
 =======> TLRB <========
 
 [TOP]
-=> vss-border-top
-=> vss-border-top-sm
-=> vss-border-top-md
-=> vss-border-top-lg
-=> vss-border-top-xl
+=> v-border-top
+=> v-border-top-sm
+=> v-border-top-md
+=> v-border-top-lg
+=> v-border-top-xl
 [LEFT]
-=> vss-border-left
-=> vss-border-left-sm
-=> vss-border-left-md
-=> vss-border-left-lg
-=> vss-border-left-xl
+=> v-border-left
+=> v-border-left-sm
+=> v-border-left-md
+=> v-border-left-lg
+=> v-border-left-xl
 [RIGHT]
-=> vss-border-right
-=> vss-border-right-sm
-=> vss-border-right-md
-=> vss-border-right-lg
-=> vss-border-right-xl
+=> v-border-right
+=> v-border-right-sm
+=> v-border-right-md
+=> v-border-right-lg
+=> v-border-right-xl
 [BOTTOM]
-=> vss-border-bottom
-=> vss-border-bottom-sm
-=> vss-border-bottom-md
-=> vss-border-bottom-lg
-=> vss-border-bottom-xl
+=> v-border-bottom
+=> v-border-bottom-sm
+=> v-border-bottom-md
+=> v-border-bottom-lg
+=> v-border-bottom-xl
 
 
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
@@ -484,107 +484,107 @@
 
 =======> GRAYSCALSE <========
 
-=> vss-graycale-10
-=> vss-graycale-20
-=> vss-graycale-30
-=> vss-graycale-40
-=> vss-graycale-50
-=> vss-graycale-60
-=> vss-graycale-70
-=> vss-graycale-80
-=> vss-graycale-90
-=> vss-graycale-100
+=> v-graycale-10
+=> v-graycale-20
+=> v-graycale-30
+=> v-graycale-40
+=> v-graycale-50
+=> v-graycale-60
+=> v-graycale-70
+=> v-graycale-80
+=> v-graycale-90
+=> v-graycale-100
 
 =======> BLUR <========
 
-=> vss-blur-10
-=> vss-blur-20
-=> vss-blur-30
-=> vss-blur-40
-=> vss-blur-50
-=> vss-blur-60
-=> vss-blur-70
-=> vss-blur-80
-=> vss-blur-90
-=> vss-blur-100
+=> v-blur-10
+=> v-blur-20
+=> v-blur-30
+=> v-blur-40
+=> v-blur-50
+=> v-blur-60
+=> v-blur-70
+=> v-blur-80
+=> v-blur-90
+=> v-blur-100
 
 =======> INVERT <========
 
-=> vss-invert-10
-=> vss-invert-20
-=> vss-invert-30
-=> vss-invert-40
-=> vss-invert-50
-=> vss-invert-60
-=> vss-invert-70
-=> vss-invert-80
-=> vss-invert-90
-=> vss-invert-100
+=> v-invert-10
+=> v-invert-20
+=> v-invert-30
+=> v-invert-40
+=> v-invert-50
+=> v-invert-60
+=> v-invert-70
+=> v-invert-80
+=> v-invert-90
+=> v-invert-100
 
 =======> SEPARATE <========
 
-=> vss-separate-10
-=> vss-separate-20
-=> vss-separate-30
-=> vss-separate-40
-=> vss-separate-50
-=> vss-separate-60
-=> vss-separate-70
-=> vss-separate-80
-=> vss-separate-90
-=> vss-separate-100
+=> v-separate-10
+=> v-separate-20
+=> v-separate-30
+=> v-separate-40
+=> v-separate-50
+=> v-separate-60
+=> v-separate-70
+=> v-separate-80
+=> v-separate-90
+=> v-separate-100
 
 =======> INVERT <========
 
-=> vss-separate-10
-=> vss-separate-20
-=> vss-separate-30
-=> vss-separate-40
-=> vss-separate-50
-=> vss-separate-60
-=> vss-separate-70
-=> vss-separate-80
-=> vss-separate-90
-=> vss-separate-100
+=> v-separate-10
+=> v-separate-20
+=> v-separate-30
+=> v-separate-40
+=> v-separate-50
+=> v-separate-60
+=> v-separate-70
+=> v-separate-80
+=> v-separate-90
+=> v-separate-100
 
 =======> DROP SHADOW <========
 
-=> vss-drop-shadow-10
-=> vss-drop-shadow-20
-=> vss-drop-shadow-30
-=> vss-drop-shadow-40
-=> vss-drop-shadow-50
-=> vss-drop-shadow-60
-=> vss-drop-shadow-70
-=> vss-drop-shadow-80
-=> vss-drop-shadow-90
-=> vss-drop-shadow-100
+=> v-drop-shadow-10
+=> v-drop-shadow-20
+=> v-drop-shadow-30
+=> v-drop-shadow-40
+=> v-drop-shadow-50
+=> v-drop-shadow-60
+=> v-drop-shadow-70
+=> v-drop-shadow-80
+=> v-drop-shadow-90
+=> v-drop-shadow-100
 
 =======> HUE ROTATE <========
 
-=> vss-hue-10
-=> vss-hue-20
-=> vss-hue-30
-=> vss-hue-40
-=> vss-hue-50
-=> vss-hue-60
-=> vss-hue-70
-=> vss-hue-80
-=> vss-hue-90
-=> vss-hue-100
+=> v-hue-10
+=> v-hue-20
+=> v-hue-30
+=> v-hue-40
+=> v-hue-50
+=> v-hue-60
+=> v-hue-70
+=> v-hue-80
+=> v-hue-90
+=> v-hue-100
 
 =======> SEPIA <========
 
-=> vss-sepia-10
-=> vss-sepia-20
-=> vss-sepia-30
-=> vss-sepia-40
-=> vss-sepia-50
-=> vss-sepia-60
-=> vss-sepia-70
-=> vss-sepia-80
-=> vss-sepia-90
-=> vss-sepia-100
+=> v-sepia-10
+=> v-sepia-20
+=> v-sepia-30
+=> v-sepia-40
+=> v-sepia-50
+=> v-sepia-60
+=> v-sepia-70
+=> v-sepia-80
+=> v-sepia-90
+=> v-sepia-100
 
 
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
@@ -593,59 +593,59 @@
 
 =======> ROTATE <========
 
-=> vss-rotate-45
-=> vss-rotate-90
-=> vss-rotate-120
-=> vss-rotate-180
-=> vss-rotate-360
-=> vss-rotate-0
+=> v-rotate-45
+=> v-rotate-90
+=> v-rotate-120
+=> v-rotate-180
+=> v-rotate-360
+=> v-rotate-0
 
 =======> SCALE <========
 
-=> vss-scale-sm
-=> vss-scale-md
-=> vss-scale-lg
-=> vss-scale-xl
-=> vss-scale-normal
+=> v-scale-sm
+=> v-scale-md
+=> v-scale-lg
+=> v-scale-xl
+=> v-scale-normal
 
 =======> SKEW <========
 
-=> vss-skew-10
-=> vss-skew-20
-=> vss-skew-30
-=> vss-skew-40
-=> vss-skew-50
-=> vss-skew-60
-=> vss-skew-70
-=> vss-skew-80
-=> vss-skew-90
-=> vss-skew-100
+=> v-skew-10
+=> v-skew-20
+=> v-skew-30
+=> v-skew-40
+=> v-skew-50
+=> v-skew-60
+=> v-skew-70
+=> v-skew-80
+=> v-skew-90
+=> v-skew-100
 
 =======> TRANSLATE <========
 
-=> vss-translate-10
-=> vss-translate-20
-=> vss-translate-30
-=> vss-translate-40
-=> vss-translate-50
-=> vss-translate-60
-=> vss-translate-70
-=> vss-translate-80
-=> vss-translate-90
-=> vss-translate-100
+=> v-translate-10
+=> v-translate-20
+=> v-translate-30
+=> v-translate-40
+=> v-translate-50
+=> v-translate-60
+=> v-translate-70
+=> v-translate-80
+=> v-translate-90
+=> v-translate-100
 
 =======> PERSPECTIVE <========
 
-=> vss-perspective-10
-=> vss-perspective-20
-=> vss-perspective-30
-=> vss-perspective-40
-=> vss-perspective-50
-=> vss-perspective-60
-=> vss-perspective-70
-=> vss-perspective-80
-=> vss-perspective-90
-=> vss-perspective-100
+=> v-perspective-10
+=> v-perspective-20
+=> v-perspective-30
+=> v-perspective-40
+=> v-perspective-50
+=> v-perspective-60
+=> v-perspective-70
+=> v-perspective-80
+=> v-perspective-90
+=> v-perspective-100
 
 
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
@@ -654,11 +654,11 @@
 
 =======> FLOAT <========
 
-=> vss-float-inline-start
-=> vss-float-inline-end
-=> vss-float-left
-=> vss-float-right
-=> vss-float-none
+=> v-float-inline-start
+=> v-float-inline-end
+=> v-float-left
+=> v-float-right
+=> v-float-none
 
 
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
@@ -667,17 +667,17 @@
 
 =======> JUSTIFY CONTENT <========
 
-=> vss-justify-center
-=> vss-justify-left
-=> vss-justify-right
-=> vss-justify-end
-=> vss-justify-baseline
-=> vss-justify-flex-end
-=> vss-justify-flex-start
-=> vss-justify-safe
-=> vss-justify-around
-=> vss-justify-between
-=> vss-justify-evenly
+=> v-justify-center
+=> v-justify-left
+=> v-justify-right
+=> v-justify-end
+=> v-justify-baseline
+=> v-justify-flex-end
+=> v-justify-flex-start
+=> v-justify-safe
+=> v-justify-around
+=> v-justify-between
+=> v-justify-evenly
 
 
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
@@ -686,10 +686,10 @@
 
 =======> ALIGN ITEMS <========
 
-=> vss-align-items-center
-=> vss-justify-items-baseline
-=> vss-justify-items-flex-end
-=> vss-justify-items-flex-start
+=> v-align-items-center
+=> v-justify-items-baseline
+=> v-justify-items-flex-end
+=> v-justify-items-flex-start
 
 
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
@@ -698,10 +698,10 @@
 
 =======> ALIGN ITEMS <========
 
-=> vss-align-items-center
-=> vss-justify-items-baseline
-=> vss-justify-items-flex-end
-=> vss-justify-items-flex-start
+=> v-align-items-center
+=> v-justify-items-baseline
+=> v-justify-items-flex-end
+=> v-justify-items-flex-start
 
 
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
@@ -710,11 +710,11 @@
 
 =======> DISPLAY <========
 
-=> vss-d-flex
-=> vss-d-block
-=> vss-d-inline
-=> vss-d-flexbox
-=> vss-d-grid
-=> vss-d-inline-block
-=> vss-d-inline-flex
-=> vss-d-inline-flexbox
+=> v-d-flex
+=> v-d-block
+=> v-d-inline
+=> v-d-flexbox
+=> v-d-grid
+=> v-d-inline-block
+=> v-d-inline-flex
+=> v-d-inline-flexbox

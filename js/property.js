@@ -1,10 +1,22 @@
+const v = [
+    {"dark" : "background-color: rgb(49, 49, 49);"},
+    {"light" : "background-color: rgb(248, 247, 247);"},
+    {"info" : "background-color: blue;"},
+    {"primary" : "background-color: rgb(0, 153, 255);"},
+    {"warning" : "background-color: rgb(255, 230, 0);"},
+    {"danger" : "background-color: rgb(209, 30, 30);"},
+    {"smooth" : "background-color: rgba(250, 236, 236, 0.712);"},
+    {"transparent" : "background-color: transparent;"},
+    {"secondary" : "background-color: rgb(141, 141, 141);"},
+    {"green" : "background-color: rgb(13, 226, 155);"},
+]
 
-
+        
 if (document.querySelector('div').classList.contains('v-dark')) {
 
     let styles = ` 
             .v-dark { 
-            background-color: rgb(49, 49, 49);
+                ${v[0].dark}
         }`;
 
     document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
@@ -14,7 +26,7 @@ if (document.querySelector('div').classList.contains('v-light')) {
 
     let styles = ` 
             .v-light { 
-            background-color: rgb(248, 247, 247);
+                ${v[1].light}
         }`;
 
     document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
@@ -24,7 +36,7 @@ if (document.querySelector('div').classList.contains('v-info')) {
 
     let styles = ` 
             .v-info { 
-            background-color: rgb(0, 195, 255);
+                ${v[2].info}
         }`;
 
     document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
@@ -34,7 +46,7 @@ if (document.querySelector('div').classList.contains('v-primary')) {
 
     let styles = ` 
             .v-primary { 
-            background-color: rgb(0, 153, 255);
+                ${v[3].primary}
         }`;
 
     document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
