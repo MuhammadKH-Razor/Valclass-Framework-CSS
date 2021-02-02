@@ -354,3 +354,367 @@
 => vss-h-auto
 => vss-h-full
 => vss-h-full-screen
+
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+#PROPERTY FONT
+
+=======> SIZE <========
+
+=> vss-size-h1
+=> vss-size-h2
+=> vss-size-h3
+=> vss-size-h4
+=> vss-size-h5
+=> vss-size-h6
+=> vss-size-sm
+=> vss-size-md
+=> vss-size-lg
+=> vss-size-xl
+
+=======> FAMILY <========
+
+=> vss-font-roboto
+=> vss-font-poppins
+=> vss-font-montsreet
+=> vss-font-raleway
+
+=======> STYLE <========
+
+=> vss-h-0
+=> vss-h-1
+=> vss-h-2
+=> vss-h-3
+=> vss-h-4
+=> vss-h-auto
+=> vss-h-full
+=> vss-h-full-screen
+
+=======> WEIGHT <========
+
+=> vss-weight-100
+=> vss-weight-200
+=> vss-weight-300
+=> vss-weight-400
+=> vss-weight-500
+=> vss-weight-600
+=> vss-weight-700
+=> vss-weight-800
+=> vss-weight-normal
+=> vss-weight-bold
+=> vss-weight-bolder
+=> vss-weight-lighter
+
+=======> STRECTH <========
+
+=> vss-strecth-condensed
+=> vss-strecth-expanded
+=> vss-strecth-extra-condensed
+=> vss-strecth-extra-expanded
+=> vss-strecth-semi-condensed
+=> vss-strecth-semi-expanded
+=> vss-strecth-narower
+=> vss-strecth-wider
+=> vss-strecth-normal
+
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+#PROPERTY BORDER
+
+=======> RADIUS <========
+
+=> vss-rounded-sm
+=> vss-rounded-md
+=> vss-rounded-lg
+=> vss-rounded-full
+
+=======> WIDTH <========
+
+=> vss-rounded-sm
+=> vss-rounded-md
+=> vss-rounded-lg
+=> vss-rounded-full
+
+=======> COLOR <========
+
+=> vss-border-danger
+=> vss-border-info
+=> vss-border-primary
+=> vss-border-warning
+=> vss-border-dark
+=> vss-border-secondary
+=> vss-border-light
+=> vss-border-pink
+=> vss-border-purple
+=> vss-border-orange
+
+=======> TLRB <========
+
+[TOP]
+=> vss-border-top
+=> vss-border-top-sm
+=> vss-border-top-md
+=> vss-border-top-lg
+=> vss-border-top-xl
+[LEFT]
+=> vss-border-left
+=> vss-border-left-sm
+=> vss-border-left-md
+=> vss-border-left-lg
+=> vss-border-left-xl
+[RIGHT]
+=> vss-border-right
+=> vss-border-right-sm
+=> vss-border-right-md
+=> vss-border-right-lg
+=> vss-border-right-xl
+[BOTTOM]
+=> vss-border-bottom
+=> vss-border-bottom-sm
+=> vss-border-bottom-md
+=> vss-border-bottom-lg
+=> vss-border-bottom-xl
+
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+#PROPERTY FILTER
+
+=======> GRAYSCALSE <========
+
+=> vss-graycale-10
+=> vss-graycale-20
+=> vss-graycale-30
+=> vss-graycale-40
+=> vss-graycale-50
+=> vss-graycale-60
+=> vss-graycale-70
+=> vss-graycale-80
+=> vss-graycale-90
+=> vss-graycale-100
+
+=======> BLUR <========
+
+=> vss-blur-10
+=> vss-blur-20
+=> vss-blur-30
+=> vss-blur-40
+=> vss-blur-50
+=> vss-blur-60
+=> vss-blur-70
+=> vss-blur-80
+=> vss-blur-90
+=> vss-blur-100
+
+=======> INVERT <========
+
+=> vss-invert-10
+=> vss-invert-20
+=> vss-invert-30
+=> vss-invert-40
+=> vss-invert-50
+=> vss-invert-60
+=> vss-invert-70
+=> vss-invert-80
+=> vss-invert-90
+=> vss-invert-100
+
+=======> SEPARATE <========
+
+=> vss-separate-10
+=> vss-separate-20
+=> vss-separate-30
+=> vss-separate-40
+=> vss-separate-50
+=> vss-separate-60
+=> vss-separate-70
+=> vss-separate-80
+=> vss-separate-90
+=> vss-separate-100
+
+=======> INVERT <========
+
+=> vss-separate-10
+=> vss-separate-20
+=> vss-separate-30
+=> vss-separate-40
+=> vss-separate-50
+=> vss-separate-60
+=> vss-separate-70
+=> vss-separate-80
+=> vss-separate-90
+=> vss-separate-100
+
+=======> DROP SHADOW <========
+
+=> vss-drop-shadow-10
+=> vss-drop-shadow-20
+=> vss-drop-shadow-30
+=> vss-drop-shadow-40
+=> vss-drop-shadow-50
+=> vss-drop-shadow-60
+=> vss-drop-shadow-70
+=> vss-drop-shadow-80
+=> vss-drop-shadow-90
+=> vss-drop-shadow-100
+
+=======> HUE ROTATE <========
+
+=> vss-hue-10
+=> vss-hue-20
+=> vss-hue-30
+=> vss-hue-40
+=> vss-hue-50
+=> vss-hue-60
+=> vss-hue-70
+=> vss-hue-80
+=> vss-hue-90
+=> vss-hue-100
+
+=======> SEPIA <========
+
+=> vss-sepia-10
+=> vss-sepia-20
+=> vss-sepia-30
+=> vss-sepia-40
+=> vss-sepia-50
+=> vss-sepia-60
+=> vss-sepia-70
+=> vss-sepia-80
+=> vss-sepia-90
+=> vss-sepia-100
+
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+#PROPERTY TRANSFORM
+
+=======> ROTATE <========
+
+=> vss-rotate-45
+=> vss-rotate-90
+=> vss-rotate-120
+=> vss-rotate-180
+=> vss-rotate-360
+=> vss-rotate-0
+
+=======> SCALE <========
+
+=> vss-scale-sm
+=> vss-scale-md
+=> vss-scale-lg
+=> vss-scale-xl
+=> vss-scale-normal
+
+=======> SKEW <========
+
+=> vss-skew-10
+=> vss-skew-20
+=> vss-skew-30
+=> vss-skew-40
+=> vss-skew-50
+=> vss-skew-60
+=> vss-skew-70
+=> vss-skew-80
+=> vss-skew-90
+=> vss-skew-100
+
+=======> TRANSLATE <========
+
+=> vss-translate-10
+=> vss-translate-20
+=> vss-translate-30
+=> vss-translate-40
+=> vss-translate-50
+=> vss-translate-60
+=> vss-translate-70
+=> vss-translate-80
+=> vss-translate-90
+=> vss-translate-100
+
+=======> PERSPECTIVE <========
+
+=> vss-perspective-10
+=> vss-perspective-20
+=> vss-perspective-30
+=> vss-perspective-40
+=> vss-perspective-50
+=> vss-perspective-60
+=> vss-perspective-70
+=> vss-perspective-80
+=> vss-perspective-90
+=> vss-perspective-100
+
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+#PROPERTY FLOAT
+
+=======> FLOAT <========
+
+=> vss-float-inline-start
+=> vss-float-inline-end
+=> vss-float-left
+=> vss-float-right
+=> vss-float-none
+
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+#PROPERTY JUSTIFY CONTENT
+
+=======> JUSTIFY CONTENT <========
+
+=> vss-justify-center
+=> vss-justify-left
+=> vss-justify-right
+=> vss-justify-end
+=> vss-justify-baseline
+=> vss-justify-flex-end
+=> vss-justify-flex-start
+=> vss-justify-safe
+=> vss-justify-around
+=> vss-justify-between
+=> vss-justify-evenly
+
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+#PROPERTY ALIGN ITEMS
+
+=======> ALIGN ITEMS <========
+
+=> vss-align-items-center
+=> vss-justify-items-baseline
+=> vss-justify-items-flex-end
+=> vss-justify-items-flex-start
+
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+#PROPERTY ALIGN ITEMS
+
+=======> ALIGN ITEMS <========
+
+=> vss-align-items-center
+=> vss-justify-items-baseline
+=> vss-justify-items-flex-end
+=> vss-justify-items-flex-start
+
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+#PROPERTY DISPLAY
+
+=======> DISPLAY <========
+
+=> vss-d-flex
+=> vss-d-block
+=> vss-d-inline
+=> vss-d-flexbox
+=> vss-d-grid
+=> vss-d-inline-block
+=> vss-d-inline-flex
+=> vss-d-inline-flexbox

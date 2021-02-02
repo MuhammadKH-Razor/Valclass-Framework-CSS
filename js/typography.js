@@ -1,4 +1,4 @@
-if (document.querySelector('div').classList.contains('vss-font-roboto')) {
+if (document.querySelector('div').classList.contains('v-font-roboto')) {
     link = document.createElement('link');
     tmp;
     
@@ -7,14 +7,14 @@ if (document.querySelector('div').classList.contains('vss-font-roboto')) {
     document.getElementsByTagName("head")[0].appendChild(tmp);
     
     let styles = ` 
-            .vss-font-roboto { 
+            .v-font-roboto { 
                 font-family: 'Roboto', sans-serif;
             }`;
 
     document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
 }
 
-if (document.querySelector('div').classList.contains('vss-font-poppins')) {
+if (document.querySelector('div').classList.contains('v-font-poppins')) {
     link = document.createElement('link');
     tmp;
     
@@ -23,14 +23,14 @@ if (document.querySelector('div').classList.contains('vss-font-poppins')) {
     document.getElementsByTagName("head")[0].appendChild(tmp);
     
     let styles = ` 
-            .vss-font-poppins { 
+            .v-font-poppins { 
                 font-family: 'Poppins', sans-serif;
             }`;
 
     document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
 }
 
-if (document.querySelector('div').classList.contains('vss-font-montserrat')) {
+if (document.querySelector('div').classList.contains('v-font-montserrat')) {
     link = document.createElement('link');
     tmp;
     
@@ -39,7 +39,7 @@ if (document.querySelector('div').classList.contains('vss-font-montserrat')) {
     document.getElementsByTagName("head")[0].appendChild(tmp);
     
     let styles = ` 
-    .vss-font-montserrat { 
+    .v-font-montserrat { 
         font-family: 'Montserrat', sans-serif;
     }`;
 
@@ -47,7 +47,7 @@ if (document.querySelector('div').classList.contains('vss-font-montserrat')) {
 
 }
 
-if (document.querySelector('div').classList.contains('vss-font-raleway')) {
+if (document.querySelector('div').classList.contains('v-font-raleway')) {
     link = document.createElement('link');
     tmp;
     
@@ -56,7 +56,7 @@ if (document.querySelector('div').classList.contains('vss-font-raleway')) {
     document.getElementsByTagName("head")[0].appendChild(tmp);
     
     let styles = ` 
-    .vss-font-raleway { 
+    .v-font-raleway { 
         font-family: 'Raleway', sans-serif;
     }`;
 
