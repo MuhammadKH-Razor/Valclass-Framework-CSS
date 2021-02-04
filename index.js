@@ -1,4 +1,6 @@
-if (document.querySelector('div')) {
+// agar langsung membuat nya tag style ketika pertama kali browser tampil
+
+if (document.querySelector('body')) {
     let css = document.createElement('style');
     css.type = 'text/css';
 
@@ -7,6 +9,7 @@ if (document.querySelector('div')) {
             padding: 0;
             margin: 0;
         }`;
+
 
     if (css.styleSheet) {
         css.styleSheet.cssText = styles;
@@ -17,111 +20,102 @@ if (document.querySelector('div')) {
     document.getElementsByTagName("head")[0].appendChild(css);
 }
 
-let components = [
-    'v-navbar',
-    'v-footer',
-    'v-jumbotron',
-    'v-sidebar'
-]
 
-let properties = [
-    'v-mt-1',
-    'v-mt-2',
-    'v-mt-3',
-    'v-mt-4',
-    'v-danger',
-    'v-dark',
-    'v-info',
-    'v-primary',
-    'v-secondary'
-]
+// pengkondisian
 
-let typographies = [
-    'v-font-roboto',
-    'v-font-poppins',
-    'v-font-Montserrat',
-    'v-font-raleway'
-]
+if (document.querySelector('body').classList.contains('v-position')) {
 
-let textColors = [
-    'v-text-danger',
-    'v-text-primary',
-    'v-text-dark',
-    'v-text-light'
-]
+    var js = './property/position.js'
 
-for(var i = 0; i <= 50; i++) {
-    if(document.querySelector('div').classList.contains(components[i])) {
-        
-        var js = './js/component.js',
-
-        script = document.createElement('script'),
+    script = document.createElement('script'),
         body = document.getElementsByTagName('body')[0],
         tmp;
 
-        tmp = script;
-        tmp.src = js;
-        body.appendChild(tmp);
-
-    }
-
-    if (document.querySelector('div') ||
-        document.querySelector('h1') ||
-        document.querySelector('h2') ||
-        document.querySelector('h3') ||
-        document.querySelector('h4') ||
-        document.querySelector('h5') ||
-        document.querySelector('h6') ||
-        document.querySelector('p') ||
-        document.querySelector('small') ||
-        document.querySelector('span') ||
-        document.querySelector('section') ||
-        document.querySelector('video') ||
-        document.querySelector('audio') ||
-        document.querySelector('code') ||
-        document.querySelector('pre') ||
-        document.querySelector('sub') ||
-        document.querySelector('sup') ||
-        document.querySelector('mark').classList.contains(textColors[i])) {
-        
-        var js = './js/textColor.js',
-
-        script = document.createElement('script'),
-        body = document.getElementsByTagName('body')[0],
-        tmp;
-
-        tmp = script;
-        tmp.src = js;
-        body.appendChild(tmp);
-
-    }
-
-    if(document.querySelector('div').classList.contains(properties[i])) {
-        
-        var js = './js/property.js',
-
-        script = document.createElement('script'),
-        body = document.getElementsByTagName('body')[0],
-        tmp;
-
-        tmp = script;
-        tmp.src = js;
-        body.appendChild(tmp);
-
-    }
-
-    if(document.querySelector('div').classList.contains(typographies[i])) {
-        
-        var js = './js/typography.js',
-
-        script = document.createElement('script'),
-        body = document.getElementsByTagName('body')[0],
-        tmp;
-
-        tmp = script;
-        tmp.src = js;
-        body.appendChild(tmp);
-
-    }
+    tmp = script;
+    tmp.src = js;
+    body.appendChild(tmp);
 
 }
+
+if (document.querySelector('body').classList.contains('v-component')) {
+
+    var js = './property/component.js'
+
+    script = document.createElement('script'),
+        body = document.getElementsByTagName('body')[0],
+        tmp;
+
+    tmp = script;
+    tmp.src = js;
+    body.appendChild(tmp);
+
+}
+
+if (document.querySelector('body').classList.contains('v-text-color')) {
+
+    var js = './property/textColor.js'
+
+    script = document.createElement('script'),
+        body = document.getElementsByTagName('body')[0],
+        tmp;
+
+    tmp = script;
+    tmp.src = js;
+    body.appendChild(tmp);
+
+}
+
+if (document.querySelector('body').classList.contains('v-margin')) {
+
+    var js = './property/margin.js'
+
+    script = document.createElement('script'),
+        body = document.getElementsByTagName('body')[0],
+        tmp;
+
+    tmp = script;
+    tmp.src = js;
+    body.appendChild(tmp);
+
+}
+
+if (document.querySelector('body').classList.contains('v-background-color')) {
+
+    var js = './property/backgroundColor.js'
+
+    script = document.createElement('script'),
+        body = document.getElementsByTagName('body')[0],
+        tmp;
+
+    tmp = script;
+    tmp.src = js;
+    body.appendChild(tmp);
+
+}
+
+if (document.querySelector('body').classList.contains('v-font')) {
+
+    var js = './property/font.js',
+
+        script = document.createElement('script'),
+        body = document.getElementsByTagName('body')[0],
+        tmp;
+
+    tmp = script;
+    tmp.src = js;
+    body.appendChild(tmp);
+
+}
+
+if (document.querySelector('body').classList.contains('v-index')) {
+    var js = './property/zIndex.js'
+
+    script = document.createElement('script'),
+        body = document.getElementsByTagName('body')[0],
+        tmp;
+
+    tmp = script;
+    tmp.src = js;
+    body.appendChild(tmp);
+}
+

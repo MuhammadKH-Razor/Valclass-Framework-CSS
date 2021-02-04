@@ -1,4 +1,11 @@
-if (document.querySelector('div').classList.contains('v-font-roboto')) {
+if (document.querySelector('div') || 
+    document.querySelector('h1') ||
+    document.querySelector('h2') ||
+    document.querySelector('h3') ||
+    document.querySelector('h4') ||
+    document.querySelector('h5') ||
+    document.querySelector('button') ||
+    document.querySelector('span').classList.contains('v-font-roboto')) {
     link = document.createElement('link');
     tmp;
     
@@ -14,7 +21,14 @@ if (document.querySelector('div').classList.contains('v-font-roboto')) {
     document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
 }
 
-if (document.querySelector('div').classList.contains('v-font-poppins')) {
+if (document.querySelector('div') || 
+    document.querySelector('h1') ||
+    document.querySelector('h2') ||
+    document.querySelector('h3') ||
+    document.querySelector('h4') ||
+    document.querySelector('h5') ||
+    document.querySelector('button') ||
+    document.querySelector('span').classList.contains('v-font-poppins')) {
     link = document.createElement('link');
     tmp;
     
