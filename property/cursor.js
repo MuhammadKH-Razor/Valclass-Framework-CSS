@@ -1,357 +1,353 @@
-// untuk MARGIN
-if (document.querySelector('div') ||
-document.querySelector('h1') ||
-document.querySelector('h2') ||
-document.querySelector('h3') ||
-document.querySelector('h4') ||
-document.querySelector('h5') ||
-document.querySelector('h6') ||
-document.querySelector('p') ||
-document.querySelector('small') ||
-document.querySelector('span') ||
-document.querySelector('section') ||
-document.querySelector('video') ||
-document.querySelector('audio') ||
-document.querySelector('code') ||
-document.querySelector('pre') ||
-document.querySelector('sub') ||
-document.querySelector('sup') ||
-document.querySelector('mark').classList.contains('v-cursor-pointer')) {
+// property, tag dan value - Muhammad Khoirul Huda
 
-let styles = ` 
-        .v-cursor-pointer { 
-            cursor: pointer;
-    }`;
+let propertiesCursors = [
+        'v-cursor-pointer',
+        'v-cursor-col-resize',
+        'v-cursor-context-menu ',
+        'v-cursor-all-scroll',
+        'v-cursor-cell',
+        'v-ursor-alias',
+        'v-cursor-default',
+        'v-cursor-none',
+        'v-cursor-progress'
+    ]
+    
+    let valuesCursors = [
+        'cursor: pointer;',
+        'cursor: col-resize;',
+        'cursor: context-menu;',
+        'cursor: all-scroll;',
+        'cursor: cell;',
+        'cursor: alias;',
+        'cursor: default;',
+        'cursor: none;',
+        'cursor: progress;'
+    ]
+    
+    // pengkondisian
+    
+    
+    for (var i = 0; i < propertiesCursors.length; i++) {
+        if (document.querySelector('body').classList.contains(propertiesCursors[i]) && !document.querySelector('style').innerText.includes(propertiesCursors[i])) {
+    
+            let styles = ` 
+            .${propertiesCursors[i]} { 
+                ${valuesCursors[i]}
+            }`;
+            
+            document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+        }
+    }
+    
+    setTimeout(() => {
+        
+        if (document.querySelector('div')) {
+            for (var i = 0; i < propertiesCursors.length; i++) {
+                if (document.querySelector('div').classList.contains(propertiesCursors[i]) && !document.querySelector('style').innerText.includes(propertiesCursors[i])) {
+    
+                    let styles = ` 
+                .${propertiesCursors[i]} { 
+                    ${valuesCursors[i]}
+                }`;
+    
+                    document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+                }
+            }
+        }
+    
+        if (document.querySelector('h1')) {
+            for (var i = 0; i < propertiesCursors.length; i++) {
+                if (document.querySelector('h1').classList.contains(propertiesCursors[i]) && !document.querySelector('style').innerText.includes(propertiesCursors[i])) {
+    
+                    let styles = ` 
+                .${propertiesCursors[i]} { 
+                    ${valuesCursors[i]}
+                }`;
+    
+                    document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+                }
+            }
+        }
+    
+        if (document.querySelector('h2')) {
+            for (var i = 0; i < propertiesCursors.length; i++) {
+                if (document.querySelector('h2').classList.contains(propertiesCursors[i]) && !document.querySelector('style').innerText.includes(propertiesCursors[i])) {
+    
+                    let styles = ` 
+                .${propertiesCursors[i]} { 
+                    ${valuesCursors[i]}
+                }`;
+    
+                    document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+                }
+            }
+        }
+    
+        if (document.querySelector('h3')) {
+            for (var i = 0; i < propertiesCursors.length; i++) {
+                if (document.querySelector('h3').classList.contains(propertiesCursors[i]) && !document.querySelector('style').innerText.includes(propertiesCursors[i])) {
+    
+                    let styles = ` 
+                .${propertiesCursors[i]} { 
+                    ${valuesCursors[i]}
+                }`;
+    
+                    document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+                }
+            }
+        }
+    
+        if (document.querySelector('h4')) {
+            for (var i = 0; i < propertiesCursors.length; i++) {
+                if (document.querySelector('h4').classList.contains(propertiesCursors[i]) && !document.querySelector('style').innerText.includes(propertiesCursors[i])) {
+    
+                    let styles = ` 
+                .${propertiesCursors[i]} { 
+                    ${valuesCursors[i]}
+                }`;
+    
+                    document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+                }
+            }
+        }
+    
+        if (document.querySelector('h5')) {
+            for (var i = 0; i < propertiesCursors.length; i++) {
+                if (document.querySelector('h5').classList.contains(propertiesCursors[i]) && !document.querySelector('style').innerText.includes(propertiesCursors[i])) {
+    
+                    let styles = ` 
+                .${propertiesCursors[i]} { 
+                    ${valuesCursors[i]}
+                }`;
+    
+                    document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+                }
+            }
+        }
+    
+        if (document.querySelector('h6')) {
+            for (var i = 0; i < propertiesCursors.length; i++) {
+                if (document.querySelector('h6').classList.contains(propertiesCursors[i]) && !document.querySelector('style').innerText.includes(propertiesCursors[i])) {
+    
+                    let styles = ` 
+                .${propertiesCursors[i]} { 
+                    ${valuesCursors[i]}
+                }`;
+    
+                    document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+                }
+            }
+        }
+    
+        if (document.querySelector('span')) {
+            for (var i = 0; i < propertiesCursors.length; i++) {
+                if (document.querySelector('span').classList.contains(propertiesCursors[i]) && !document.querySelector('style').innerText.includes(propertiesCursors[i])) {
+    
+                    let styles = ` 
+                .${propertiesCursors[i]} { 
+                    ${valuesCursors[i]}
+                }`;
+    
+                    document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+                }
+            }
+        }
+    
+        if (document.querySelector('p')) {
+            for (var i = 0; i < propertiesCursors.length; i++) {
+                if (document.querySelector('p').classList.contains(propertiesCursors[i]) && !document.querySelector('style').innerText.includes(propertiesCursors[i])) {
+    
+                    let styles = ` 
+                .${propertiesCursors[i]} { 
+                    ${valuesCursors[i]}
+                }`;
+    
+                    document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+                }
+            }
+        }
+    
+        if (document.querySelector('small')) {
+            for (var i = 0; i < propertiesCursors.length; i++) {
+                if (document.querySelector('small').classList.contains(propertiesCursors[i]) && !document.querySelector('style').innerText.includes(propertiesCursors[i])) {
+    
+                    let styles = ` 
+                .${propertiesCursors[i]} { 
+                    ${valuesCursors[i]}
+                }`;
+    
+                    document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+                }
+            }
+        }
+    
+        if (document.querySelector('input')) {
+            for (var i = 0; i < propertiesCursors.length; i++) {
+                if (document.querySelector('input').classList.contains(propertiesCursors[i]) && !document.querySelector('style').innerText.includes(propertiesCursors[i])) {
+    
+                    let styles = ` 
+                .${propertiesCursors[i]} { 
+                    ${valuesCursors[i]}
+                }`;
+    
+                    document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+                }
+            }
+        }
+    
+        if (document.querySelector('textarea')) {
+            for (var i = 0; i < propertiesCursors.length; i++) {
+                if (document.querySelector('textarea').classList.contains(propertiesCursors[i]) && !document.querySelector('style').innerText.includes(propertiesCursors[i])) {
+    
+                    let styles = ` 
+                .${propertiesCursors[i]} { 
+                    ${valuesCursors[i]}
+                }`;
+    
+                    document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+                }
+            }
+        }
+    
+        if (document.querySelector('select')) {
+            for (var i = 0; i < propertiesCursors.length; i++) {
+                if (document.querySelector('select').classList.contains(propertiesCursors[i]) && !document.querySelector('style').innerText.includes(propertiesCursors[i])) {
+    
+                    let styles = ` 
+                .${propertiesCursors[i]} { 
+                    ${valuesCursors[i]}
+                }`;
+    
+                    document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+                }
+            }
+        }
+    
+        if (document.querySelector('button')) {
+            for (var i = 0; i < propertiesCursors.length; i++) {
+                if (document.querySelector('button').classList.contains(propertiesCursors[i]) && !document.querySelector('style').innerText.includes(propertiesCursors[i])) {
+    
+                    let styles = ` 
+                .${propertiesCursors[i]} { 
+                    ${valuesCursors[i]}
+                }`;
+    
+                    document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+                }
+            }
+        }
+    
+        if (document.querySelector('sup')) {
+            for (var i = 0; i < propertiesCursors.length; i++) {
+                if (document.querySelector('sup').classList.contains(propertiesCursors[i]) && !document.querySelector('style').innerText.includes(propertiesCursors[i])) {
+    
+                    let styles = ` 
+                .${propertiesCursors[i]} { 
+                    ${valuesCursors[i]}
+                }`;
+    
+                    document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+                }
+            }
+        }
+    
+        if (document.querySelector('sup')) {
+            for (var i = 0; i < propertiesCursors.length; i++) {
+                if (document.querySelector('sup').classList.contains(propertiesCursors[i]) && !document.querySelector('style').innerText.includes(propertiesCursors[i])) {
+    
+                    let styles = ` 
+                .${propertiesCursors[i]} { 
+                    ${valuesCursors[i]}
+                }`;
+    
+                    document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+                }
+            }
+        }
+    
+        if (document.querySelector('sub')) {
+            for (var i = 0; i < propertiesCursors.length; i++) {
+                if (document.querySelector('sub').classList.contains(propertiesCursors[i]) && !document.querySelector('style').innerText.includes(propertiesCursors[i])) {
+    
+                    let styles = ` 
+                .${propertiesCursors[i]} { 
+                    ${valuesCursors[i]}
+                }`;
+    
+                    document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+                }
+            }
+        }
+    
+        if (document.querySelector('mark')) {
+            for (var i = 0; i < propertiesCursors.length; i++) {
+                if (document.querySelector('mark').classList.contains(propertiesCursors[i]) && !document.querySelector('style').innerText.includes(propertiesCursors[i])) {
+    
+                    let styles = ` 
+                .${propertiesCursors[i]} { 
+                    ${valuesCursors[i]}
+                }`;
+    
+                    document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+                }
+            }
+        }
+    
+        if (document.querySelector('code')) {
+            for (var i = 0; i < propertiesCursors.length; i++) {
+                if (document.querySelector('code').classList.contains(propertiesCursors[i]) && !document.querySelector('style').innerText.includes(propertiesCursors[i])) {
+    
+                    let styles = ` 
+                .${propertiesCursors[i]} { 
+                    ${valuesCursors[i]}
+                }`;
+    
+                    document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+                }
+            }
+        }
+    
+        if (document.querySelector('pre')) {
+            for (var i = 0; i < propertiesCursors.length; i++) {
+                if (document.querySelector('pre').classList.contains(propertiesCursors[i]) && !document.querySelector('style').innerText.includes(propertiesCursors[i])) {
+    
+                    let styles = ` 
+                .${propertiesCursors[i]} { 
+                    ${valuesCursors[i]}
+                }`;
+    
+                    document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+                }
+            }
+        }
+    
+        if (document.querySelector('blockquote')) {
+            for (var i = 0; i < propertiesCursors.length; i++) {
+                if (document.querySelector('blockquote').classList.contains(propertiesCursors[i]) && !document.querySelector('style').innerText.includes(propertiesCursors[i])) {
+    
+                    let styles = ` 
+                .${propertiesCursors[i]} { 
+                    ${valuesCursors[i]}
+                }`;
+    
+                    document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+                }
+            }
+        }
 
-document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
-}
-
-if (document.querySelector('div') ||
-document.querySelector('h1') ||
-document.querySelector('h2') ||
-document.querySelector('h3') ||
-document.querySelector('h4') ||
-document.querySelector('h5') ||
-document.querySelector('h6') ||
-document.querySelector('p') ||
-document.querySelector('small') ||
-document.querySelector('span') ||
-document.querySelector('section') ||
-document.querySelector('video') ||
-document.querySelector('audio') ||
-document.querySelector('code') ||
-document.querySelector('pre') ||
-document.querySelector('sub') ||
-document.querySelector('sup') ||
-document.querySelector('mark').classList.contains('v-cursor-progress')) {
-
-let styles = ` 
-        .v-cursor-progress { 
-            cursor: progress;
-    }`;
-
-document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
-}
-
-if (document.querySelector('div') ||
-document.querySelector('h1') ||
-document.querySelector('h2') ||
-document.querySelector('h3') ||
-document.querySelector('h4') ||
-document.querySelector('h5') ||
-document.querySelector('h6') ||
-document.querySelector('p') ||
-document.querySelector('small') ||
-document.querySelector('span') ||
-document.querySelector('section') ||
-document.querySelector('video') ||
-document.querySelector('audio') ||
-document.querySelector('code') ||
-document.querySelector('pre') ||
-document.querySelector('sub') ||
-document.querySelector('sup') ||
-document.querySelector('mark').classList.contains('v-cursor-none')) {
-
-let styles = ` 
-        .v-cursor-none { 
-            cursor: none;
-    }`;
-
-document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
-}
-
-if (document.querySelector('div') ||
-document.querySelector('h1') ||
-document.querySelector('h2') ||
-document.querySelector('h3') ||
-document.querySelector('h4') ||
-document.querySelector('h5') ||
-document.querySelector('h6') ||
-document.querySelector('p') ||
-document.querySelector('small') ||
-document.querySelector('span') ||
-document.querySelector('section') ||
-document.querySelector('video') ||
-document.querySelector('audio') ||
-document.querySelector('code') ||
-document.querySelector('pre') ||
-document.querySelector('sub') ||
-document.querySelector('sup') ||
-document.querySelector('mark').classList.contains('v-cursor-no-drop')) {
-
-let styles = ` 
-        .v-cursor-no-drop { 
-            cursor: no-drop;
-    }`;
-
-document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
-}
-
-
-// untuk MARGIN LEFT
-if (document.querySelector('div') ||
-document.querySelector('h1') ||
-document.querySelector('h2') ||
-document.querySelector('h3') ||
-document.querySelector('h4') ||
-document.querySelector('h5') ||
-document.querySelector('h6') ||
-document.querySelector('p') ||
-document.querySelector('small') ||
-document.querySelector('span') ||
-document.querySelector('section') ||
-document.querySelector('video') ||
-document.querySelector('audio') ||
-document.querySelector('code') ||
-document.querySelector('pre') ||
-document.querySelector('sub') ||
-document.querySelector('sup') ||
-document.querySelector('mark').classList.contains('v-cursor-copy')) {
-
-let styles = ` 
-        .v-cursor-copy { 
-            cursor: copy;
-    }`;
-
-document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
-}
-
-if (document.querySelector('div') ||
-document.querySelector('h1') ||
-document.querySelector('h2') ||
-document.querySelector('h3') ||
-document.querySelector('h4') ||
-document.querySelector('h5') ||
-document.querySelector('h6') ||
-document.querySelector('p') ||
-document.querySelector('small') ||
-document.querySelector('span') ||
-document.querySelector('section') ||
-document.querySelector('video') ||
-document.querySelector('audio') ||
-document.querySelector('code') ||
-document.querySelector('pre') ||
-document.querySelector('sub') ||
-document.querySelector('sup') ||
-document.querySelector('mark').classList.contains('v-cursor-crosshair')) {
-
-let styles = ` 
-        .v-cursor-crosshair { 
-            cursor: crosshair;
-    }`;
-
-document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
-}
-
-if (document.querySelector('div') ||
-document.querySelector('h1') ||
-document.querySelector('h2') ||
-document.querySelector('h3') ||
-document.querySelector('h4') ||
-document.querySelector('h5') ||
-document.querySelector('h6') ||
-document.querySelector('p') ||
-document.querySelector('small') ||
-document.querySelector('span') ||
-document.querySelector('section') ||
-document.querySelector('video') ||
-document.querySelector('audio') ||
-document.querySelector('code') ||
-document.querySelector('pre') ||
-document.querySelector('sub') ||
-document.querySelector('sup') ||
-document.querySelector('mark').classList.contains('v-cursor-default')) {
-
-let styles = ` 
-            .v-cursor-default { 
-                cursor: default;
-        }`;
-
-document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
-}
-
-if (document.querySelector('div') ||
-document.querySelector('h1') ||
-document.querySelector('h2') ||
-document.querySelector('h3') ||
-document.querySelector('h4') ||
-document.querySelector('h5') ||
-document.querySelector('h6') ||
-document.querySelector('p') ||
-document.querySelector('small') ||
-document.querySelector('span') ||
-document.querySelector('section') ||
-document.querySelector('video') ||
-document.querySelector('audio') ||
-document.querySelector('code') ||
-document.querySelector('pre') ||
-document.querySelector('sub') ||
-document.querySelector('sup') ||
-document.querySelector('mark').classList.contains('v-cursor-grab')) {
-
-let styles = ` 
-            .v-cursor-grab { 
-                cursor: grab;
-        }`;
-
-document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
-}
-
-
-// untuk MARGIN RIGHT
-if (document.querySelector('div') ||
-document.querySelector('h1') ||
-document.querySelector('h2') ||
-document.querySelector('h3') ||
-document.querySelector('h4') ||
-document.querySelector('h5') ||
-document.querySelector('h6') ||
-document.querySelector('p') ||
-document.querySelector('small') ||
-document.querySelector('span') ||
-document.querySelector('section') ||
-document.querySelector('video') ||
-document.querySelector('audio') ||
-document.querySelector('code') ||
-document.querySelector('pre') ||
-document.querySelector('sub') ||
-document.querySelector('sup') ||
-document.querySelector('mark').classList.contains('v-cursor-alias')) {
-
-let styles = ` 
-        .v-cursor-alias { 
-            cursor: alias;
-    }`;
-
-document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
-}
-
-if (document.querySelector('div') ||
-document.querySelector('h1') ||
-document.querySelector('h2') ||
-document.querySelector('h3') ||
-document.querySelector('h4') ||
-document.querySelector('h5') ||
-document.querySelector('h6') ||
-document.querySelector('p') ||
-document.querySelector('small') ||
-document.querySelector('span') ||
-document.querySelector('section') ||
-document.querySelector('video') ||
-document.querySelector('audio') ||
-document.querySelector('code') ||
-document.querySelector('pre') ||
-document.querySelector('sub') ||
-document.querySelector('sup') ||
-document.querySelector('mark').classList.contains('v-cursor-cell')) {
-
-let styles = ` 
-        .v-cursor-cell { 
-            cursor: cell;
-    }`;
-
-document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
-}
-
-if (document.querySelector('div') ||
-document.querySelector('h1') ||
-document.querySelector('h2') ||
-document.querySelector('h3') ||
-document.querySelector('h4') ||
-document.querySelector('h5') ||
-document.querySelector('h6') ||
-document.querySelector('p') ||
-document.querySelector('small') ||
-document.querySelector('span') ||
-document.querySelector('section') ||
-document.querySelector('video') ||
-document.querySelector('audio') ||
-document.querySelector('code') ||
-document.querySelector('pre') ||
-document.querySelector('sub') ||
-document.querySelector('sup') ||
-document.querySelector('mark').classList.contains('v-cursor-all-scroll')) {
-
-let styles = ` 
-            .v-cursor-all-scroll { 
-                cursort: all-scroll;
-        }`;
-
-document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
-}
-
-if (document.querySelector('div') ||
-document.querySelector('h1') ||
-document.querySelector('h2') ||
-document.querySelector('h3') ||
-document.querySelector('h4') ||
-document.querySelector('h5') ||
-document.querySelector('h6') ||
-document.querySelector('p') ||
-document.querySelector('small') ||
-document.querySelector('span') ||
-document.querySelector('section') ||
-document.querySelector('video') ||
-document.querySelector('audio') ||
-document.querySelector('code') ||
-document.querySelector('pre') ||
-document.querySelector('sub') ||
-document.querySelector('sup') ||
-document.querySelector('mark').classList.contains('v-cursor-context-menu')) {
-
-let styles = ` 
-            .v-cursor-context-menu { 
-                cursor: context-menu;
-        }`;
-
-document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
-}
-
-
-// untuk MARGIN RIGHT
-if (document.querySelector('div') ||
-document.querySelector('h1') ||
-document.querySelector('h2') ||
-document.querySelector('h3') ||
-document.querySelector('h4') ||
-document.querySelector('h5') ||
-document.querySelector('h6') ||
-document.querySelector('p') ||
-document.querySelector('small') ||
-document.querySelector('span') ||
-document.querySelector('section') ||
-document.querySelector('video') ||
-document.querySelector('audio') ||
-document.querySelector('code') ||
-document.querySelector('pre') ||
-document.querySelector('sub') ||
-document.querySelector('sup') ||
-document.querySelector('mark').classList.contains('v-cursor-col-resize')) {
-
-let styles = ` 
-        .v-cursor-col-resize { 
-            cursor: col-resize;
-    }`;
-
-document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
-}
+        if (document.querySelector('a')) {
+            for (var i = 0; i < propertiesCursors.length; i++) {
+                if (document.querySelector('a').classList.contains(propertiesCursors[i]) && !document.querySelector('style').innerText.includes(propertiesCursors[i])) {
+    
+                    let styles = ` 
+                .${propertiesCursors[i]} { 
+                    ${valuesCursors[i]}
+                }`;
+    
+                    document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+                }
+            }
+        }
+    }, 300)
+    
+    // akhir dari pengkondisian - Muhammad Khoirul Huda

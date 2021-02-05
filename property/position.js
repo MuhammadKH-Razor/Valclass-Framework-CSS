@@ -327,6 +327,20 @@ setTimeout(() => {
             }
         }
     }
-}, 500)
+
+    if (document.querySelector('a')) {
+        for (var i = 0; i < propertiesPosition.length; i++) {
+            if (document.querySelector('a').classList.contains(propertiesPosition[i]) && !document.querySelector('style').innerText.includes(propertiesPosition[i])) {
+
+                let styles = ` 
+            .${propertiesPosition[i]} { 
+                ${valuesPosition[i]}
+            }`;
+
+                document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+            }
+        }
+    }
+}, 300)
 
 // akhir dari pengkondisian - Muhammad Khoirul Huda

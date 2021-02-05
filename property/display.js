@@ -1,567 +1,375 @@
-// untuk MARGIN
-if (document.querySelector('div') ||
-document.querySelector('h1') ||
-document.querySelector('h2') ||
-document.querySelector('h3') ||
-document.querySelector('h4') ||
-document.querySelector('h5') ||
-document.querySelector('h6') ||
-document.querySelector('p') ||
-document.querySelector('small') ||
-document.querySelector('span') ||
-document.querySelector('section') ||
-document.querySelector('video') ||
-document.querySelector('audio') ||
-document.querySelector('code') ||
-document.querySelector('pre') ||
-document.querySelector('sub') ||
-document.querySelector('sup') ||
-document.querySelector('mark').classList.contains('v-flex')) {
+// property, tag dan value - Muhammad Khoirul Huda
 
-let styles = ` 
-        .v-flex { 
-            display: flex;
+let propertiesDisplay = [
+    'v-d-flex',
+    'v-d-block',
+    'v-d-flexbox',
+    'v-d-inline',
+    'v-d-table',
+    'v-d-inline-flex',
+    'v-d-inline-block',
+    'v-d-inline-flexbox',
+    'v-d-inline-table ',
+    'v-d-grid',
+    'v-d-table-column-group',
+    'v-d-table-footer-group',
+    'v-d-table-header-group',
+    'v-d-table-row',
+    'v-d-run-i',
+    'v-d-table-cell',
+    'v-d-table-column',
+    'v-d-none',
+    'v-d-list-item',
+    'v-d-flow-root',
+    'v-d-ruby'
+]
+
+let valuesDisplay = [
+    'display: flex',
+    'display: block;',
+    'display: flexbox;',
+    'display: inline;',
+    'display: table',
+    'display: inline-flex;',
+    'display: inline-block;',
+    'display: inline-flexbox;',
+    'display: inline-table;',
+    'display: grid;',
+    'display: table-column-group;',
+    'display: table-footer-group;',
+    'display: table-header-group;',
+    'display: table-row;',
+    'display: run-i;',
+    'display: table-cell;',
+    'display: table-column;',
+    'display: none;',
+    'display: list-item;',
+    'display: flow-root;',
+    'display: ruby;'
+]
+// pengkondisian
+
+for (var i = 0; i < propertiesDisplay.length; i++) {
+    if (document.querySelector('body').classList.contains(propertiesDisplay[i]) && !document.querySelector('style').innerText.includes(propertiesDisplay[i])) {
+
+        let styles = ` 
+        .${propertiesDisplay[i]} { 
+            ${valuesDisplay[i]}
         }`;
 
-document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+        document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+    }
 }
 
-if (document.querySelector('div') ||
-document.querySelector('h1') ||
-document.querySelector('h2') ||
-document.querySelector('h3') ||
-document.querySelector('h4') ||
-document.querySelector('h5') ||
-document.querySelector('h6') ||
-document.querySelector('p') ||
-document.querySelector('small') ||
-document.querySelector('span') ||
-document.querySelector('section') ||
-document.querySelector('video') ||
-document.querySelector('audio') ||
-document.querySelector('code') ||
-document.querySelector('pre') ||
-document.querySelector('sub') ||
-document.querySelector('sup') ||
-document.querySelector('mark').classList.contains('v-block')) {
+setTimeout(() => {
 
-let styles = ` 
-        .v-block { 
-            display: block;
-        }`;
+    if (document.querySelector('div')) {
+        for (var i = 0; i < propertiesDisplay.length; i++) {
+            if (document.querySelector('div').classList.contains(propertiesDisplay[i]) && !document.querySelector('style').innerText.includes(propertiesDisplay[i])) {
 
-document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
-}
+                let styles = ` 
+            .${propertiesDisplay[i]} { 
+                ${valuesDisplay[i]}
+            }`;
 
-if (document.querySelector('div') ||
-document.querySelector('h1') ||
-document.querySelector('h2') ||
-document.querySelector('h3') ||
-document.querySelector('h4') ||
-document.querySelector('h5') ||
-document.querySelector('h6') ||
-document.querySelector('p') ||
-document.querySelector('small') ||
-document.querySelector('span') ||
-document.querySelector('section') ||
-document.querySelector('video') ||
-document.querySelector('audio') ||
-document.querySelector('code') ||
-document.querySelector('pre') ||
-document.querySelector('sub') ||
-document.querySelector('sup') ||
-document.querySelector('mark').classList.contains('v-inline')) {
+                document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+            }
+        }
+    }
 
-let styles = ` 
-        .v-inline { 
-            display: inline;
-    }`;
+    if (document.querySelector('h1')) {
+        for (var i = 0; i < propertiesDisplay.length; i++) {
+            if (document.querySelector('h1').classList.contains(propertiesDisplay[i]) && !document.querySelector('style').innerText.includes(propertiesDisplay[i])) {
 
-document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
-}
+                let styles = ` 
+            .${propertiesDisplay[i]} { 
+                ${valuesDisplay[i]}
+            }`;
 
-if (document.querySelector('div') ||
-document.querySelector('h1') ||
-document.querySelector('h2') ||
-document.querySelector('h3') ||
-document.querySelector('h4') ||
-document.querySelector('h5') ||
-document.querySelector('h6') ||
-document.querySelector('p') ||
-document.querySelector('small') ||
-document.querySelector('span') ||
-document.querySelector('section') ||
-document.querySelector('video') ||
-document.querySelector('audio') ||
-document.querySelector('code') ||
-document.querySelector('pre') ||
-document.querySelector('sub') ||
-document.querySelector('sup') ||
-document.querySelector('mark').classList.contains('v-inline-flex')) {
+                document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+            }
+        }
+    }
 
-let styles = ` 
-        .v-inline-flex { 
-            display: inline-flex;
-    }`;
+    if (document.querySelector('h2')) {
+        for (var i = 0; i < propertiesDisplay.length; i++) {
+            if (document.querySelector('h2').classList.contains(propertiesDisplay[i]) && !document.querySelector('style').innerText.includes(propertiesDisplay[i])) {
 
-document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
-}
+                let styles = ` 
+            .${propertiesDisplay[i]} { 
+                ${valuesDisplay[i]}
+            }`;
 
-if (document.querySelector('div') ||
-document.querySelector('h1') ||
-document.querySelector('h2') ||
-document.querySelector('h3') ||
-document.querySelector('h4') ||
-document.querySelector('h5') ||
-document.querySelector('h6') ||
-document.querySelector('p') ||
-document.querySelector('small') ||
-document.querySelector('span') ||
-document.querySelector('section') ||
-document.querySelector('video') ||
-document.querySelector('audio') ||
-document.querySelector('code') ||
-document.querySelector('pre') ||
-document.querySelector('sub') ||
-document.querySelector('sup') ||
-document.querySelector('mark').classList.contains('v-inline-block')) {
+                document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+            }
+        }
+    }
 
-let styles = ` 
-        .v-inline-block { 
-            display: inline-block;
-    }`;
+    if (document.querySelector('h3')) {
+        for (var i = 0; i < propertiesDisplay.length; i++) {
+            if (document.querySelector('h3').classList.contains(propertiesDisplay[i]) && !document.querySelector('style').innerText.includes(propertiesDisplay[i])) {
 
-document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
-}
+                let styles = ` 
+            .${propertiesDisplay[i]} { 
+                ${valuesDisplay[i]}
+            }`;
 
-if (document.querySelector('div') ||
-document.querySelector('h1') ||
-document.querySelector('h2') ||
-document.querySelector('h3') ||
-document.querySelector('h4') ||
-document.querySelector('h5') ||
-document.querySelector('h6') ||
-document.querySelector('p') ||
-document.querySelector('small') ||
-document.querySelector('span') ||
-document.querySelector('section') ||
-document.querySelector('video') ||
-document.querySelector('audio') ||
-document.querySelector('code') ||
-document.querySelector('pre') ||
-document.querySelector('sub') ||
-document.querySelector('sup') ||
-document.querySelector('mark').classList.contains('v-inline-flexbox')) {
+                document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+            }
+        }
+    }
 
-let styles = ` 
-        .v-inline-flexbox { 
-            display: inline-flexbox;
-    }`;
+    if (document.querySelector('h4')) {
+        for (var i = 0; i < propertiesDisplay.length; i++) {
+            if (document.querySelector('h4').classList.contains(propertiesDisplay[i]) && !document.querySelector('style').innerText.includes(propertiesDisplay[i])) {
 
-document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
-}
+                let styles = ` 
+            .${propertiesDisplay[i]} { 
+                ${valuesDisplay[i]}
+            }`;
 
-if (document.querySelector('div') ||
-document.querySelector('h1') ||
-document.querySelector('h2') ||
-document.querySelector('h3') ||
-document.querySelector('h4') ||
-document.querySelector('h5') ||
-document.querySelector('h6') ||
-document.querySelector('p') ||
-document.querySelector('small') ||
-document.querySelector('span') ||
-document.querySelector('section') ||
-document.querySelector('video') ||
-document.querySelector('audio') ||
-document.querySelector('code') ||
-document.querySelector('pre') ||
-document.querySelector('sub') ||
-document.querySelector('sup') ||
-document.querySelector('mark').classList.contains('v-flexbox')) {
+                document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+            }
+        }
+    }
 
-let styles = ` 
-        .v-flexbox { 
-            display: flexbox;
-    }`;
+    if (document.querySelector('h5')) {
+        for (var i = 0; i < propertiesDisplay.length; i++) {
+            if (document.querySelector('h5').classList.contains(propertiesDisplay[i]) && !document.querySelector('style').innerText.includes(propertiesDisplay[i])) {
 
-document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
-}
+                let styles = ` 
+            .${propertiesDisplay[i]} { 
+                ${valuesDisplay[i]}
+            }`;
 
-if (document.querySelector('div') ||
-document.querySelector('h1') ||
-document.querySelector('h2') ||
-document.querySelector('h3') ||
-document.querySelector('h4') ||
-document.querySelector('h5') ||
-document.querySelector('h6') ||
-document.querySelector('p') ||
-document.querySelector('small') ||
-document.querySelector('span') ||
-document.querySelector('section') ||
-document.querySelector('video') ||
-document.querySelector('audio') ||
-document.querySelector('code') ||
-document.querySelector('pre') ||
-document.querySelector('sub') ||
-document.querySelector('sup') ||
-document.querySelector('mark').classList.contains('v-inline-table')) {
+                document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+            }
+        }
+    }
 
-let styles = ` 
-        .v-inline-table { 
-            display: inline-table;
-    }`;
+    if (document.querySelector('h6')) {
+        for (var i = 0; i < propertiesDisplay.length; i++) {
+            if (document.querySelector('h6').classList.contains(propertiesDisplay[i]) && !document.querySelector('style').innerText.includes(propertiesDisplay[i])) {
 
-document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
-}
+                let styles = ` 
+            .${propertiesDisplay[i]} { 
+                ${valuesDisplay[i]}
+            }`;
 
-if (document.querySelector('div') ||
-document.querySelector('h1') ||
-document.querySelector('h2') ||
-document.querySelector('h3') ||
-document.querySelector('h4') ||
-document.querySelector('h5') ||
-document.querySelector('h6') ||
-document.querySelector('p') ||
-document.querySelector('small') ||
-document.querySelector('span') ||
-document.querySelector('section') ||
-document.querySelector('video') ||
-document.querySelector('audio') ||
-document.querySelector('code') ||
-document.querySelector('pre') ||
-document.querySelector('sub') ||
-document.querySelector('sup') ||
-document.querySelector('mark').classList.contains('v-grid')) {
+                document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+            }
+        }
+    }
 
-let styles = ` 
-        .v-grid { 
-            display: grid;
-    }`;
+    if (document.querySelector('span')) {
+        for (var i = 0; i < propertiesDisplay.length; i++) {
+            if (document.querySelector('span').classList.contains(propertiesDisplay[i]) && !document.querySelector('style').innerText.includes(propertiesDisplay[i])) {
 
-document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
-}
+                let styles = ` 
+            .${propertiesDisplay[i]} { 
+                ${valuesDisplay[i]}
+            }`;
 
-if (document.querySelector('div') ||
-document.querySelector('h1') ||
-document.querySelector('h2') ||
-document.querySelector('h3') ||
-document.querySelector('h4') ||
-document.querySelector('h5') ||
-document.querySelector('h6') ||
-document.querySelector('p') ||
-document.querySelector('small') ||
-document.querySelector('span') ||
-document.querySelector('section') ||
-document.querySelector('video') ||
-document.querySelector('audio') ||
-document.querySelector('code') ||
-document.querySelector('pre') ||
-document.querySelector('sub') ||
-document.querySelector('sup') ||
-document.querySelector('mark').classList.contains('v-ruby')) {
+                document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+            }
+        }
+    }
 
-let styles = ` 
-        .v-ruby { 
-            display: ruby;
-    }`;
+    if (document.querySelector('p')) {
+        for (var i = 0; i < propertiesDisplay.length; i++) {
+            if (document.querySelector('p').classList.contains(propertiesDisplay[i]) && !document.querySelector('style').innerText.includes(propertiesDisplay[i])) {
 
-document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
-}
+                let styles = ` 
+            .${propertiesDisplay[i]} { 
+                ${valuesDisplay[i]}
+            }`;
 
-if (document.querySelector('div') ||
-document.querySelector('h1') ||
-document.querySelector('h2') ||
-document.querySelector('h3') ||
-document.querySelector('h4') ||
-document.querySelector('h5') ||
-document.querySelector('h6') ||
-document.querySelector('p') ||
-document.querySelector('small') ||
-document.querySelector('span') ||
-document.querySelector('section') ||
-document.querySelector('video') ||
-document.querySelector('audio') ||
-document.querySelector('code') ||
-document.querySelector('pre') ||
-document.querySelector('sub') ||
-document.querySelector('sup') ||
-document.querySelector('mark').classList.contains('v-flow-root')) {
+                document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+            }
+        }
+    }
 
-let styles = ` 
-        .v-flow-root { 
-            display: flow-root;
-    }`;
+    if (document.querySelector('small')) {
+        for (var i = 0; i < propertiesDisplay.length; i++) {
+            if (document.querySelector('small').classList.contains(propertiesDisplay[i]) && !document.querySelector('style').innerText.includes(propertiesDisplay[i])) {
 
-document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
-}
+                let styles = ` 
+            .${propertiesDisplay[i]} { 
+                ${valuesDisplay[i]}
+            }`;
 
-if (document.querySelector('div') ||
-document.querySelector('h1') ||
-document.querySelector('h2') ||
-document.querySelector('h3') ||
-document.querySelector('h4') ||
-document.querySelector('h5') ||
-document.querySelector('h6') ||
-document.querySelector('p') ||
-document.querySelector('small') ||
-document.querySelector('span') ||
-document.querySelector('section') ||
-document.querySelector('video') ||
-document.querySelector('audio') ||
-document.querySelector('code') ||
-document.querySelector('pre') ||
-document.querySelector('sub') ||
-document.querySelector('sup') ||
-document.querySelector('mark').classList.contains('v-list-item')) {
+                document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+            }
+        }
+    }
 
-let styles = ` 
-        .v-list-item { 
-            display: list-item;
-    }`;
+    if (document.querySelector('input')) {
+        for (var i = 0; i < propertiesDisplay.length; i++) {
+            if (document.querySelector('input').classList.contains(propertiesDisplay[i]) && !document.querySelector('style').innerText.includes(propertiesDisplay[i])) {
 
-document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
-}
+                let styles = ` 
+            .${propertiesDisplay[i]} { 
+                ${valuesDisplay[i]}
+            }`;
 
-if (document.querySelector('div') ||
-document.querySelector('h1') ||
-document.querySelector('h2') ||
-document.querySelector('h3') ||
-document.querySelector('h4') ||
-document.querySelector('h5') ||
-document.querySelector('h6') ||
-document.querySelector('p') ||
-document.querySelector('small') ||
-document.querySelector('span') ||
-document.querySelector('section') ||
-document.querySelector('video') ||
-document.querySelector('audio') ||
-document.querySelector('code') ||
-document.querySelector('pre') ||
-document.querySelector('sub') ||
-document.querySelector('sup') ||
-document.querySelector('mark').classList.contains('v-none')) {
+                document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+            }
+        }
+    }
 
-let styles = ` 
-        .v-none { 
-            display: none;
-    }`;
+    if (document.querySelector('textarea')) {
+        for (var i = 0; i < propertiesDisplay.length; i++) {
+            if (document.querySelector('textarea').classList.contains(propertiesDisplay[i]) && !document.querySelector('style').innerText.includes(propertiesDisplay[i])) {
 
-document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
-}
+                let styles = ` 
+            .${propertiesDisplay[i]} { 
+                ${valuesDisplay[i]}
+            }`;
 
-if (document.querySelector('div') ||
-document.querySelector('h1') ||
-document.querySelector('h2') ||
-document.querySelector('h3') ||
-document.querySelector('h4') ||
-document.querySelector('h5') ||
-document.querySelector('h6') ||
-document.querySelector('p') ||
-document.querySelector('small') ||
-document.querySelector('span') ||
-document.querySelector('section') ||
-document.querySelector('video') ||
-document.querySelector('audio') ||
-document.querySelector('code') ||
-document.querySelector('pre') ||
-document.querySelector('sub') ||
-document.querySelector('sup') ||
-document.querySelector('mark').classList.contains('v-table')) {
+                document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+            }
+        }
+    }
 
-let styles = ` 
-        .v-table { 
-            display: table;
-    }`;
+    if (document.querySelector('select')) {
+        for (var i = 0; i < propertiesDisplay.length; i++) {
+            if (document.querySelector('select').classList.contains(propertiesDisplay[i]) && !document.querySelector('style').innerText.includes(propertiesDisplay[i])) {
 
-document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
-}
+                let styles = ` 
+            .${propertiesDisplay[i]} { 
+                ${valuesDisplay[i]}
+            }`;
 
-if (document.querySelector('div') ||
-document.querySelector('h1') ||
-document.querySelector('h2') ||
-document.querySelector('h3') ||
-document.querySelector('h4') ||
-document.querySelector('h5') ||
-document.querySelector('h6') ||
-document.querySelector('p') ||
-document.querySelector('small') ||
-document.querySelector('span') ||
-document.querySelector('section') ||
-document.querySelector('video') ||
-document.querySelector('audio') ||
-document.querySelector('code') ||
-document.querySelector('pre') ||
-document.querySelector('sub') ||
-document.querySelector('sup') ||
-document.querySelector('mark').classList.contains('v-table-cell')) {
+                document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+            }
+        }
+    }
 
-let styles = ` 
-        .v-table-cell { 
-            display: table-cell;
-    }`;
+    if (document.querySelector('button')) {
+        for (var i = 0; i < propertiesDisplay.length; i++) {
+            if (document.querySelector('button').classList.contains(propertiesDisplay[i]) && !document.querySelector('style').innerText.includes(propertiesDisplay[i])) {
 
-document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
-}
+                let styles = ` 
+            .${propertiesDisplay[i]} { 
+                ${valuesDisplay[i]}
+            }`;
 
-if (document.querySelector('div') ||
-document.querySelector('h1') ||
-document.querySelector('h2') ||
-document.querySelector('h3') ||
-document.querySelector('h4') ||
-document.querySelector('h5') ||
-document.querySelector('h6') ||
-document.querySelector('p') ||
-document.querySelector('small') ||
-document.querySelector('span') ||
-document.querySelector('section') ||
-document.querySelector('video') ||
-document.querySelector('audio') ||
-document.querySelector('code') ||
-document.querySelector('pre') ||
-document.querySelector('sub') ||
-document.querySelector('sup') ||
-document.querySelector('mark').classList.contains('v-table-column')) {
+                document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+            }
+        }
+    }
 
-let styles = ` 
-        .v-table-column { 
-            display: table-column;
-    }`;
+    if (document.querySelector('sup')) {
+        for (var i = 0; i < propertiesDisplay.length; i++) {
+            if (document.querySelector('sup').classList.contains(propertiesDisplay[i]) && !document.querySelector('style').innerText.includes(propertiesDisplay[i])) {
 
-document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
-}
+                let styles = ` 
+            .${propertiesDisplay[i]} { 
+                ${valuesDisplay[i]}
+            }`;
 
-if (document.querySelector('div') ||
-document.querySelector('h1') ||
-document.querySelector('h2') ||
-document.querySelector('h3') ||
-document.querySelector('h4') ||
-document.querySelector('h5') ||
-document.querySelector('h6') ||
-document.querySelector('p') ||
-document.querySelector('small') ||
-document.querySelector('span') ||
-document.querySelector('section') ||
-document.querySelector('video') ||
-document.querySelector('audio') ||
-document.querySelector('code') ||
-document.querySelector('pre') ||
-document.querySelector('sub') ||
-document.querySelector('sup') ||
-document.querySelector('mark').classList.contains('v-run-in')) {
+                document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+            }
+        }
+    }
 
-let styles = ` 
-        .v-run-in { 
-            display: run-in;
-    }`;
+    if (document.querySelector('sup')) {
+        for (var i = 0; i < propertiesDisplay.length; i++) {
+            if (document.querySelector('sup').classList.contains(propertiesDisplay[i]) && !document.querySelector('style').innerText.includes(propertiesDisplay[i])) {
 
-document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
-}
+                let styles = ` 
+            .${propertiesDisplay[i]} { 
+                ${valuesDisplay[i]}
+            }`;
 
-if (document.querySelector('div') ||
-document.querySelector('h1') ||
-document.querySelector('h2') ||
-document.querySelector('h3') ||
-document.querySelector('h4') ||
-document.querySelector('h5') ||
-document.querySelector('h6') ||
-document.querySelector('p') ||
-document.querySelector('small') ||
-document.querySelector('span') ||
-document.querySelector('section') ||
-document.querySelector('video') ||
-document.querySelector('audio') ||
-document.querySelector('code') ||
-document.querySelector('pre') ||
-document.querySelector('sub') ||
-document.querySelector('sup') ||
-document.querySelector('mark').classList.contains('v-table-row')) {
+                document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+            }
+        }
+    }
 
-let styles = ` 
-        .v-table-row { 
-            display: table-row;
-    }`;
+    if (document.querySelector('sub')) {
+        for (var i = 0; i < propertiesDisplay.length; i++) {
+            if (document.querySelector('sub').classList.contains(propertiesDisplay[i]) && !document.querySelector('style').innerText.includes(propertiesDisplay[i])) {
 
-document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
-}
+                let styles = ` 
+            .${propertiesDisplay[i]} { 
+                ${valuesDisplay[i]}
+            }`;
 
-if (document.querySelector('div') ||
-document.querySelector('h1') ||
-document.querySelector('h2') ||
-document.querySelector('h3') ||
-document.querySelector('h4') ||
-document.querySelector('h5') ||
-document.querySelector('h6') ||
-document.querySelector('p') ||
-document.querySelector('small') ||
-document.querySelector('span') ||
-document.querySelector('section') ||
-document.querySelector('video') ||
-document.querySelector('audio') ||
-document.querySelector('code') ||
-document.querySelector('pre') ||
-document.querySelector('sub') ||
-document.querySelector('sup') ||
-document.querySelector('mark').classList.contains('v-table-header-group')) {
+                document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+            }
+        }
+    }
 
-let styles = ` 
-        .v-table-header-group { 
-            display: table-header-group;
-    }`;
+    if (document.querySelector('mark')) {
+        for (var i = 0; i < propertiesDisplay.length; i++) {
+            if (document.querySelector('mark').classList.contains(propertiesDisplay[i]) && !document.querySelector('style').innerText.includes(propertiesDisplay[i])) {
 
-document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
-}
+                let styles = ` 
+            .${propertiesDisplay[i]} { 
+                ${valuesDisplay[i]}
+            }`;
 
-if (document.querySelector('div') ||
-document.querySelector('h1') ||
-document.querySelector('h2') ||
-document.querySelector('h3') ||
-document.querySelector('h4') ||
-document.querySelector('h5') ||
-document.querySelector('h6') ||
-document.querySelector('p') ||
-document.querySelector('small') ||
-document.querySelector('span') ||
-document.querySelector('section') ||
-document.querySelector('video') ||
-document.querySelector('audio') ||
-document.querySelector('code') ||
-document.querySelector('pre') ||
-document.querySelector('sub') ||
-document.querySelector('sup') ||
-document.querySelector('mark').classList.contains('v-table-footer-group')) {
+                document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+            }
+        }
+    }
 
-let styles = ` 
-        .v-table-footer-group { 
-            display: table-footer-group;
-    }`;
+    if (document.querySelector('code')) {
+        for (var i = 0; i < propertiesDisplay.length; i++) {
+            if (document.querySelector('code').classList.contains(propertiesDisplay[i]) && !document.querySelector('style').innerText.includes(propertiesDisplay[i])) {
 
-document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
-}
+                let styles = ` 
+            .${propertiesDisplay[i]} { 
+                ${valuesDisplay[i]}
+            }`;
 
-if (document.querySelector('div') ||
-document.querySelector('h1') ||
-document.querySelector('h2') ||
-document.querySelector('h3') ||
-document.querySelector('h4') ||
-document.querySelector('h5') ||
-document.querySelector('h6') ||
-document.querySelector('p') ||
-document.querySelector('small') ||
-document.querySelector('span') ||
-document.querySelector('section') ||
-document.querySelector('video') ||
-document.querySelector('audio') ||
-document.querySelector('code') ||
-document.querySelector('pre') ||
-document.querySelector('sub') ||
-document.querySelector('sup') ||
-document.querySelector('mark').classList.contains('v-table-column-group')) {
+                document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+            }
+        }
+    }
 
-let styles = ` 
-        .v-table-column-group { 
-            display: table-column-group;
-    }`;
+    if (document.querySelector('pre')) {
+        for (var i = 0; i < propertiesDisplay.length; i++) {
+            if (document.querySelector('pre').classList.contains(propertiesDisplay[i]) && !document.querySelector('style').innerText.includes(propertiesDisplay[i])) {
 
-document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
-}
+                let styles = ` 
+            .${propertiesDisplay[i]} { 
+                ${valuesDisplay[i]}
+            }`;
+
+                document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+            }
+        }
+    }
+
+    if (document.querySelector('blockquote')) {
+        for (var i = 0; i < propertiesDisplay.length; i++) {
+            if (document.querySelector('blockquote').classList.contains(propertiesDisplay[i]) && !document.querySelector('style').innerText.includes(propertiesDisplay[i])) {
+
+                let styles = ` 
+            .${propertiesDisplay[i]} { 
+                ${valuesDisplay[i]}
+            }`;
+
+                document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+            }
+        }
+    }
+
+    if (document.querySelector('a')) {
+        for (var i = 0; i < propertiesDisplay.length; i++) {
+            if (document.querySelector('a').classList.contains(propertiesDisplay[i]) && !document.querySelector('style').innerText.includes(propertiesDisplay[i])) {
+
+                let styles = ` 
+            .${propertiesDisplay[i]} { 
+                ${valuesDisplay[i]}
+            }`;
+
+                document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+            }
+        }
+    }
+}, 300)
+
+// akhir dari pengkondisian - Muhammad Khoirul Huda
