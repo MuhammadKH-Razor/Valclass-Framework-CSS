@@ -1,8 +1,8 @@
 // property, tag dan value - Muhammad Khoirul Huda
 
 let propertiesEmptyCells = [
-    'v-empty-cells-show',
-    'v-empty-cells-hidden'
+    'v-cells-show',
+    'v-cells-hidden'
 ]
 
 let valuesEmptyCells = [
@@ -350,6 +350,38 @@ setTimeout(() => {
         for (var i = 0; i < propertiesEmptyCells.length; i++) {
             for (var a = 0; a < document.querySelectorAll('a').length; a++) {
                 if (document.querySelectorAll('a')[a].classList.contains(propertiesEmptyCells[i]) && !document.querySelector('style').innerText.includes(propertiesEmptyCells[i])) {
+
+                    let styles = ` 
+            .${propertiesEmptyCells[i]} { 
+                ${valuesEmptyCells[i]}
+            }`;
+
+                    document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+                }
+            }
+        }
+    }
+    
+    if (document.querySelector('ul')) {
+        for (var i = 0; i < propertiesEmptyCells.length; i++) {
+            for (var a = 0; a < document.querySelectorAll('ul').length; a++) {
+                if (document.querySelectorAll('ul')[a].classList.contains(propertiesEmptyCells[i]) && !document.querySelector('style').innerText.includes(propertiesEmptyCells[i])) {
+
+                    let styles = ` 
+            .${propertiesEmptyCells[i]} { 
+                ${valuesEmptyCells[i]}
+            }`;
+
+                    document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+                }
+            }
+        }
+    }
+
+    if (document.querySelector('li')) {
+        for (var i = 0; i < propertiesEmptyCells.length; i++) {
+            for (var a = 0; a < document.querySelectorAll('li').length; a++) {
+                if (document.querySelectorAll('li')[a].classList.contains(propertiesEmptyCells[i]) && !document.querySelector('style').innerText.includes(propertiesEmptyCells[i])) {
 
                     let styles = ` 
             .${propertiesEmptyCells[i]} { 

@@ -18,7 +18,7 @@ let valuesHover = [
     `
     transition: 0.3s;
     opacity: 1;
-   `,
+   `
 ]
 
 let hover = [
@@ -36,7 +36,7 @@ let hover = [
     .v-hover-pulse:hover {
         transition: 0.3s;
         opacity: 0.7;
-    }`,
+    }`
 ]
 
 // pengkondisian
@@ -406,6 +406,38 @@ setTimeout(() => {
                         ${valuesHover[i]}
                     }
                     ${hover[i]}`;
+
+                    document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+                }
+            }
+        }
+    }
+    
+    if (document.querySelector('ul')) {
+        for (var i = 0; i < propertiesHover.length; i++) {
+            for (var a = 0; a < document.querySelectorAll('ul').length; a++) {
+                if (document.querySelectorAll('ul')[a].classList.contains(propertiesHover[i]) && !document.querySelector('style').innerText.includes(propertiesHover[i])) {
+
+                    let styles = ` 
+            .${propertiesHover[i]} { 
+                ${valuesHover[i]}
+            }`;
+
+                    document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+                }
+            }
+        }
+    }
+
+    if (document.querySelector('li')) {
+        for (var i = 0; i < propertiesHover.length; i++) {
+            for (var a = 0; a < document.querySelectorAll('li').length; a++) {
+                if (document.querySelectorAll('li')[a].classList.contains(propertiesHover[i]) && !document.querySelector('style').innerText.includes(propertiesHover[i])) {
+
+                    let styles = ` 
+            .${propertiesHover[i]} { 
+                ${valuesHover[i]}
+            }`;
 
                     document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
                 }

@@ -1,22 +1,22 @@
 // property, tag dan value - Muhammad Khoirul Huda
 
 let propertiesWidthHeight = [
-    'v-width-1',
-    'v-width-2',
-    'v-width-3',
-    'v-width-4',
-    'v-width-full',
-    'v-width-screen',
-    'v-width-min',
-    'v-width-max',
-    'v-height-1',
-    'v-height-2',
-    'v-height-3',
-    'v-height-4',
-    'v-height-full',
-    'v-height-screen',
-    'v-height-min',
-    'v-height-max',
+    'v-w-1',
+    'v-w-2',
+    'v-w-3',
+    'v-w-4',
+    'v-w-full',
+    'v-w-screen',
+    'v-w-min',
+    'v-w-max',
+    'v-h-1',
+    'v-h-2',
+    'v-h-3',
+    'v-h-4',
+    'v-h-full',
+    'v-h-screen',
+    'v-h-min',
+    'v-h-max',
 ]
 
 let valuesWidthHeight = [
@@ -378,6 +378,38 @@ setTimeout(() => {
         for (var i = 0; i < propertiesWidthHeight.length; i++) {
             for (var a = 0; a < document.querySelectorAll('a').length; a++) {
                 if (document.querySelectorAll('a')[a].classList.contains(propertiesWidthHeight[i]) && !document.querySelector('style').innerText.includes(propertiesWidthHeight[i])) {
+
+                    let styles = ` 
+            .${propertiesWidthHeight[i]} { 
+                ${valuesWidthHeight[i]}
+            }`;
+
+                    document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+                }
+            }
+        }
+    }
+    
+    if (document.querySelector('ul')) {
+        for (var i = 0; i < propertiesWidthHeight.length; i++) {
+            for (var a = 0; a < document.querySelectorAll('ul').length; a++) {
+                if (document.querySelectorAll('ul')[a].classList.contains(propertiesWidthHeight[i]) && !document.querySelector('style').innerText.includes(propertiesWidthHeight[i])) {
+
+                    let styles = ` 
+            .${propertiesWidthHeight[i]} { 
+                ${valuesWidthHeight[i]}
+            }`;
+
+                    document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+                }
+            }
+        }
+    }
+
+    if (document.querySelector('li')) {
+        for (var i = 0; i < propertiesWidthHeight.length; i++) {
+            for (var a = 0; a < document.querySelectorAll('li').length; a++) {
+                if (document.querySelectorAll('li')[a].classList.contains(propertiesWidthHeight[i]) && !document.querySelector('style').innerText.includes(propertiesWidthHeight[i])) {
 
                     let styles = ` 
             .${propertiesWidthHeight[i]} { 

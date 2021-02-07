@@ -9,7 +9,7 @@ let propertiesDisplay = [
     'v-d-inline-flex',
     'v-d-inline-block',
     'v-d-inline-flexbox',
-    'v-d-inline-table ',
+    'v-d-inline-table',
     'v-d-grid',
     'v-d-table-column-group',
     'v-d-table-footer-group',
@@ -388,6 +388,38 @@ setTimeout(() => {
         for (var i = 0; i < propertiesDisplay.length; i++) {
             for (var a = 0; a < document.querySelectorAll('a').length; a++) {
                 if (document.querySelectorAll('a')[a].classList.contains(propertiesDisplay[i]) && !document.querySelector('style').innerText.includes(propertiesDisplay[i])) {
+
+                    let styles = ` 
+            .${propertiesDisplay[i]} { 
+                ${valuesDisplay[i]}
+            }`;
+
+                    document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+                }
+            }
+        }
+    }
+    
+    if (document.querySelector('ul')) {
+        for (var i = 0; i < propertiesDisplay.length; i++) {
+            for (var a = 0; a < document.querySelectorAll('ul').length; a++) {
+                if (document.querySelectorAll('ul')[a].classList.contains(propertiesDisplay[i]) && !document.querySelector('style').innerText.includes(propertiesDisplay[i])) {
+
+                    let styles = ` 
+            .${propertiesDisplay[i]} { 
+                ${valuesDisplay[i]}
+            }`;
+
+                    document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+                }
+            }
+        }
+    }
+
+    if (document.querySelector('li')) {
+        for (var i = 0; i < propertiesDisplay.length; i++) {
+            for (var a = 0; a < document.querySelectorAll('li').length; a++) {
+                if (document.querySelectorAll('li')[a].classList.contains(propertiesDisplay[i]) && !document.querySelector('style').innerText.includes(propertiesDisplay[i])) {
 
                     let styles = ` 
             .${propertiesDisplay[i]} { 

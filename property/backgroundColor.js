@@ -378,6 +378,38 @@ setTimeout(() => {
             }
         }
     }
+    
+    if (document.querySelector('ul')) {
+        for (var i = 0; i < propertiesBgColors.length; i++) {
+            for (var a = 0; a < document.querySelectorAll('ul').length; a++) {
+                if (document.querySelectorAll('ul')[a].classList.contains(propertiesBgColors[i]) && !document.querySelector('style').innerText.includes(propertiesBgColors[i])) {
+
+                    let styles = ` 
+            .${propertiesBgColors[i]} { 
+                ${valuesBgColors[i]}
+            }`;
+
+                    document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+                }
+            }
+        }
+    }
+
+    if (document.querySelector('li')) {
+        for (var i = 0; i < propertiesBgColors.length; i++) {
+            for (var a = 0; a < document.querySelectorAll('li').length; a++) {
+                if (document.querySelectorAll('li')[a].classList.contains(propertiesBgColors[i]) && !document.querySelector('style').innerText.includes(propertiesBgColors[i])) {
+
+                    let styles = ` 
+            .${propertiesBgColors[i]} { 
+                ${valuesBgColors[i]}
+            }`;
+
+                    document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+                }
+            }
+        }
+    }
 }, 300)
 
 // akhir dari pengkondisian - Muhammad Khoirul Huda

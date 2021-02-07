@@ -1,31 +1,31 @@
 // property, tag dan value - Muhammad Khoirul Huda
 
 let propertiesFilter = [
-    'v-filter-blur-1',
-    'v-filter-blur-2',
-    'v-filter-blur-3',
-    'v-filter-blur-4',
-    'v-filter-blur-full',
-    'v-filter-gryscale-1',
-    'v-filter-gryscale-2',
-    'v-filter-gryscale-3',
-    'v-filter-gryscale-4',
-    'v-filter-gryscale-full',
-    'v-filter-saturate-1',
-    'v-filter-saturate-2',
-    'v-filter-saturate-3',
-    'v-filter-saturate-4',
-    'v-filter-saturate-full',
-    'v-filter-brightness-1',
-    'v-filter-brightness-2',
-    'v-filter-brightness-3',
-    'v-filter-brightness-4',
-    'v-filter-brightness-full',
-    'v-filter-contrast-1',
-    'v-filter-contrast-2',
-    'v-filter-contrast-3',
-    'v-filter-contrast-4',
-    'v-filter-contrast-full'
+    'v-blur-1',
+    'v-blur-2',
+    'v-blur-3',
+    'v-blur-4',
+    'v-blur-full',
+    'v-gryscale-1',
+    'v-gryscale-2',
+    'v-gryscale-3',
+    'v-gryscale-4',
+    'v-gryscale-full',
+    'v-saturate-1',
+    'v-saturate-2',
+    'v-saturate-3',
+    'v-saturate-4',
+    'v-saturate-full',
+    'v-brightness-1',
+    'v-brightness-2',
+    'v-brightness-3',
+    'v-brightness-4',
+    'v-brightness-full',
+    'v-contrast-1',
+    'v-contrast-2',
+    'v-contrast-3',
+    'v-contrast-4',
+    'v-contrast-full'
 ]
 
 let valuesFilter = [
@@ -396,6 +396,38 @@ setTimeout(() => {
         for (var i = 0; i < propertiesFilter.length; i++) {
             for (var a = 0; a < document.querySelectorAll('a').length; a++) {
                 if (document.querySelectorAll('a')[a].classList.contains(propertiesFilter[i]) && !document.querySelector('style').innerText.includes(propertiesFilter[i])) {
+
+                    let styles = ` 
+            .${propertiesFilter[i]} { 
+                ${valuesFilter[i]}
+            }`;
+
+                    document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+                }
+            }
+        }
+    }
+    
+    if (document.querySelector('ul')) {
+        for (var i = 0; i < propertiesFilter.length; i++) {
+            for (var a = 0; a < document.querySelectorAll('ul').length; a++) {
+                if (document.querySelectorAll('ul')[a].classList.contains(propertiesFilter[i]) && !document.querySelector('style').innerText.includes(propertiesFilter[i])) {
+
+                    let styles = ` 
+            .${propertiesFilter[i]} { 
+                ${valuesFilter[i]}
+            }`;
+
+                    document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+                }
+            }
+        }
+    }
+
+    if (document.querySelector('li')) {
+        for (var i = 0; i < propertiesFilter.length; i++) {
+            for (var a = 0; a < document.querySelectorAll('li').length; a++) {
+                if (document.querySelectorAll('li')[a].classList.contains(propertiesFilter[i]) && !document.querySelector('style').innerText.includes(propertiesFilter[i])) {
 
                     let styles = ` 
             .${propertiesFilter[i]} { 

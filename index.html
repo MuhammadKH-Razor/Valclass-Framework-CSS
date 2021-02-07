@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width = device-width, maximum-scale=1, initial-scale=1, user-scalable=no">
     <title>Valclass - Framework CSS</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <!-- <link rel="stylesheet" href="index.css"> -->
 </head>
 
@@ -15,28 +16,45 @@
     transition transform shadow index width-height decoration 
     overflow float justify-content word-spacing align-items
     increment grid sosmed word excel pdf reload result animation font 
-    hover time
+    hover time back-to-top list-style focus
     ">
+    <input type="text" placeholder="focus...." class="v-font-xl v-p-1 v-focus-pulse v-relative">
 
-    <h1 class="v-text-info v-width-screen v-items-baseline v-warning v-opacity-4 v-relative v-text-center v-font-poppins v-radius-lg v-outline-dark v-outline-style-dotted v-scale-1 v-index-4 v-overflowY-scroll v-overflowX-hidden v-float-right">
+    <div class="v-relative v-d-flex v-w-screen v-list-none">
+        <li class="v-float-left v-m-1">float</li>
+        <li class="v-float-left v-m-1">float</li>
+        <li class="v-float-left v-m-1">float</li>
+    </div>
+
+    <span class="v-text-warning v-info">huhuh</span>
+    <span class="v-secondary v-text-danger">span</span>
+    <h1 class="v-font-bold">h1</h1>
+    <h2>h1</h2>
+    <h1>
+        h1
+    </h1>
+    <h1 style="font-size: 50px;" class="v-text-info v-pl-4 v-w-screen v-font-normal v-items-baseline v-warning v-opacity-4 v-relative v-text-left v-font-anton v-radius-lg v-outline-dark v-outline-style-dotted v-scale-1 v-index-4 v-overflowY-scroll v-overflowX-hidden v-float-right">
         kdahdjah
     </h1>
 
     <h1 class="v-hover-opacity v-smooth">
         huhuhuh
     </h1>
-   
-    <div class="v-row">
-        <div class="v-column"></div>
-        <div class="v-column"></div>
-    </div>
-    <div class="v-row">
-        <div class="v-column"></div>
-        <div class="v-column"></div>
-        <div class="v-column"></div>
+
+    <ul>
+        <li>list-style default</li>
+        <li class="v-list-square">list-style aqyare</li>
+        <li class="v-list-circle">list-style circle</li>
+        <li class="v-list-armenian">list-style armenian</li>
+        <li class="v-list-georgian">list-style georgian</li>
+        <li class="v-list-none">list-style none</li>
+    </ul>
+
+    <div class="v-col-3">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est consequuntur et asperiores neque aperiam fugiat nulla commodi illum vitae, officia at necessitatibus accusamus molestias doloribus dolores? Accusamus ipsa perspiciatis atque.
     </div>
 
-    <div class="v-column-4">
+    <div class="v-col-4">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Et officia magni eum illo explicabo possimus fuga
         quisquam velit, hic dolorum minus repellendus iure ipsa? Dolore qui atque ipsum unde ipsa!
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, similique numquam? Quam officia ratione velit
@@ -44,7 +62,7 @@
         ipsa.
     </div>
 
-    <div class="v-column-4 v-green">
+    <div class="v-col-4 v-green">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Et officia magni eum illo explicabo possimus fuga
         quisquam velit, hic dolorum minus repellendus iure ipsa? Dolore qui atque ipsum unde ipsa!
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, similique numquam? Quam officia ratione velit
@@ -52,8 +70,8 @@
         ipsa.
     </div>
 
-    <div class="v-time">
-        <p class="v-day"></p><p class="v-month"></p><p class="v-year"></p>
+    <div class="v-time v-relative">
+        <p class="v-day"></p><p class="v-date"></p><p class="v-month"></p><p class="v-year"></p>
     </div>
 
     <button class="v-sosmed-wa" url="https://www.whatsapp.com">whatsapp</button>
@@ -113,6 +131,8 @@
     <input type="number" value="2" class="v-var-2">
     <button class="v-operation">total</button>
     <p class="v-result"></p>
+
+    <button class="v-back">Kembali ke atas</button>
 
     <button class="v-reload-web">reload</button>
     <button class="v-office-word"></button>

@@ -11,26 +11,26 @@ let propertiesOutlines = [
     'v-radius-md',
     'v-radius-lg',
     'v-radius-full',
-    'v-b-1',
-    'v-b-2',
-    'v-b-3',
-    'v-b-4',
-    'v-bt-1',
-    'v-bt-2',
-    'v-bt-3',
-    'v-bt-4',
-    'v-bl-1',
-    'v-bl-2',
-    'v-bl-3',
-    'v-bl-4',
-    'v-br-1',
-    'v-br-2',
-    'v-br-3',
-    'v-br-4',
-    'v-bb-1',
-    'v-bb-2',
-    'v-bb-3',
-    'v-bb-4',
+    'v-outline-1',
+    'v-outline-2',
+    'v-outline-3',
+    'v-outline-4',
+    'v-outline-top-1',
+    'v-outline-top-2',
+    'v-outline-top-3',
+    'v-outline-top-4',
+    'v-outline-left-1',
+    'v-outline-left-2',
+    'v-outline-left-3',
+    'v-outline-left-4',
+    'v-outline-right-1',
+    'v-outline-right-2',
+    'v-outline-right-3',
+    'v-outline-right-4',
+    'v-outline-bottom-1',
+    'v-outline-bottom-2',
+    'v-outline-bottom-3',
+    'v-outline-bottom-4',
     'v-outline-dark',
     'v-outline-light',
     'v-outline-danger',
@@ -40,8 +40,9 @@ let propertiesOutlines = [
     'v-outline-transparent',
     'v-outline-secondary',
     'v-outline-warning',
+    'v-outline-green',
     'v-outline-collapse',
-    'v-outline-separate',
+    'v-outline-separate'
 ]
 
 let valuesOutlines = [
@@ -75,16 +76,16 @@ let valuesOutlines = [
     'outline-bottom: 2px;',
     'outline-bottom: 3px;',
     'outline-bottom: 4px;',
-    'outline-color: rgb(49, 49, 49);',
-    'outline-color: rgb(248, 247, 247);',
-    'outline-color: red;',
-    'outline-color: rgb(0, 204, 255);',
-    'outline-color: rgb(0, 153, 255);',
+    'outline-color: #464855;',
+    'outline-color: #babfc7;',
+    'outline-color: #f8313c ;',
+    'outline-color: #28afd0;',
+    'outline-color: #6967ce;',
     'outline-color: rgba(250, 236, 236, 0.712);',
     'outline-color: transparent;',
-    'outline-color: rgb(141, 141, 141);',
-    'outline-color: rgb(255, 230, 0);',
-    'outline-color: rgb(13, 226, 155);',
+    'outline-color: #6b6f80;',
+    'outline-color: #fdb901;',
+    'outline-color: #5ed84f;',
     'outline-collapse: collapse;',
     'outline-collapse: separate'
 ]
@@ -429,6 +430,38 @@ setTimeout(() => {
         for (var i = 0; i < propertiesOutlines.length; i++) {
             for (var a = 0; a < document.querySelectorAll('a').length; a++) {
                 if (document.querySelectorAll('a')[a].classList.contains(propertiesOutlines[i]) && !document.querySelector('style').innerText.includes(propertiesOutlines[i])) {
+
+                    let styles = ` 
+            .${propertiesOutlines[i]} { 
+                ${valuesOutlines[i]}
+            }`;
+
+                    document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+                }
+            }
+        }
+    }
+    
+    if (document.querySelector('ul')) {
+        for (var i = 0; i < propertiesOutlines.length; i++) {
+            for (var a = 0; a < document.querySelectorAll('ul').length; a++) {
+                if (document.querySelectorAll('ul')[a].classList.contains(propertiesOutlines[i]) && !document.querySelector('style').innerText.includes(propertiesOutlines[i])) {
+
+                    let styles = ` 
+            .${propertiesOutlines[i]} { 
+                ${valuesOutlines[i]}
+            }`;
+
+                    document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+                }
+            }
+        }
+    }
+
+    if (document.querySelector('li')) {
+        for (var i = 0; i < propertiesOutlines.length; i++) {
+            for (var a = 0; a < document.querySelectorAll('li').length; a++) {
+                if (document.querySelectorAll('li')[a].classList.contains(propertiesOutlines[i]) && !document.querySelector('style').innerText.includes(propertiesOutlines[i])) {
 
                     let styles = ` 
             .${propertiesOutlines[i]} { 

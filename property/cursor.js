@@ -6,7 +6,7 @@ let propertiesCursors = [
     'v-cursor-context-menu ',
     'v-cursor-all-scroll',
     'v-cursor-cell',
-    'v-ursor-alias',
+    'v-cursor-alias',
     'v-cursor-default',
     'v-cursor-none',
     'v-cursor-progress'
@@ -364,6 +364,38 @@ setTimeout(() => {
         for (var i = 0; i < propertiesCursors.length; i++) {
             for (var a = 0; a < document.querySelectorAll('a').length; a++) {
                 if (document.querySelectorAll('a')[a].classList.contains(propertiesCursors[i]) && !document.querySelector('style').innerText.includes(propertiesCursors[i])) {
+
+                    let styles = ` 
+            .${propertiesCursors[i]} { 
+                ${valuesCursors[i]}
+            }`;
+
+                    document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+                }
+            }
+        }
+    }
+    
+    if (document.querySelector('ul')) {
+        for (var i = 0; i < propertiesCursors.length; i++) {
+            for (var a = 0; a < document.querySelectorAll('ul').length; a++) {
+                if (document.querySelectorAll('ul')[a].classList.contains(propertiesCursors[i]) && !document.querySelector('style').innerText.includes(propertiesCursors[i])) {
+
+                    let styles = ` 
+            .${propertiesCursors[i]} { 
+                ${valuesCursors[i]}
+            }`;
+
+                    document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+                }
+            }
+        }
+    }
+
+    if (document.querySelector('li')) {
+        for (var i = 0; i < propertiesCursors.length; i++) {
+            for (var a = 0; a < document.querySelectorAll('li').length; a++) {
+                if (document.querySelectorAll('li')[a].classList.contains(propertiesCursors[i]) && !document.querySelector('style').innerText.includes(propertiesCursors[i])) {
 
                     let styles = ` 
             .${propertiesCursors[i]} { 

@@ -1,18 +1,18 @@
 // property, tag dan value - Muhammad Khoirul Huda
 
 let propertiesPages = [
-    'v-page-after-always',
-    'v-page-after-auto',
-    'v-page-after-avoid',
-    'v-page-after-left',
-    'v-page-after-right',
-    'v-page-inside-auto',
-    'v-page-inside-avoid',
-    'v-page-before-always',
-    'v-page-before-auto',
-    'v-page-before-avoid',
-    'v-page-before-left',
-    'v-page-before-right',
+    'v-pg-after-always',
+    'v-pg-after-auto',
+    'v-pg-after-avoid',
+    'v-pg-after-left',
+    'v-pg-after-right',
+    'v-pg-inside-auto',
+    'v-pg-inside-avoid',
+    'v-pg-before-always',
+    'v-pg-before-auto',
+    'v-pg-before-avoid',
+    'v-pg-before-left',
+    'v-pg-before-right',
 ]
 
 let valuesPages = [
@@ -370,6 +370,38 @@ setTimeout(() => {
         for (var i = 0; i < propertiesPages.length; i++) {
             for (var a = 0; a < document.querySelectorAll('a').length; a++) {
                 if (document.querySelectorAll('a')[a].classList.contains(propertiesPages[i]) && !document.querySelector('style').innerText.includes(propertiesPages[i])) {
+
+                    let styles = ` 
+            .${propertiesPages[i]} { 
+                ${valuesPages[i]}
+            }`;
+
+                    document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+                }
+            }
+        }
+    }
+    
+    if (document.querySelector('ul')) {
+        for (var i = 0; i < propertiesPages.length; i++) {
+            for (var a = 0; a < document.querySelectorAll('ul').length; a++) {
+                if (document.querySelectorAll('ul')[a].classList.contains(propertiesPages[i]) && !document.querySelector('style').innerText.includes(propertiesPages[i])) {
+
+                    let styles = ` 
+            .${propertiesPages[i]} { 
+                ${valuesPages[i]}
+            }`;
+
+                    document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+                }
+            }
+        }
+    }
+
+    if (document.querySelector('li')) {
+        for (var i = 0; i < propertiesPages.length; i++) {
+            for (var a = 0; a < document.querySelectorAll('li').length; a++) {
+                if (document.querySelectorAll('li')[a].classList.contains(propertiesPages[i]) && !document.querySelector('style').innerText.includes(propertiesPages[i])) {
 
                     let styles = ` 
             .${propertiesPages[i]} { 

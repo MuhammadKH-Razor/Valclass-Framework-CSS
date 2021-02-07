@@ -19,6 +19,7 @@ for (var i = 0; i < propertiesIncrement.length; i++) {
             padding: 0;
             counter-reset: my-sec-counter;
         }
+
         .v-increment::before { 
             ${valuesIncrement[i]}
         }`;
@@ -461,6 +462,48 @@ setTimeout(() => {
                 }`;
 
                 document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+            }
+        }
+    }
+     
+    if (document.querySelector('ul')) {
+        for (var i = 0; i < propertiesJustify.length; i++) {
+            for (var a = 0; a < document.querySelectorAll('ul').length; a++) {
+                if (document.querySelectorAll('ul')[a].classList.contains(propertiesJustify[i]) && !document.querySelector('style').innerText.includes(propertiesJustify[i])) {
+
+                    let styles = ` 
+                    body {
+                        margin: 0;
+                        padding: 0;
+                        counter-reset: my-sec-counter;
+                    }
+                    .v-increment::before { 
+                        ${valuesIncrement[i]}
+                    }`;
+
+                    document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+                }
+            }
+        }
+    }
+
+    if (document.querySelector('li')) {
+        for (var i = 0; i < propertiesJustify.length; i++) {
+            for (var a = 0; a < document.querySelectorAll('li').length; a++) {
+                if (document.querySelectorAll('li')[a].classList.contains(propertiesJustify[i]) && !document.querySelector('style').innerText.includes(propertiesJustify[i])) {
+
+                    let styles = ` 
+                    body {
+                        margin: 0;
+                        padding: 0;
+                        counter-reset: my-sec-counter;
+                    }
+                    .v-increment::before { 
+                        ${valuesIncrement[i]}
+                    }`;
+
+                    document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+                }
             }
         }
     }

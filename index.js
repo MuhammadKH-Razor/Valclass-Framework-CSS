@@ -683,7 +683,7 @@ if (document.querySelector('body').classList.contains('hover')) {
 
 if (document.querySelector('body').classList.contains('focus')) {
 
-    var js = './property/hover.js',
+    var js = './property/focus.js',
 
         script = document.createElement('script'),
         body = document.getElementsByTagName('body')[0],
@@ -871,7 +871,23 @@ if (document.querySelector('body').classList.contains('result')) {
 if (document.querySelector('body').classList.contains('time')) {
 
     var js = [
-        './property/clock.js'
+        './property/time.js'
+    ]
+
+    script = document.createElement('script'),
+        body = document.getElementsByTagName('body')[0],
+        tmp;
+
+    tmp = script;
+    tmp.src = js;
+    body.appendChild(tmp);
+
+}
+
+if (document.querySelector('body').classList.contains('back-to-top')) {
+
+    var js = [
+        './property/backToTop.js'
     ]
 
     script = document.createElement('script'),
