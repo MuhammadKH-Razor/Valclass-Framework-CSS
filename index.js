@@ -39,7 +39,7 @@ if (document.querySelector('body').classList.contains('position')) {
 
 if (document.querySelector('body').classList.contains('component')) {
 
-    var js = './property/component.js'      
+    var js = './property/component.js'
 
     script = document.createElement('script'),
         body = document.getElementsByTagName('body')[0],
@@ -667,7 +667,7 @@ if (document.querySelector('body').classList.contains('perspective')) {
 
 }
 
-if (document.querySelector('body').classList.contains(':hover')) {
+if (document.querySelector('body').classList.contains('hover')) {
 
     var js = './property/hover.js',
 
@@ -681,7 +681,21 @@ if (document.querySelector('body').classList.contains(':hover')) {
 
 }
 
-if (document.querySelector('body').classList.contains(':active')) {
+if (document.querySelector('body').classList.contains('focus')) {
+
+    var js = './property/hover.js',
+
+        script = document.createElement('script'),
+        body = document.getElementsByTagName('body')[0],
+        tmp;
+
+    tmp = script;
+    tmp.src = js;
+    body.appendChild(tmp);
+
+}
+
+if (document.querySelector('body').classList.contains('active')) {
 
     var js = './property/active.js',
 
@@ -725,9 +739,142 @@ if (document.querySelector('body').classList.contains('zoom')) {
 
 if (document.querySelector('body').classList.contains('grid')) {
 
-    var js = './property/grid.js',
+    var js = [
+        './property/grid.js',
+        './property/columnCustom.js'
+    ]
 
+    for (var i = 0; i < js.length; i++) {
         script = document.createElement('script'),
+            body = document.getElementsByTagName('body')[0],
+            tmp;
+
+        tmp = script;
+        tmp.src = js[i];
+        body.appendChild(tmp);
+    }
+
+}
+
+if (document.querySelector('body').classList.contains('increment')) {
+
+    var js = [
+        './property/increment.js'
+    ]
+
+    script = document.createElement('script'),
+        body = document.getElementsByTagName('body')[0],
+        tmp;
+
+    tmp = script;
+    tmp.src = js;
+    body.appendChild(tmp);
+
+}
+
+if (document.querySelector('body').classList.contains('excel')) {
+
+    var js = [
+        './property/officeExcel.js'
+    ]
+
+    script = document.createElement('script'),
+        body = document.getElementsByTagName('body')[0],
+        tmp;
+
+    tmp = script;
+    tmp.src = js;
+    body.appendChild(tmp);
+
+}
+
+if (document.querySelector('body').classList.contains('word')) {
+
+    var js = [
+        './property/officeWord.js'
+    ]
+
+    script = document.createElement('script'),
+        body = document.getElementsByTagName('body')[0],
+        tmp;
+
+    tmp = script;
+    tmp.src = js;
+    body.appendChild(tmp);
+
+}
+
+if (document.querySelector('body').classList.contains('pdf')) {
+
+    var js = [
+        './property/officePdf.js'
+    ]
+
+    script = document.createElement('script'),
+        body = document.getElementsByTagName('body')[0],
+        tmp;
+
+    tmp = script;
+    tmp.src = js;
+    body.appendChild(tmp);
+
+}
+
+if (document.querySelector('body').classList.contains('sosmed')) {
+
+    var js = [
+        './property/sosmed.js'
+    ]
+
+    script = document.createElement('script'),
+        body = document.getElementsByTagName('body')[0],
+        tmp;
+
+    tmp = script;
+    tmp.src = js;
+    body.appendChild(tmp);
+
+}
+
+if (document.querySelector('body').classList.contains('reload')) {
+
+    var js = [
+        './property/reload.js'
+    ]
+
+    script = document.createElement('script'),
+        body = document.getElementsByTagName('body')[0],
+        tmp;
+
+    tmp = script;
+    tmp.src = js;
+    body.appendChild(tmp);
+
+}
+
+if (document.querySelector('body').classList.contains('result')) {
+
+    var js = [
+        './property/result.js'
+    ]
+
+    script = document.createElement('script'),
+        body = document.getElementsByTagName('body')[0],
+        tmp;
+
+    tmp = script;
+    tmp.src = js;
+    body.appendChild(tmp);
+
+}
+
+if (document.querySelector('body').classList.contains('time')) {
+
+    var js = [
+        './property/clock.js'
+    ]
+
+    script = document.createElement('script'),
         body = document.getElementsByTagName('body')[0],
         tmp;
 

@@ -10,46 +10,46 @@ let propertiesAnimations = [
 
 let valuesAnimations = [
   'animation: none;',
-  `animation: spin 1s linear infinite;
+  `animation: spin 1s linear infinite;`,
+  `animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite; `,
+  `animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;`,
+  `animation: bounce 1s infinite;`
+]
 
-   @keyframes spin {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  }`,
-  `animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite; 
-
-   @keyframes ping {
-    75%, 100% {
-     transform: scale(2);
-     opacity: 0;
-    }
-  }`,
-  `animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-
-  @keyframes pulse {
-    0%, 100% {
-      opacity: 1;
-    }
-    50% {
-      opacity: .5;
-    }
-  }`,
-  `animation: bounce 1s infinite;
-
-  @keyframes bounce {
-    0%, 100% {
-      transform: translateY(-25%);
-      animationTimingFunction: cubic-bezier(0.8, 0, 1, 1);
-    }
-    50% {
-      transform: translateY(0);
-      animationTimingFunction: cubic-bezier(0, 0, 0.2, 1);
-    }
-  }`
+let animations = [
+    ``,
+    `
+    @keyframes spin {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+    `,
+    `@keyframes ping {
+        75%, 100% {
+         transform: scale(2);
+         opacity: 0;
+        }
+      }`,
+      `@keyframes pulse {
+        0%, 100% {
+           font-size: 30px;
+        }
+        50% {
+           font-size: 10px;
+        }
+     }`,
+      `@keyframes bounce {
+        0%, 100% {
+          margin-top: 0px
+        }
+        50% {
+            margin-top: 120px
+        }
+      }`
 ]
 
 // pengkondisian
@@ -60,7 +60,8 @@ for (var i = 0; i < propertiesAnimations.length; i++) {
         let styles = ` 
         .${propertiesAnimations[i]} { 
             ${valuesAnimations[i]}
-        }`;
+        }
+        ${animations[i]}`;
 
         document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
     }
@@ -70,308 +71,357 @@ setTimeout(() => {
 
     if (document.querySelector('div')) {
         for (var i = 0; i < propertiesAnimations.length; i++) {
-            if (document.querySelector('div').classList.contains(propertiesAnimations[i]) && !document.querySelector('style').innerText.includes(propertiesAnimations[i])) {
+            for (var a = 0; a < document.querySelectorAll('div').length; a++) {
+                if (document.querySelectorAll('div')[a].classList.contains(propertiesAnimations[i]) && !document.querySelector('style').innerText.includes(propertiesAnimations[i])) {
 
-                let styles = ` 
-            .${propertiesAnimations[i]} { 
-                ${valuesAnimations[i]}
-            }`;
+                    let styles = ` 
+                    .${propertiesAnimations[i]} { 
+                        ${valuesAnimations[i]}
+                    }
+                    ${animations[i]}`;
 
-                document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+                    document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+                }
             }
         }
     }
 
     if (document.querySelector('h1')) {
         for (var i = 0; i < propertiesAnimations.length; i++) {
-            if (document.querySelector('h1').classList.contains(propertiesAnimations[i]) && !document.querySelector('style').innerText.includes(propertiesAnimations[i])) {
+            for (var a = 0; a < document.querySelectorAll('h1').length; a++) {
+                if (document.querySelectorAll('h1')[a].classList.contains(propertiesAnimations[i]) && !document.querySelector('style').innerText.includes(propertiesAnimations[i])) {
 
-                let styles = ` 
-            .${propertiesAnimations[i]} { 
-                ${valuesAnimations[i]}
-            }`;
+                    let styles = ` 
+                    .${propertiesAnimations[i]} { 
+                        ${valuesAnimations[i]}
+                    }
+                    ${animations[i]}`;
 
-                document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+                    document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+                }
             }
         }
     }
 
     if (document.querySelector('h2')) {
         for (var i = 0; i < propertiesAnimations.length; i++) {
-            if (document.querySelector('h2').classList.contains(propertiesAnimations[i]) && !document.querySelector('style').innerText.includes(propertiesAnimations[i])) {
+            for (var a = 0; a < document.querySelectorAll('h2').length; a++) {
+                if (document.querySelectorAll('h2')[a].classList.contains(propertiesAnimations[i]) && !document.querySelector('style').innerText.includes(propertiesAnimations[i])) {
 
-                let styles = ` 
-            .${propertiesAnimations[i]} { 
-                ${valuesAnimations[i]}
-            }`;
+                   let styles = ` 
+                    .${propertiesAnimations[i]} { 
+                        ${valuesAnimations[i]}
+                    }
+                    ${animations[i]}`;
 
-                document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+                    document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+                }
             }
         }
     }
 
     if (document.querySelector('h3')) {
         for (var i = 0; i < propertiesAnimations.length; i++) {
-            if (document.querySelector('h3').classList.contains(propertiesAnimations[i]) && !document.querySelector('style').innerText.includes(propertiesAnimations[i])) {
+            for (var a = 0; a < document.querySelectorAll('h3').length; a++) {
+                if (document.querySelectorAll('h3')[a].classList.contains(propertiesAnimations[i]) && !document.querySelector('style').innerText.includes(propertiesAnimations[i])) {
 
-                let styles = ` 
-            .${propertiesAnimations[i]} { 
-                ${valuesAnimations[i]}
-            }`;
+                    let styles = ` 
+                    .${propertiesAnimations[i]} { 
+                        ${valuesAnimations[i]}
+                    }
+                    ${animations[i]}`;
 
-                document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+                    document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+                }
             }
         }
     }
 
     if (document.querySelector('h4')) {
         for (var i = 0; i < propertiesAnimations.length; i++) {
-            if (document.querySelector('h4').classList.contains(propertiesAnimations[i]) && !document.querySelector('style').innerText.includes(propertiesAnimations[i])) {
+            for (var a = 0; a < document.querySelectorAll('h4').length; a++) {
+                if (document.querySelectorAll('h4')[a].classList.contains(propertiesAnimations[i]) && !document.querySelector('style').innerText.includes(propertiesAnimations[i])) {
 
-                let styles = ` 
-            .${propertiesAnimations[i]} { 
-                ${valuesAnimations[i]}
-            }`;
+                    let styles = ` 
+                    .${propertiesAnimations[i]} { 
+                        ${valuesAnimations[i]}
+                    }
+                    ${animations[i]}`;
 
-                document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+                    document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+                }
             }
         }
     }
 
     if (document.querySelector('h5')) {
         for (var i = 0; i < propertiesAnimations.length; i++) {
-            if (document.querySelector('h5').classList.contains(propertiesAnimations[i]) && !document.querySelector('style').innerText.includes(propertiesAnimations[i])) {
+            for (var a = 0; a < document.querySelectorAll('h5').length; a++) {
+                if (document.querySelectorAll('h5')[a].classList.contains(propertiesAnimations[i]) && !document.querySelector('style').innerText.includes(propertiesAnimations[i])) {
 
-                let styles = ` 
-            .${propertiesAnimations[i]} { 
-                ${valuesAnimations[i]}
-            }`;
+                    let styles = ` 
+                    .${propertiesAnimations[i]} { 
+                        ${valuesAnimations[i]}
+                    }
+                    ${animations[i]}`;
 
-                document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+                    document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+                }
             }
         }
     }
 
     if (document.querySelector('h6')) {
         for (var i = 0; i < propertiesAnimations.length; i++) {
-            if (document.querySelector('h6').classList.contains(propertiesAnimations[i]) && !document.querySelector('style').innerText.includes(propertiesAnimations[i])) {
+            for (var a = 0; a < document.querySelectorAll('h6').length; a++) {
+                if (document.querySelectorAll('h6')[a].classList.contains(propertiesAnimations[i]) && !document.querySelector('style').innerText.includes(propertiesAnimations[i])) {
 
-                let styles = ` 
-            .${propertiesAnimations[i]} { 
-                ${valuesAnimations[i]}
-            }`;
+                    let styles = ` 
+                    .${propertiesAnimations[i]} { 
+                        ${valuesAnimations[i]}
+                    }
+                    ${animations[i]}`;
 
-                document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+                    document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+                }
             }
         }
     }
 
     if (document.querySelector('span')) {
         for (var i = 0; i < propertiesAnimations.length; i++) {
-            if (document.querySelector('span').classList.contains(propertiesAnimations[i]) && !document.querySelector('style').innerText.includes(propertiesAnimations[i])) {
+            for (var a = 0; a < document.querySelectorAll('span').length; a++) {
+                if (document.querySelectorAll('span')[a].classList.contains(propertiesAnimations[i]) && !document.querySelector('style').innerText.includes(propertiesAnimations[i])) {
 
-                let styles = ` 
-            .${propertiesAnimations[i]} { 
-                ${valuesAnimations[i]}
-            }`;
+                    let styles = ` 
+                    .${propertiesAnimations[i]} { 
+                        ${valuesAnimations[i]}
+                    }
+                    ${animations[i]}`;
 
-                document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+                    document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+                }
             }
         }
     }
 
     if (document.querySelector('p')) {
         for (var i = 0; i < propertiesAnimations.length; i++) {
-            if (document.querySelector('p').classList.contains(propertiesAnimations[i]) && !document.querySelector('style').innerText.includes(propertiesAnimations[i])) {
+            for (var a = 0; a < document.querySelectorAll('p').length; a++) {
+                if (document.querySelectorAll('p')[a].classList.contains(propertiesAnimations[i]) && !document.querySelector('style').innerText.includes(propertiesAnimations[i])) {
 
-                let styles = ` 
-            .${propertiesAnimations[i]} { 
-                ${valuesAnimations[i]}
-            }`;
+                    let styles = ` 
+                    .${propertiesAnimations[i]} { 
+                        ${valuesAnimations[i]}
+                    }
+                    ${animations[i]}`;
 
-                document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+                    document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+                }
             }
         }
     }
 
     if (document.querySelector('small')) {
         for (var i = 0; i < propertiesAnimations.length; i++) {
-            if (document.querySelector('small').classList.contains(propertiesAnimations[i]) && !document.querySelector('style').innerText.includes(propertiesAnimations[i])) {
+            for (var a = 0; a < document.querySelectorAll('small').length; a++) {
+                if (document.querySelectorAll('small')[a].classList.contains(propertiesAnimations[i]) && !document.querySelector('style').innerText.includes(propertiesAnimations[i])) {
 
-                let styles = ` 
-            .${propertiesAnimations[i]} { 
-                ${valuesAnimations[i]}
-            }`;
+                     let styles = ` 
+                    .${propertiesAnimations[i]} { 
+                        ${valuesAnimations[i]}
+                    }
+                    ${animations[i]}`;
 
-                document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+                    document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+                }
             }
         }
     }
 
     if (document.querySelector('input')) {
         for (var i = 0; i < propertiesAnimations.length; i++) {
-            if (document.querySelector('input').classList.contains(propertiesAnimations[i]) && !document.querySelector('style').innerText.includes(propertiesAnimations[i])) {
+            for (var a = 0; a < document.querySelectorAll('input').length; a++) {
+                if (document.querySelectorAll('input')[a].classList.contains(propertiesAnimations[i]) && !document.querySelector('style').innerText.includes(propertiesAnimations[i])) {
 
-                let styles = ` 
-            .${propertiesAnimations[i]} { 
-                ${valuesAnimations[i]}
-            }`;
+                     let styles = ` 
+                    .${propertiesAnimations[i]} { 
+                        ${valuesAnimations[i]}
+                    }
+                    ${animations[i]}`;
 
-                document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+                    document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+                }
             }
         }
     }
 
     if (document.querySelector('textarea')) {
         for (var i = 0; i < propertiesAnimations.length; i++) {
-            if (document.querySelector('textarea').classList.contains(propertiesAnimations[i]) && !document.querySelector('style').innerText.includes(propertiesAnimations[i])) {
+            for (var a = 0; a < document.querySelectorAll('textarea').length; a++) {
+                if (document.querySelectorAll('textarea')[a].classList.contains(propertiesAnimations[i]) && !document.querySelector('style').innerText.includes(propertiesAnimations[i])) {
 
-                let styles = ` 
-            .${propertiesAnimations[i]} { 
-                ${valuesAnimations[i]}
-            }`;
+                     let styles = ` 
+                    .${propertiesAnimations[i]} { 
+                        ${valuesAnimations[i]}
+                    }
+                    ${animations[i]}`;
 
-                document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+                    document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+                }
             }
         }
     }
 
     if (document.querySelector('select')) {
         for (var i = 0; i < propertiesAnimations.length; i++) {
-            if (document.querySelector('select').classList.contains(propertiesAnimations[i]) && !document.querySelector('style').innerText.includes(propertiesAnimations[i])) {
+            for (var a = 0; a < document.querySelectorAll('select').length; a++) {
+                if (document.querySelectorAll('select')[a].classList.contains(propertiesAnimations[i]) && !document.querySelector('style').innerText.includes(propertiesAnimations[i])) {
 
-                let styles = ` 
-            .${propertiesAnimations[i]} { 
-                ${valuesAnimations[i]}
-            }`;
+                     let styles = ` 
+                    .${propertiesAnimations[i]} { 
+                        ${valuesAnimations[i]}
+                    }
+                    ${animations[i]}`;
 
-                document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+                    document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+                }
             }
         }
     }
 
     if (document.querySelector('button')) {
         for (var i = 0; i < propertiesAnimations.length; i++) {
-            if (document.querySelector('button').classList.contains(propertiesAnimations[i]) && !document.querySelector('style').innerText.includes(propertiesAnimations[i])) {
+            for (var a = 0; a < document.querySelectorAll('button').length; a++) {
+                if (document.querySelectorAll('button')[a].classList.contains(propertiesAnimations[i]) && !document.querySelector('style').innerText.includes(propertiesAnimations[i])) {
 
-                let styles = ` 
-            .${propertiesAnimations[i]} { 
-                ${valuesAnimations[i]}
-            }`;
+                     let styles = ` 
+                    .${propertiesAnimations[i]} { 
+                        ${valuesAnimations[i]}
+                    }
+                    ${animations[i]}`;
 
-                document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+                    document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+                }
             }
         }
     }
 
     if (document.querySelector('sup')) {
         for (var i = 0; i < propertiesAnimations.length; i++) {
-            if (document.querySelector('sup').classList.contains(propertiesAnimations[i]) && !document.querySelector('style').innerText.includes(propertiesAnimations[i])) {
+            for (var a = 0; a < document.querySelectorAll('sup').length; a++) {
+                if (document.querySelectorAll('sup')[a].classList.contains(propertiesAnimations[i]) && !document.querySelector('style').innerText.includes(propertiesAnimations[i])) {
 
-                let styles = ` 
-            .${propertiesAnimations[i]} { 
-                ${valuesAnimations[i]}
-            }`;
+                     let styles = ` 
+                    .${propertiesAnimations[i]} { 
+                        ${valuesAnimations[i]}
+                    }
+                    ${animations[i]}`;
 
-                document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
-            }
-        }
-    }
-
-    if (document.querySelector('sup')) {
-        for (var i = 0; i < propertiesAnimations.length; i++) {
-            if (document.querySelector('sup').classList.contains(propertiesAnimations[i]) && !document.querySelector('style').innerText.includes(propertiesAnimations[i])) {
-
-                let styles = ` 
-            .${propertiesAnimations[i]} { 
-                ${valuesAnimations[i]}
-            }`;
-
-                document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+                    document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+                }
             }
         }
     }
 
     if (document.querySelector('sub')) {
         for (var i = 0; i < propertiesAnimations.length; i++) {
-            if (document.querySelector('sub').classList.contains(propertiesAnimations[i]) && !document.querySelector('style').innerText.includes(propertiesAnimations[i])) {
+            for (var a = 0; a < document.querySelectorAll('sub').length; a++) {
+                if (document.querySelectorAll('sub')[a].classList.contains(propertiesAnimations[i]) && !document.querySelector('style').innerText.includes(propertiesAnimations[i])) {
 
-                let styles = ` 
-            .${propertiesAnimations[i]} { 
-                ${valuesAnimations[i]}
-            }`;
+                     let styles = ` 
+                    .${propertiesAnimations[i]} { 
+                        ${valuesAnimations[i]}
+                    }
+                    ${animations[i]}`;
 
-                document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+                    document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+                }
             }
         }
     }
 
     if (document.querySelector('mark')) {
         for (var i = 0; i < propertiesAnimations.length; i++) {
-            if (document.querySelector('mark').classList.contains(propertiesAnimations[i]) && !document.querySelector('style').innerText.includes(propertiesAnimations[i])) {
+            for (var a = 0; a < document.querySelectorAll('mark').length; a++) {
+                if (document.querySelectorAll('mark')[a].classList.contains(propertiesAnimations[i]) && !document.querySelector('style').innerText.includes(propertiesAnimations[i])) {
 
-                let styles = ` 
-            .${propertiesAnimations[i]} { 
-                ${valuesAnimations[i]}
-            }`;
+                     let styles = ` 
+                    .${propertiesAnimations[i]} { 
+                        ${valuesAnimations[i]}
+                    }
+                    ${animations[i]}`;
 
-                document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+                    document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+                }
             }
         }
     }
 
     if (document.querySelector('code')) {
         for (var i = 0; i < propertiesAnimations.length; i++) {
-            if (document.querySelector('code').classList.contains(propertiesAnimations[i]) && !document.querySelector('style').innerText.includes(propertiesAnimations[i])) {
+            for (var a = 0; a < document.querySelectorAll('code').length; a++) {
+                if (document.querySelectorAll('code')[a].classList.contains(propertiesAnimations[i]) && !document.querySelector('style').innerText.includes(propertiesAnimations[i])) {
 
-                let styles = ` 
-            .${propertiesAnimations[i]} { 
-                ${valuesAnimations[i]}
-            }`;
+                     let styles = ` 
+                    .${propertiesAnimations[i]} { 
+                        ${valuesAnimations[i]}
+                    }
+                    ${animations[i]}`;
 
-                document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+                    document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+                }
             }
         }
     }
 
     if (document.querySelector('pre')) {
         for (var i = 0; i < propertiesAnimations.length; i++) {
-            if (document.querySelector('pre').classList.contains(propertiesAnimations[i]) && !document.querySelector('style').innerText.includes(propertiesAnimations[i])) {
+            for (var a = 0; a < document.querySelectorAll('pre').length; a++) {
+                if (document.querySelectorAll('pre')[a].classList.contains(propertiesAnimations[i]) && !document.querySelector('style').innerText.includes(propertiesAnimations[i])) {
 
-                let styles = ` 
-            .${propertiesAnimations[i]} { 
-                ${valuesAnimations[i]}
-            }`;
+                     let styles = ` 
+                    .${propertiesAnimations[i]} { 
+                        ${valuesAnimations[i]}
+                    }
+                    ${animations[i]}`;
 
-                document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+                    document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+                }
             }
         }
     }
 
     if (document.querySelector('blockquote')) {
         for (var i = 0; i < propertiesAnimations.length; i++) {
-            if (document.querySelector('blockquote').classList.contains(propertiesAnimations[i]) && !document.querySelector('style').innerText.includes(propertiesAnimations[i])) {
+            for (var a = 0; a < document.querySelectorAll('blockquote').length; a++) {
+                if (document.querySelectorAll('blockquote')[a].classList.contains(propertiesAnimations[i]) && !document.querySelector('style').innerText.includes(propertiesAnimations[i])) {
 
-                let styles = ` 
-            .${propertiesAnimations[i]} { 
-                ${valuesAnimations[i]}
-            }`;
+                     let styles = ` 
+                    .${propertiesAnimations[i]} { 
+                        ${valuesAnimations[i]}
+                    }
+                    ${animations[i]}`;
 
-                document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+                    document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+                }
             }
         }
     }
 
     if (document.querySelector('a')) {
         for (var i = 0; i < propertiesAnimations.length; i++) {
-            if (document.querySelector('a').classList.contains(propertiesAnimations[i]) && !document.querySelector('style').innerText.includes(propertiesAnimations[i])) {
+            for (var a = 0; a < document.querySelectorAll('a').length; a++) {
+                if (document.querySelectorAll('a')[a].classList.contains(propertiesAnimations[i]) && !document.querySelector('style').innerText.includes(propertiesAnimations[i])) {
 
-                let styles = ` 
-            .${propertiesAnimations[i]} { 
-                ${valuesAnimations[i]}
-            }`;
+                     let styles = ` 
+                    .${propertiesAnimations[i]} { 
+                        ${valuesAnimations[i]}
+                    }
+                    ${animations[i]}`;
 
-                document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+                    document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+                }
             }
         }
     }

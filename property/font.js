@@ -5,6 +5,23 @@ let propertiesFonts = [
     'v-font-raleway',
     'v-font-poppins',
     'v-font-montserrat',
+    'v-font-normal',
+    'v-font-bold',
+    'v-font-100',
+    'v-font-200',
+    'v-font-300',
+    'v-font-400',
+    'v-font-500',
+    'v-font-600',
+    'v-font-700',
+    'v-font-800',
+    'v-font-italic',
+    'v-font-normal',
+    'v-font-oblique',
+    'v-font-sm',
+    'v-font-md',
+    'v-font-lg',
+    'v-font-xl'
 ]
 
 let valuesFonts = [
@@ -12,6 +29,23 @@ let valuesFonts = [
     'font-family: "Raleway", sans-serif;',
     'font-family: "Poppins", sans-serif;',
     'font-family: "Montserrat", sans-serif;',
+    'font-weight: normal;',
+    'font-weight: bold;',
+    'font-weight: 100;',
+    'font-weight: 200;',
+    'font-weight: 300;',
+    'font-weight: 400;',
+    'font-weight: 500;',
+    'font-weight: 600;',
+    'font-weight: 700;',
+    'font-weight: 800;',
+    'font-style: italic;',
+    'font-style: normal;',
+    'font-style: oblique;',
+    'font-size: 15px;',
+    'font-size: 20px;',
+    'font-size: 25px;',
+    'font-size: 30px;'
 ]
 
 // pengkondisian

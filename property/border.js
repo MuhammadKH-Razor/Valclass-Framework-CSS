@@ -40,6 +40,7 @@ let propertiesBorders = [
     'v-border-transparent',
     'v-border-secondary',
     'v-border-warning',
+    'v-border-green',
     'v-border-collapse',
     'v-border-separate',
 ]
@@ -75,16 +76,16 @@ let valuesBorders = [
     'border-bottom: 2px;',
     'border-bottom: 3px;',
     'border-bottom: 4px;',
-    'border-color: rgb(49, 49, 49);',
-    'border-color: rgb(248, 247, 247);',
-    'border-color: red;',
-    'border-color: rgb(0, 204, 255);',
-    'border-color: rgb(0, 153, 255);',
+    'border-color: #464855;',
+    'border-color: #babfc7;',
+    'border-color: #f8313c;',
+    'border-color: #28afd0;',
+    'border-color: #6967ce;',
     'border-color: rgba(250, 236, 236, 0.712);',
     'border-color: transparent;',
-    'border-color: rgb(141, 141, 141);',
-    'border-color: rgb(255, 230, 0);',
-    'border-color: rgb(13, 226, 155);',
+    'border-color: #6b6f80;',
+    'border-color: #fdb901;',
+    'border-color: #5ed84f;',
     'border-collapse: collapse;',
     'border-collapse: separate'
 ]
@@ -95,9 +96,9 @@ for (var i = 0; i < propertiesBorders.length; i++) {
     if (document.querySelector('body').classList.contains(propertiesBorders[i]) && !document.querySelector('style').innerText.includes(propertiesBorders[i])) {
 
         let styles = ` 
-        .${propertiesBorders[i]} { 
-            ${valuesBorders[i]}
-        }`;
+    .${propertiesBorders[i]} { 
+        ${valuesBorders[i]}
+    }`;
 
         document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
     }
@@ -107,308 +108,336 @@ setTimeout(() => {
 
     if (document.querySelector('div')) {
         for (var i = 0; i < propertiesBorders.length; i++) {
-            if (document.querySelector('div').classList.contains(propertiesBorders[i]) && !document.querySelector('style').innerText.includes(propertiesBorders[i])) {
+            for (var a = 0; a < document.querySelectorAll('div').length; a++) {
+                if (document.querySelectorAll('div')[a].classList.contains(propertiesBorders[i]) && !document.querySelector('style').innerText.includes(propertiesBorders[i])) {
 
-                let styles = ` 
+                    let styles = ` 
             .${propertiesBorders[i]} { 
                 ${valuesBorders[i]}
             }`;
 
-                document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+                    document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+                }
             }
         }
     }
 
     if (document.querySelector('h1')) {
         for (var i = 0; i < propertiesBorders.length; i++) {
-            if (document.querySelector('h1').classList.contains(propertiesBorders[i]) && !document.querySelector('style').innerText.includes(propertiesBorders[i])) {
+            for (var a = 0; a < document.querySelectorAll('h1').length; a++) {
+                if (document.querySelectorAll('h1')[a].classList.contains(propertiesBorders[i]) && !document.querySelector('style').innerText.includes(propertiesBorders[i])) {
 
-                let styles = ` 
-            .${propertiesBorders[i]} { 
-                ${valuesBorders[i]}
-            }`;
+                    let styles = ` 
+                .${propertiesBorders[i]} { 
+                    ${valuesBorders[i]}
+                }`;
 
-                document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+                    document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+                }
             }
         }
     }
 
     if (document.querySelector('h2')) {
         for (var i = 0; i < propertiesBorders.length; i++) {
-            if (document.querySelector('h2').classList.contains(propertiesBorders[i]) && !document.querySelector('style').innerText.includes(propertiesBorders[i])) {
+            for (var a = 0; a < document.querySelectorAll('h2').length; a++) {
+                if (document.querySelectorAll('h2')[a].classList.contains(propertiesBorders[i]) && !document.querySelector('style').innerText.includes(propertiesBorders[i])) {
 
-                let styles = ` 
+                    let styles = ` 
             .${propertiesBorders[i]} { 
                 ${valuesBorders[i]}
             }`;
 
-                document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+                    document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+                }
             }
         }
     }
 
     if (document.querySelector('h3')) {
         for (var i = 0; i < propertiesBorders.length; i++) {
-            if (document.querySelector('h3').classList.contains(propertiesBorders[i]) && !document.querySelector('style').innerText.includes(propertiesBorders[i])) {
+            for (var a = 0; a < document.querySelectorAll('h3').length; a++) {
+                if (document.querySelectorAll('h3')[a].classList.contains(propertiesBorders[i]) && !document.querySelector('style').innerText.includes(propertiesBorders[i])) {
 
-                let styles = ` 
+                    let styles = ` 
             .${propertiesBorders[i]} { 
                 ${valuesBorders[i]}
             }`;
 
-                document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+                    document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+                }
             }
         }
     }
 
     if (document.querySelector('h4')) {
         for (var i = 0; i < propertiesBorders.length; i++) {
-            if (document.querySelector('h4').classList.contains(propertiesBorders[i]) && !document.querySelector('style').innerText.includes(propertiesBorders[i])) {
+            for (var a = 0; a < document.querySelectorAll('h4').length; a++) {
+                if (document.querySelectorAll('h4')[a].classList.contains(propertiesBorders[i]) && !document.querySelector('style').innerText.includes(propertiesBorders[i])) {
 
-                let styles = ` 
+                    let styles = ` 
             .${propertiesBorders[i]} { 
                 ${valuesBorders[i]}
             }`;
 
-                document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+                    document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+                }
             }
         }
     }
 
     if (document.querySelector('h5')) {
         for (var i = 0; i < propertiesBorders.length; i++) {
-            if (document.querySelector('h5').classList.contains(propertiesBorders[i]) && !document.querySelector('style').innerText.includes(propertiesBorders[i])) {
+            for (var a = 0; a < document.querySelectorAll('h5').length; a++) {
+                if (document.querySelectorAll('h5')[a].classList.contains(propertiesBorders[i]) && !document.querySelector('style').innerText.includes(propertiesBorders[i])) {
 
-                let styles = ` 
+                    let styles = ` 
             .${propertiesBorders[i]} { 
                 ${valuesBorders[i]}
             }`;
 
-                document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+                    document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+                }
             }
         }
     }
 
     if (document.querySelector('h6')) {
         for (var i = 0; i < propertiesBorders.length; i++) {
-            if (document.querySelector('h6').classList.contains(propertiesBorders[i]) && !document.querySelector('style').innerText.includes(propertiesBorders[i])) {
+            for (var a = 0; a < document.querySelectorAll('h6').length; a++) {
+                if (document.querySelectorAll('h6')[a].classList.contains(propertiesBorders[i]) && !document.querySelector('style').innerText.includes(propertiesBorders[i])) {
 
-                let styles = ` 
+                    let styles = ` 
             .${propertiesBorders[i]} { 
                 ${valuesBorders[i]}
             }`;
 
-                document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+                    document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+                }
             }
         }
     }
 
     if (document.querySelector('span')) {
         for (var i = 0; i < propertiesBorders.length; i++) {
-            if (document.querySelector('span').classList.contains(propertiesBorders[i]) && !document.querySelector('style').innerText.includes(propertiesBorders[i])) {
+            for (var a = 0; a < document.querySelectorAll('span').length; a++) {
+                if (document.querySelectorAll('span')[a].classList.contains(propertiesBorders[i]) && !document.querySelector('style').innerText.includes(propertiesBorders[i])) {
 
-                let styles = ` 
+                    let styles = ` 
             .${propertiesBorders[i]} { 
                 ${valuesBorders[i]}
             }`;
 
-                document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+                    document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+                }
             }
         }
     }
 
     if (document.querySelector('p')) {
         for (var i = 0; i < propertiesBorders.length; i++) {
-            if (document.querySelector('p').classList.contains(propertiesBorders[i]) && !document.querySelector('style').innerText.includes(propertiesBorders[i])) {
+            for (var a = 0; a < document.querySelectorAll('p').length; a++) {
+                if (document.querySelectorAll('p')[a].classList.contains(propertiesBorders[i]) && !document.querySelector('style').innerText.includes(propertiesBorders[i])) {
 
-                let styles = ` 
+                    let styles = ` 
             .${propertiesBorders[i]} { 
                 ${valuesBorders[i]}
             }`;
 
-                document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+                    document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+                }
             }
         }
     }
 
     if (document.querySelector('small')) {
         for (var i = 0; i < propertiesBorders.length; i++) {
-            if (document.querySelector('small').classList.contains(propertiesBorders[i]) && !document.querySelector('style').innerText.includes(propertiesBorders[i])) {
+            for (var a = 0; a < document.querySelectorAll('small').length; a++) {
+                if (document.querySelectorAll('small')[a].classList.contains(propertiesBorders[i]) && !document.querySelector('style').innerText.includes(propertiesBorders[i])) {
 
-                let styles = ` 
+                    let styles = ` 
             .${propertiesBorders[i]} { 
                 ${valuesBorders[i]}
             }`;
 
-                document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+                    document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+                }
             }
         }
     }
 
     if (document.querySelector('input')) {
         for (var i = 0; i < propertiesBorders.length; i++) {
-            if (document.querySelector('input').classList.contains(propertiesBorders[i]) && !document.querySelector('style').innerText.includes(propertiesBorders[i])) {
+            for (var a = 0; a < document.querySelectorAll('input').length; a++) {
+                if (document.querySelectorAll('input')[a].classList.contains(propertiesBorders[i]) && !document.querySelector('style').innerText.includes(propertiesBorders[i])) {
 
-                let styles = ` 
+                    let styles = ` 
             .${propertiesBorders[i]} { 
                 ${valuesBorders[i]}
             }`;
 
-                document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+                    document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+                }
             }
         }
     }
 
     if (document.querySelector('textarea')) {
         for (var i = 0; i < propertiesBorders.length; i++) {
-            if (document.querySelector('textarea').classList.contains(propertiesBorders[i]) && !document.querySelector('style').innerText.includes(propertiesBorders[i])) {
+            for (var a = 0; a < document.querySelectorAll('textarea').length; a++) {
+                if (document.querySelectorAll('textarea')[a].classList.contains(propertiesBorders[i]) && !document.querySelector('style').innerText.includes(propertiesBorders[i])) {
 
-                let styles = ` 
+                    let styles = ` 
             .${propertiesBorders[i]} { 
                 ${valuesBorders[i]}
             }`;
 
-                document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+                    document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+                }
             }
         }
     }
 
     if (document.querySelector('select')) {
         for (var i = 0; i < propertiesBorders.length; i++) {
-            if (document.querySelector('select').classList.contains(propertiesBorders[i]) && !document.querySelector('style').innerText.includes(propertiesBorders[i])) {
+            for (var a = 0; a < document.querySelectorAll('select').length; a++) {
+                if (document.querySelectorAll('select')[a].classList.contains(propertiesBorders[i]) && !document.querySelector('style').innerText.includes(propertiesBorders[i])) {
 
-                let styles = ` 
+                    let styles = ` 
             .${propertiesBorders[i]} { 
                 ${valuesBorders[i]}
             }`;
 
-                document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+                    document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+                }
             }
         }
     }
 
     if (document.querySelector('button')) {
         for (var i = 0; i < propertiesBorders.length; i++) {
-            if (document.querySelector('button').classList.contains(propertiesBorders[i]) && !document.querySelector('style').innerText.includes(propertiesBorders[i])) {
+            for (var a = 0; a < document.querySelectorAll('button').length; a++) {
+                if (document.querySelectorAll('button')[a].classList.contains(propertiesBorders[i]) && !document.querySelector('style').innerText.includes(propertiesBorders[i])) {
 
-                let styles = ` 
+                    let styles = ` 
             .${propertiesBorders[i]} { 
                 ${valuesBorders[i]}
             }`;
 
-                document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+                    document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+                }
             }
         }
     }
 
     if (document.querySelector('sup')) {
         for (var i = 0; i < propertiesBorders.length; i++) {
-            if (document.querySelector('sup').classList.contains(propertiesBorders[i]) && !document.querySelector('style').innerText.includes(propertiesBorders[i])) {
+            for (var a = 0; a < document.querySelectorAll('sup').length; a++) {
+                if (document.querySelectorAll('sup')[a].classList.contains(propertiesBorders[i]) && !document.querySelector('style').innerText.includes(propertiesBorders[i])) {
 
-                let styles = ` 
+                    let styles = ` 
             .${propertiesBorders[i]} { 
                 ${valuesBorders[i]}
             }`;
 
-                document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
-            }
-        }
-    }
-
-    if (document.querySelector('sup')) {
-        for (var i = 0; i < propertiesBorders.length; i++) {
-            if (document.querySelector('sup').classList.contains(propertiesBorders[i]) && !document.querySelector('style').innerText.includes(propertiesBorders[i])) {
-
-                let styles = ` 
-            .${propertiesBorders[i]} { 
-                ${valuesBorders[i]}
-            }`;
-
-                document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+                    document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+                }
             }
         }
     }
 
     if (document.querySelector('sub')) {
         for (var i = 0; i < propertiesBorders.length; i++) {
-            if (document.querySelector('sub').classList.contains(propertiesBorders[i]) && !document.querySelector('style').innerText.includes(propertiesBorders[i])) {
+            for (var a = 0; a < document.querySelectorAll('sub').length; a++) {
+                if (document.querySelectorAll('sub')[a].classList.contains(propertiesBorders[i]) && !document.querySelector('style').innerText.includes(propertiesBorders[i])) {
 
-                let styles = ` 
+                    let styles = ` 
             .${propertiesBorders[i]} { 
                 ${valuesBorders[i]}
             }`;
 
-                document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+                    document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+                }
             }
         }
     }
 
     if (document.querySelector('mark')) {
         for (var i = 0; i < propertiesBorders.length; i++) {
-            if (document.querySelector('mark').classList.contains(propertiesBorders[i]) && !document.querySelector('style').innerText.includes(propertiesBorders[i])) {
+            for (var a = 0; a < document.querySelectorAll('mark').length; a++) {
+                if (document.querySelectorAll('mark')[a].classList.contains(propertiesBorders[i]) && !document.querySelector('style').innerText.includes(propertiesBorders[i])) {
 
-                let styles = ` 
+                    let styles = ` 
             .${propertiesBorders[i]} { 
                 ${valuesBorders[i]}
             }`;
 
-                document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+                    document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+                }
             }
         }
     }
 
     if (document.querySelector('code')) {
         for (var i = 0; i < propertiesBorders.length; i++) {
-            if (document.querySelector('code').classList.contains(propertiesBorders[i]) && !document.querySelector('style').innerText.includes(propertiesBorders[i])) {
+            for (var a = 0; a < document.querySelectorAll('code').length; a++) {
+                if (document.querySelectorAll('code')[a].classList.contains(propertiesBorders[i]) && !document.querySelector('style').innerText.includes(propertiesBorders[i])) {
 
-                let styles = ` 
+                    let styles = ` 
             .${propertiesBorders[i]} { 
                 ${valuesBorders[i]}
             }`;
 
-                document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+                    document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+                }
             }
         }
     }
 
     if (document.querySelector('pre')) {
         for (var i = 0; i < propertiesBorders.length; i++) {
-            if (document.querySelector('pre').classList.contains(propertiesBorders[i]) && !document.querySelector('style').innerText.includes(propertiesBorders[i])) {
+            for (var a = 0; a < document.querySelectorAll('pre').length; a++) {
+                if (document.querySelectorAll('pre')[a].classList.contains(propertiesBorders[i]) && !document.querySelector('style').innerText.includes(propertiesBorders[i])) {
 
-                let styles = ` 
+                    let styles = ` 
             .${propertiesBorders[i]} { 
                 ${valuesBorders[i]}
             }`;
 
-                document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+                    document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+                }
             }
         }
     }
 
     if (document.querySelector('blockquote')) {
         for (var i = 0; i < propertiesBorders.length; i++) {
-            if (document.querySelector('blockquote').classList.contains(propertiesBorders[i]) && !document.querySelector('style').innerText.includes(propertiesBorders[i])) {
+            for (var a = 0; a < document.querySelectorAll('blockquote').length; a++) {
+                if (document.querySelectorAll('blockquote')[a].classList.contains(propertiesBorders[i]) && !document.querySelector('style').innerText.includes(propertiesBorders[i])) {
 
-                let styles = ` 
+                    let styles = ` 
             .${propertiesBorders[i]} { 
                 ${valuesBorders[i]}
             }`;
 
-                document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+                    document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+                }
             }
         }
     }
 
     if (document.querySelector('a')) {
         for (var i = 0; i < propertiesBorders.length; i++) {
-            if (document.querySelector('a').classList.contains(propertiesBorders[i]) && !document.querySelector('style').innerText.includes(propertiesBorders[i])) {
+            for (var a = 0; a < document.querySelectorAll('a').length; a++) {
+                if (document.querySelectorAll('a')[a].classList.contains(propertiesBorders[i]) && !document.querySelector('style').innerText.includes(propertiesBorders[i])) {
 
-                let styles = ` 
+                    let styles = ` 
             .${propertiesBorders[i]} { 
                 ${valuesBorders[i]}
             }`;
 
-                document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+                    document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+                }
             }
         }
     }
