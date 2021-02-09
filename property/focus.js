@@ -3,7 +3,8 @@
 let propertiesFocus = [
     'v-focus-scale',
     'v-focus-pulse',
-    'v-focus-width'
+    'v-focus-width',
+    'v-focus-border'
 ]
 
 let valuesFocus = [
@@ -28,17 +29,29 @@ let focuss = [
     `
     .v-focus-scale:focus {
         transition: 0.3s;
+        transition: 1s;
         transform: scale(0.97);
     }`,
     `
     .v-focus-pulse:focus {
         transition: 0.3s;
+        transition: 1s;
         opacity: 0.7;
     }`,
     `
     .v-focus-width:focus {
         transition: 0.3s;
+        transition: 1s;
         width: 90%;
+    }`,
+    `
+    .v-focus-border:focus {
+        border-top: none;
+        transition: 1s;
+        border-left: none;
+        border-right: none;
+        outline: none;
+        border-bottom: 1px solid black;
     }`
 ]
 
