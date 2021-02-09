@@ -135,6 +135,20 @@ if (document.querySelector('body').classList.contains('font')) {
 
 }
 
+if (document.querySelector('body').classList.contains('font-family')) {
+
+    var js = './property/fontFamily.js',
+
+        script = document.createElement('script'),
+        body = document.getElementsByTagName('body')[0],
+        tmp;
+
+    tmp = script;
+    tmp.src = js;
+    body.appendChild(tmp);
+
+}
+
 if (document.querySelector('body').classList.contains('tlrb')) {
 
     var js = './property/tlrb.js',

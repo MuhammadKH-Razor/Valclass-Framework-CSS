@@ -5,7 +5,7 @@ let propertiesIncrement = [
 ]
 
 let valuesIncrement = [
-    'counter-increment: my-sec-counter; content: counter(my-sec-counter) "."'
+    'counter-increment: my-sec-counter; content: counter(my-sec-counter)'
 ]
 
 // pengkondisian
