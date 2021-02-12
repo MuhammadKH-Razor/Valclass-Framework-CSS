@@ -14,16 +14,16 @@ let propertiesTextColors = [
 ]
 
 let valuesTextColors = [
-    'color: #464855;',
-    'color: #babfc7;',
-    'color: #f8313c;',
-    'color: #28afd0;',
-    'color: #6967ce;',
-    'color: rgba(250, 236, 236, 0.712);',
+    'color: rgb(70, 70, 70);',
+    'color: rgb(238, 238, 238);',
+    'color: rgb(255, 76, 44);',
+    'color: rgb(2, 168, 245);',
+    'color: rgb(42, 131, 248);',
+    'color: rgb(255, 242, 242);',
     'color: transparent;',
-    'color: #6b6f80;',
-    'color: #fdb901;',
-    'color: #5ed84f;'
+    'color: rgb(141, 141, 141);',
+    'color: rgb(253, 207, 0);',
+    'color: rgb(14, 253, 201);'
 ]
 
 // pengkondisian

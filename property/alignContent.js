@@ -13,9 +13,9 @@ let valueContent = [
     'align-content: center;',
     'align-content: flex-end;',
     'align-content: flex-start;',
-    'align-content: stretch;',
-    'align-content: between;',
-    'align-content: around;',
+    'align-content: space-evenly;',
+    'align-content: space-between;',
+    'align-content: space-around;',
 ]
 
 // pengkondisian

@@ -14,16 +14,16 @@ let propertiesBgColors = [
 ]
 
 let valuesBgColors = [
-    'background-color: #464855;',
-    'background-color: #babfc7;',
-    'background-color: #f8313c;',
-    'background-color: #28afd0;',
-    'background-color: #6967ce;',
-    'background-color: rgba(250, 236, 236, 0.712);',
+    'background-color: rgb(70, 70, 70);',
+    'background-color: rgb(238, 238, 238);',
+    'background-color: rgb(255, 76, 44);',
+    'background-color: rgb(2, 168, 245);',
+    'background-color: rgb(42, 131, 248);',
+    'background-color: rgb(255, 242, 242);',
     'background-color: transparent;',
-    'background-color: #6b6f80;',
-    'background-color: #fdb901;',
-    'background-color: #5ed84f;'
+    'background-color: rgb(141, 141, 141);',
+    'background-color: rgb(253, 207, 0);',
+    'background-color: rgb(14, 253, 201);'
 ]
 
 // pengkondisian

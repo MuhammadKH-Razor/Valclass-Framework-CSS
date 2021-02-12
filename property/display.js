@@ -15,13 +15,10 @@ let propertiesDisplay = [
     'v-d-table-footer-group',
     'v-d-table-header-group',
     'v-d-table-row',
-    'v-d-run-i',
     'v-d-table-cell',
     'v-d-table-column',
     'v-d-none',
-    'v-d-list-item',
-    'v-d-flow-root',
-    'v-d-ruby'
+    'v-d-flow-root'
 ]
 
 let valuesDisplay = [
@@ -39,13 +36,10 @@ let valuesDisplay = [
     'display: table-footer-group;',
     'display: table-header-group;',
     'display: table-row;',
-    'display: run-i;',
     'display: table-cell;',
     'display: table-column;',
     'display: none;',
-    'display: list-item;',
-    'display: flow-root;',
-    'display: ruby;'
+    'display: flow-root;'
 ]
 
 // pengkondisian

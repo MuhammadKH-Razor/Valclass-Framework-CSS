@@ -275,7 +275,7 @@ if (document.querySelector('body').classList.contains('shadow')) {
 
 }
 
-if (document.querySelector('body').classList.contains('index')) {
+if (document.querySelector('body').classList.contains('z-index')) {
 
     var js = './property/zIndex.js',
 
@@ -348,6 +348,34 @@ if (document.querySelector('body').classList.contains('float')) {
 if (document.querySelector('body').classList.contains('justify-content')) {
 
     var js = './property/justifyContent.js',
+
+        script = document.createElement('script'),
+        body = document.getElementsByTagName('body')[0],
+        tmp;
+
+    tmp = script;
+    tmp.src = js;
+    body.appendChild(tmp);
+
+}
+
+if (document.querySelector('body').classList.contains('justify-items')) {
+
+    var js = './property/justifyItems.js',
+
+        script = document.createElement('script'),
+        body = document.getElementsByTagName('body')[0],
+        tmp;
+
+    tmp = script;
+    tmp.src = js;
+    body.appendChild(tmp);
+
+}
+
+if (document.querySelector('body').classList.contains('justify-self')) {
+
+    var js = './property/justifySelf.js',
 
         script = document.createElement('script'),
         body = document.getElementsByTagName('body')[0],
@@ -902,6 +930,38 @@ if (document.querySelector('body').classList.contains('back-to-top')) {
 
     var js = [
         './property/backToTop.js'
+    ]
+
+    script = document.createElement('script'),
+        body = document.getElementsByTagName('body')[0],
+        tmp;
+
+    tmp = script;
+    tmp.src = js;
+    body.appendChild(tmp);
+
+}
+
+if (document.querySelector('body').classList.contains('icon')) {
+
+    var js = [
+        './property/icons.js'
+    ]
+
+    script = document.createElement('script'),
+        body = document.getElementsByTagName('body')[0],
+        tmp;
+
+    tmp = script;
+    tmp.src = js;
+    body.appendChild(tmp);
+
+}
+
+if (document.querySelector('body').classList.contains('box-sizing')) {
+
+    var js = [
+        './property/boxSizing.js'
     ]
 
     script = document.createElement('script'),

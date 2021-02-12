@@ -18,12 +18,14 @@ let propertiesFlex = [
     'v-flex-wrap',
     'v-flex-nowrap',
     'v-flex-wrap-reverse',
-    'v-flex-direction-column',
-    'v-flex-direction-column-reverse',
-    'v-flex-direction-row',
-    'v-flex-direction-row-reverse',
-    'v-flex-shrink-inherit',
-    'v-flex-shrink-initial'
+    'v-direction-column',
+    'v-direction-column-reverse',
+    'v-direction-row',
+    'v-direction-row-reverse',
+    'v-shrink-1',
+    'v-shrink-2',
+    'v-shrink-3',
+    'v-shrink-4'
 ]
 
 let valuesFlex = [
@@ -48,8 +50,10 @@ let valuesFlex = [
     'flex-direction: column-reverse;',
     'flex-direction: row;',
     'flex-direction: row-reverse;',
-    'flex-shrink: inherit;',
-    'flex-shrink: initial;'
+    'flex-shrink: 1;',
+    'flex-shrink: 2;',
+    'flex-shrink: 3;',
+    'flex-shrink: 4;'
 ]
 
 // pengkondisian
