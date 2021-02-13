@@ -123,29 +123,19 @@ if (document.querySelector('body').classList.contains('margin')) {
 
 if (document.querySelector('body').classList.contains('font')) {
 
-    var js = './property/font.js',
+    var js = [
+        './property/font.js',
+        './property/fontFamily.js'
+    ]
 
+    for (var i = 0; i < js.length; i++) {
         script = document.createElement('script'),
-        body = document.getElementsByTagName('body')[0],
-        tmp;
+            body = document.getElementsByTagName('body')[0],
+            tmp;
 
-    tmp = script;
-    tmp.src = js;
-    body.appendChild(tmp);
-
-}
-
-if (document.querySelector('body').classList.contains('font-family')) {
-
-    var js = './property/fontFamily.js',
-
-        script = document.createElement('script'),
-        body = document.getElementsByTagName('body')[0],
-        tmp;
-
-    tmp = script;
-    tmp.src = js;
-    body.appendChild(tmp);
+        tmp = script;
+        tmp.src = js[i];
+        body.appendChild(tmp);
 
 }
 
@@ -586,6 +576,20 @@ if (document.querySelector('body').classList.contains('word-wrap')) {
 if (document.querySelector('body').classList.contains('word-spacing')) {
 
     var js = './property/wordSpacing.js',
+
+        script = document.createElement('script'),
+        body = document.getElementsByTagName('body')[0],
+        tmp;
+
+    tmp = script;
+    tmp.src = js;
+    body.appendChild(tmp);
+
+}
+
+if (document.querySelector('body').classList.contains('letter-spacing')) {
+
+    var js = './property/letterSpacing.js',
 
         script = document.createElement('script'),
         body = document.getElementsByTagName('body')[0],
