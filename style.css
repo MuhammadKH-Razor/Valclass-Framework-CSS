@@ -11,6 +11,7 @@ table {
 .v-table-hovered {
    border-collapse: collapse;
    table-layout: auto;
+   background-color:#313131;
    font-size: 15px;
 }
 
@@ -168,6 +169,54 @@ caption {
    transform-origin: 0 0;
    transform: rotate(-45deg);
   
+}
+
+.v-dark-mode {
+   background-color: rgb(44, 44, 44);
+   border: none;
+   width: 100px;
+   outline: none;
+   height: max-content;
+   border-radius: 40px;
+   padding: 5px;
+   text-align: center;
+   font-weight: 500;
+}
+
+.v-dark-mode-on {
+   background-color: rgb(160, 160, 160);
+   border: none;
+   width: 100px;
+   outline: none;
+   height: max-content;
+   border-radius: 40px;
+   padding: 5px;
+   text-align: center;
+   font-weight: 500;
+}
+
+.v-dark-mode .toggle-mode {
+   position: relative;
+   width: 35px;
+   height: 35px;
+   left: 0;
+   cursor: pointer;
+   border-radius: 90px;
+   background-color: #fff;
+   transition: 0.3s;
+}
+
+.toggle-mode:hover {
+   opacity: 0.8;
+   transform: scale(0.97);
+   transition: 0.3s;
+}
+
+.modeDarks {
+   position: relative;
+   margin-left: 65px;
+   transition: 0.3s;
+   background-color: rgb(44, 44, 44);
 }
 
 /* tablet */

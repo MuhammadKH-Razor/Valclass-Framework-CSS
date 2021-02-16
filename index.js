@@ -992,3 +992,19 @@ if (document.querySelector('body').classList.contains('box-sizing')) {
     body.appendChild(tmp);
 
 }
+
+if (document.querySelector('body').classList.contains('mode')) {
+
+    var js = [
+        './property/darkMode.js'
+    ]
+
+    script = document.createElement('script'),
+        body = document.getElementsByTagName('body')[0],
+        tmp;
+
+    tmp = script;
+    tmp.src = js;
+    body.appendChild(tmp);
+
+}
