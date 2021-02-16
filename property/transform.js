@@ -68,7 +68,7 @@ let propertiesTransform = [
     '-v-translateZ-2',
     '-v-translateZ-3',
     '-v-translateZ-4',
-    '-v-translateZ-middle',
+    '-v-translateZ-middle'
 ]
 
 let valuesTransform = [
@@ -92,14 +92,14 @@ let valuesTransform = [
   'transform: scale(2)',
   'transform: scale(3)',
   'transform: scale(4)',
-  'transform: skew(3deg)',
-  'transform: skew(6deg)',
-  'transform: skew(9deg)',
-  'transform: skew(12deg)',
-  'transform: skew(-3deg)',
-  'transform: skew(-6deg)',
-  'transform: skew(-9deg)',
-  'transform: skew(-12deg)',
+  'transform: skew(5deg)',
+  'transform: skew(10deg)',
+  'transform: skew(15deg)',
+  'transform: skew(20deg)',
+  'transform: skew(-5deg)',
+  'transform: skew(-10deg)',
+  'transform: skew(-15deg)',
+  'transform: skew(-20deg)',
   'transform: translate(10%)',
   'transform: translate(20%)',
   'transform: translate(30%)',
@@ -139,7 +139,7 @@ let valuesTransform = [
   'transform: translateZ(-20%)',
   'transform: translateZ(-30%)',
   'transform: translateZ(-40%)',
-  'transform: translateZ(-50%)',
+  'transform: translateZ(-50%)'
 ]
 
 // pengkondisian

@@ -1,9 +1,9 @@
 // property, tag dan value - Muhammad Khoirul Huda
 
 let propertiesBackgroundAttachment = [
-    'v-bg-attachment-fixed',
-    'v-bg-attachment-local',
-    'v-bg-attachment-scroll'
+    'v-attachment-fixed',
+    'v-attachment-local',
+    'v-attachment-scroll'
 ]
 
 let valuesBackgroundAttachment = [

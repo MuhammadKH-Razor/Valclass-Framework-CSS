@@ -10,18 +10,18 @@ let propertiesPerspective = [
     'v-perspective-2',
     'v-perspective-3',
     'v-perspective-4',
-    'v-perspective-origin-top',
-    'v-perspective-origin-bottom',
-    'v-perspective-origin-left',
-    'v-perspective-origin-right',
-    'v-perspective-origin-center'
+    'v-perspective-top',
+    'v-perspective-bottom',
+    'v-perspective-left',
+    'v-perspective-right',
+    'v-perspective-center'
 ]
 
 let valuesPerspective = [
     'perspective: -20px;',
-    'perspective: -40%;',
-    'perspective: -60%;',
-    'perspective: -80%;',
+    'perspective: -40px;',
+    'perspective: -60px;',
+    'perspective: -80px;',
     'perspective: none;',
     'perspective: 20px;',
     'perspective: 40px;',

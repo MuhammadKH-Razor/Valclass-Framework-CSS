@@ -65,6 +65,20 @@ if (document.querySelector('body').classList.contains('text-color')) {
 
 }
 
+if (document.querySelector('body').classList.contains('text-transform')) {
+
+    var js = './property/textTransform.js'
+
+    script = document.createElement('script'),
+        body = document.getElementsByTagName('body')[0],
+        tmp;
+
+    tmp = script;
+    tmp.src = js;
+    body.appendChild(tmp);
+
+}
+
 if (document.querySelector('body').classList.contains('cursor')) {
 
     var js = './property/cursor.js'
@@ -137,6 +151,7 @@ if (document.querySelector('body').classList.contains('font')) {
         tmp.src = js[i];
         body.appendChild(tmp);
 
+}
 }
 
 if (document.querySelector('body').classList.contains('tlrb')) {

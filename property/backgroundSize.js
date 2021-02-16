@@ -1,20 +1,20 @@
 // property, tag dan value - Muhammad Khoirul Huda
 
 let propertiesBackgroundSize = [
-    'v-bg-auto',
-    'v-bg-contain',
-    'v-bg-cover',
-    'v-bg--1',
-    'v-bg--2',
-    'v-bg--3',
-    'v-bg--4',
-    'v-bg--full',
-    'v-bg-0',
-    'v-bg-1',
-    'v-bg-2',
-    'v-bg-3',
-    'v-bg-4',
-    'v-bg-full'
+    'v-bg-sz-auto',
+    'v-bg-sz-contain',
+    'v-bg-sz-cover',
+    'v-bg-sz--1',
+    'v-bg-sz--2',
+    'v-bg-sz--3',
+    'v-bg-sz--4',
+    'v-bg-sz--full',
+    'v-bg-sz-0',
+    'v-bg-sz-1',
+    'v-bg-sz-2',
+    'v-bg-sz-3',
+    'v-bg-sz-4',
+    'v-bg-sz-full'
 ]
 
 let valuesBackgroundSize = [

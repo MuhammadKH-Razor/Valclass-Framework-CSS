@@ -1,22 +1,22 @@
 // property, tag dan value - Muhammad Khoirul Huda
 
 let propertiesBackgroundPosition = [
-    'v-bg-center',
-    'v-bg-top',
-    'v-bg-left',
-    'v-bg-right',
-    'v-bg-bottom',
-    'v-bg--1',
-    'v-bg--2',
-    'v-bg--3',
-    'v-bg--4',
-    'v-bg--full',
-    'v-bg-0',
-    'v-bg-1',
-    'v-bg-2',
-    'v-bg-3',
-    'v-bg-4',
-    'v-bg-full'
+    'v-bg-post-center',
+    'v-bg-post-top',
+    'v-bg-post-left',
+    'v-bg-post-right',
+    'v-bg-post-bottom',
+    'v-bg-post--1',
+    'v-bg-post--2',
+    'v-bg-post--3',
+    'v-bg-post--4',
+    'v-bg-post--full',
+    'v-bg-post-0',
+    'v-bg-post-1',
+    'v-bg-post-2',
+    'v-bg-post-3',
+    'v-bg-post-4',
+    'v-bg-post-full'
 ]
 
 let valuesBackgroundPosition = [
@@ -29,7 +29,7 @@ let valuesBackgroundPosition = [
     'background-position: -40%',
     'background-position: -60%',
     'background-position: -80%',
-    'background-position: 100%',
+    'background-position: -100%',
     'background-position: 0%',
     'background-position: 20%',
     'background-position: 40%',

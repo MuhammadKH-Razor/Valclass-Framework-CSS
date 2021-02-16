@@ -2,9 +2,9 @@
 
 let propertiesLineHeight = [
     'v-leading-1',
-    'v-leading-1',
-    'v-leading-1',
-    'v-leading-1',
+    'v-leading-2',
+    'v-leading-3',
+    'v-leading-4',
     'v-leading-none',
     'v-leading-tight',
     'v-leading-snug',
@@ -14,13 +14,13 @@ let propertiesLineHeight = [
 ]
 
 let valuesLineHeight = [
-    'line-height: .75rem',
-    'line-height: 1rem',
+    'line-height: .75rem;',
+    'line-height: 1rem;',
     'line-height: 1.25rem;',
     'line-height: 1.5rem;',
     'line-height: 1;',
-    'line-height: 1.25',
-    'line-height: 1.375',
+    'line-height: 1.25;',
+    'line-height: 1.375;',
     'line-height: 1.5;',
     'line-height: 1.625;',
     'line-height: 2;'

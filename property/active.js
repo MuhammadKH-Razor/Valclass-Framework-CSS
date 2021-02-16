@@ -2,7 +2,7 @@
 
 let propertiesActive = [
     'v-active-scale',
-    'v-active-bounce',
+    'v-active-up',
     'v-active-pulse'
 ]
 
@@ -28,7 +28,7 @@ let Active = [
         transform: scale(0.97);
     }`,
     `
-    .v-active-bounce:active {
+    .v-active-up:active {
         transition: 0.3s;
         margin-top: -10px;
     }`,

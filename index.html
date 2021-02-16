@@ -21,6 +21,7 @@
     icon z-index
     ">
 
+    
     <nav class="v-navbar" style="margin-top: 50px;">
         <div class="v-logo">
             <h3>
@@ -45,7 +46,7 @@
 
 
     <input type="text" placeholder="focus...." class="v-font-xl v-p-1 v-focus-width v-relative">
-
+    
     <div class="v-relative v-d-flex v-w-screen v-list-none">
         <li class="v-float-left v-m-1">float</li>
         <li class="v-float-left v-m-1">float</li>
@@ -90,7 +91,7 @@
     <h1 style="font-size: 50px;" class="v-green v-text-light v-pl-4 v-w-screen v-font-normal v-items-baseline v-relative v-text-left v-radius-lg v-outline-dark v-outline-style-dotted v-scale-1 v-overflowY-scroll v-overflowX-hidden v-float-right">
         kdahdjah green
     </h1>
-
+    
     <h1 class="v-hover-opacity v-smooth">
         huhuhuh
     </h1>
@@ -103,7 +104,7 @@
         <li class="v-list-georgian">list-style georgian</li>
         <li class="v-list-none">list-style none</li>
     </ul>
-
+    
     <div class="v-col-3">
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est consequuntur et asperiores neque aperiam fugiat nulla commodi illum vitae, officia at necessitatibus accusamus molestias doloribus dolores? Accusamus ipsa perspiciatis atque.
     </div>
@@ -126,11 +127,14 @@
 
 
     <button class="v-btn v-primary v-animation-pulse">v-btn</button>
-
-    <div class="v-time v-relative">
-        <p class="v-day"></p><p class="v-date"></p><p class="v-month"></p><p class="v-year"></p>
+    <div>
+        <div>
+            <div class="v-time v-relative">
+                <p class="v-day"></p><p class="v-date"></p><p class="v-month"></p><p class="v-year"></p>
+            </div>
+        </div>
     </div>
-
+    
     <button class="v-sosmed-wa" url="https://www.whatsapp.com">whatsapp</button>
     <button class="v-sosmed-ig" url="https://www.instagram.com">instagram</button>
     <button class="v-sosmed-fb" url="https://www.facebook.com">facebook</button>
@@ -209,9 +213,23 @@
     <button class="v-reload-web">reload</button>
     <button class="v-office-word"></button>
     <button class="v-office-word"></button>
+    <button class="v-dark-mode">dark mode</button>
 
 
     <script src="./index.js"></script>
+    <script>
+
+        document.querySelector('button.v-dark-mode').addEventListener('click', () => {
+            let i = 0;
+            let i = i + 1
+            if(i % 2 == 0) {
+                document.body.style.backgroundColor = 'black'
+            }else {
+                document.body.style.backgroundColor = 'white'
+            }
+        })
+        
+    </script>
 </body>
 
 </html>

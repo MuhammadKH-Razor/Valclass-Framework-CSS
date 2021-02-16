@@ -11,9 +11,9 @@ let propertiesLetterSpacing = [
 let valuesLetterSpacing = [
   'letter-spacing: normal',
   'letter-spacing: 10px',
+  'letter-spacing: 15px',
   'letter-spacing: 20px',
-  'letter-spacing: 30px',
-  'letter-spacing: 40px'
+  'letter-spacing: 25px'
 ]
 
 // pengkondisian

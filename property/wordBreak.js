@@ -8,8 +8,8 @@ let propertiesWordBreak = [
 
 let valuesWordBreak = [
   `overflow-wrap: normal; 
-   word-break: normal;`,
-  'word-break: overflow-wrap: break-word;',
+   word-break: normal;`,    
+  'overflow-wrap: break-word;',
   'word-break: break-all'
 ]
 

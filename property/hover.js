@@ -2,7 +2,7 @@
 
 let propertiesHover = [
     'v-hover-scale',
-    'v-hover-bounce',
+    'v-hover-up',
     'v-hover-pulse'
 ]
 
@@ -28,14 +28,14 @@ let hover = [
         transform: scale(0.97);
     }`,
     `
-    .v-hover-bounce:hover {
+    .v-hover-up:hover {
         transition: 0.3s;
         margin-top: -10px;
     }`,
     `
     .v-hover-pulse:hover {
         transition: 0.3s;
-        opacity: 0.7;
+        opacity: 0.5;
     }`
 ]
 

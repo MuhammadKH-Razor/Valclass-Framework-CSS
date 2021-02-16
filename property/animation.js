@@ -5,15 +5,17 @@ let propertiesAnimations = [
     'v-animation-spin',
     'v-animation-ping',
     'v-animation-pulse',
-    'v-animation-bounce'
+    'v-animation-bounce',
+    'v-animation-typing-text'
 ]
 
 let valuesAnimations = [
     'animation: none;',
     `animation: spin 1s linear infinite;`,
     `animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite; `,
-    `animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;`,
-    `animation: bounce 2s infinite ease-in;`
+    `animation: pulse 1.6s cubic-bezier(0.4, 0, 0.6, 1) infinite;`,
+    `animation: bounce 2s infinite ease-in;`,
+    `animation: typing 10s steps(70, end) infinite;`
 ]
 
 let animations = [
@@ -39,7 +41,7 @@ let animations = [
            opacity: 1;
         }
         50% {
-            opacity: 0.7;
+            opacity: 0.5;
         }
      }`,
     `@keyframes bounce { 
@@ -52,7 +54,15 @@ let animations = [
         60% {
             transform: translateY(-15px);
         } 
-    }`
+    }`,
+    `@keyframes typing {
+        0% {
+           width: 0%;
+        }
+        100% {
+           width: 100%;
+        }
+      }`
 ]
 
 // pengkondisian
