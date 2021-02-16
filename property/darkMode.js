@@ -1,14 +1,64 @@
-if (document.querySelector('div.v-dark-mode')) {
-    let styles = ` 
-    .darkModes { 
-        background-color: #313131;
-        color: white;
-    }
-    
-    .lightModes {
-        background-color: white;
-        color: #313131;
-    }`;
+let styles = ` 
+.v-dark-mode {
+    background-color: rgb(44, 44, 44);
+    border: none;
+    width: 100px;
+    outline: none;
+    height: max-content;
+    border-radius: 40px;
+    padding: 5px;
+    text-align: center;
+    font-weight: 500;
+ }
+ 
+ .v-dark-mode-on {
+    background-color: rgb(160, 160, 160);
+    border: none;
+    width: 100px;
+    outline: none;
+    height: max-content;
+    border-radius: 40px;
+    padding: 5px;
+    text-align: center;
+    font-weight: 500;
+ }
+ 
+ .v-dark-mode .toggle-mode {
+    position: relative;
+    width: 35px;
+    height: 35px;
+    left: 0;
+    cursor: pointer;
+    border-radius: 90px;
+    background-color: #fff;
+    transition: 0.3s;
+ }
+ 
+ .toggle-mode:hover {
+    opacity: 0.8;
+    transform: scale(0.97);
+    transition: 0.3s;
+ }
+ 
+ .modeDarks {
+    position: relative;
+    margin-left: 65px;
+    transition: 0.3s;
+    background-color: rgb(44, 44, 44);
+ }
+ 
+ .darkModes { 
+    background-color: #313131;
+    color: white;
+ }
+ 
+ .lightModes {
+    background-color: white;
+    color: #313131;
+ }`;
+
+ 
+if (document.querySelector('div.v-dark-mode') && !document.querySelector('style').innerText.includes(styles)) {
     document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
     s = 0;
     document.querySelector('div.toggle-mode').addEventListener('click', () => {
@@ -29,12 +79,7 @@ if (document.querySelector('div.v-dark-mode')) {
     })
 }
 
-if (document.querySelector('div.v-dark-mode')) {
-    let styles = `
-    .lightModes {
-        background-color: white;
-        color: #313131;
-    }`;
+if (document.querySelector('div.v-dark-mode') && !document.querySelector('style').innerText.includes(propertiesDirections[i])) {
     document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
     d = 0;
     document.querySelector('div.toggle-mode').addEventListener('click', () => {
