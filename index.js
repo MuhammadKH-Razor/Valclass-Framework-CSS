@@ -95,7 +95,7 @@ if (document.querySelector('body').classList.contains('cursor')) {
 
 if (document.querySelector('body').classList.contains('background-color')) {
 
-    var js = './property/backgroundColor.js'
+    var js = 'https://cdn.jsdelivr.net/gh/muhammadKH-Razor/Valclass-Framework-CSS/property/backgroundColor.min.js'
 
     script = document.createElement('script'),
         body = document.getElementsByTagName('body')[0],
