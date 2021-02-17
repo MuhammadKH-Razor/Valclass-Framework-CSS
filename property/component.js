@@ -234,6 +234,7 @@ let valueComponent = [
    .v-navbar ul.show {
       transform: translateX(0%);
       right: 0;
+      opacity: 1;
       transition: 0.4s ease;
    }
    
@@ -251,6 +252,7 @@ let valueComponent = [
       transform: rotate(-45deg);
    }
    
+   
    /* tablet */
    @media screen and (max-width: 768px) {
       .v-navbar ul {
@@ -263,7 +265,7 @@ let valueComponent = [
       .v-btn-toggle {
          display: flex;
       }
-   
+      
       .v-navbar ul {
          position: absolute;
          flex-direction: column;
@@ -272,11 +274,13 @@ let valueComponent = [
          right: 0;
          transform: translateX(100%);
          align-items: center;
-         top: 0;
+         opacity: 0;
+         top: 30px;
          height: 100vh;
          justify-content: space-evenly;
          transition: 0.4s ease;
       }
+
    }`,
    `
      .v-navbar-fixed {
@@ -288,6 +292,7 @@ let valueComponent = [
       background-color: rgb(107, 107, 103);
       justify-content: space-around;
       height: 64px;
+      overflow: hidden;
       align-items: center;
       color: rgb(255, 255, 255);
    }
@@ -310,6 +315,7 @@ let valueComponent = [
    .v-navbar-fixed ul li a {
       color: rgb(255, 255, 255);
       text-decoration: none;
+      margin: 10px 0;
    }
    
    .v-btn-toggle {
@@ -348,6 +354,7 @@ let valueComponent = [
    
    .v-navbar-fixed ul.show {
       transform: translateX(0%);
+      opacity: 1;
       right: 0;
       transition: 0.4s ease;
    }
@@ -383,11 +390,12 @@ let valueComponent = [
          position: fixed;
          flex-direction: column;
          background-color: rgb(107, 107, 103);
-         z-index: 1;
+         z-index: -1;
          right: 0;
          transform: translateX(100%);
          align-items: center;
-         top: 0;
+         opacity: 0;
+         top: 47px;
          height: 100vh;
          justify-content: space-evenly;
          transition: 0.4s ease;
@@ -403,7 +411,7 @@ let valueComponent = [
       height: 50px;
       padding-left: 20px;
       align-items: center;
-      z-index: 2;
+      z-index: 999;
       background-color: rgb(113, 196, 252);
    }`,
      `.v-alert-danger {
@@ -416,7 +424,7 @@ let valueComponent = [
       height: 50px;
       padding-left: 20px;
       align-items: center;
-      z-index: 2;
+      z-index: 999;
       background-color: rgb(252, 113, 113);
    }`,
      `.v-alert-warning {
@@ -429,8 +437,21 @@ let valueComponent = [
       height: 50px;
       padding-left: 20px;
       align-items: center;
-      z-index: 2;
+      z-index: 999;
       background-color: rgb(252, 230, 104);
+   }`,
+     `.v-alert-info {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      color: rgb(202, 213, 250);
+      display: flex;
+      height: 50px;
+      padding-left: 20px;
+      align-items: center;
+      z-index: 999;
+      background-color: rgb(2, 168, 245);
    }`,
      `.v-alert-primary {
       position: fixed;
@@ -442,7 +463,7 @@ let valueComponent = [
       height: 50px;
       padding-left: 20px;
       align-items: center;
-      z-index: 2;
+      z-index: 999;
       background-color: rgb(104, 151, 252);
    }`,
      `.v-alert-secondary {
@@ -455,7 +476,7 @@ let valueComponent = [
       height: 50px;
       padding-left: 20px;
       align-items: center;
-      z-index: 2;
+      z-index: 999;
       background-color: rgb(128, 128, 128);
    }`,
      `.v-alert-dark {
@@ -468,7 +489,7 @@ let valueComponent = [
       height: 50px;
       padding-left: 20px;
       align-items: center;
-      z-index: 2;
+      z-index: 999;
       background-color: rgb(61, 61, 61);
    }`,
      `.v-alert-light {
@@ -481,7 +502,7 @@ let valueComponent = [
       height: 50px;
       padding-left: 20px;
       align-items: center;
-      z-index: 2;
+      z-index: 999;
       background-color: rgb(231, 231, 231);
    }`,
      `.v-alert-smooth {
@@ -494,7 +515,7 @@ let valueComponent = [
       height: 50px;
       padding-left: 20px;
       align-items: center;
-      z-index: 2;
+      z-index: 999;
       background-color: rgb(255, 236, 236);
    }`,
      `.v-alert-green {
@@ -507,7 +528,7 @@ let valueComponent = [
       height: 50px;
       padding-left: 20px;
       align-items: center;
-      z-index: 2;
+      z-index: 999;
       background-color: rgb(14, 253, 201);
    }`
 ]

@@ -53,7 +53,7 @@ if (document.querySelector('body').classList.contains('component')) {
 
 if (document.querySelector('body').classList.contains('text-color')) {
 
-    var js = './property/textColor.js'
+    var js = './property/backgroundColor.js'
 
     script = document.createElement('script'),
         body = document.getElementsByTagName('body')[0],
@@ -95,7 +95,7 @@ if (document.querySelector('body').classList.contains('cursor')) {
 
 if (document.querySelector('body').classList.contains('background-color')) {
 
-    var js = 'https://cdn.jsdelivr.net/gh/muhammadKH-Razor/Valclass-Framework-CSS/property/backgroundColor.min.js'
+    var js = './property/backgroundColor.js'
 
     script = document.createElement('script'),
         body = document.getElementsByTagName('body')[0],

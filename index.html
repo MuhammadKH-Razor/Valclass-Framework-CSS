@@ -51,7 +51,7 @@
         <li class="v-float-left v-m-1">float</li>
     </div> 
     
-    <div class="v-alert-green v-font-poppins">
+    <div class="v-alert-danger v-font-poppins">
         A simple primary alert—check it out!
     </div>
 
@@ -102,6 +102,7 @@
     </ul>
     
     <div class="v-col-3">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est consequuntur et asperiores neque aperiam fugiat nulla commodi illum vitae, officia at necessitatibus accusamus molestias doloribus dolores? Accusamus ipsa perspiciatis atque.
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est consequuntur et asperiores neque aperiam fugiat nulla commodi illum vitae, officia at necessitatibus accusamus molestias doloribus dolores? Accusamus ipsa perspiciatis atque.
     </div>
 
@@ -222,6 +223,11 @@
 
 
     <script src="./index.js"></script>
+    <script>
+        document.querySelector('.v-btn-toggle input').addEventListener('click', () => {
+            document.querySelector('.v-navbar ul').classList.toggle('show')
+        })
+    </script>
 </body>
 
 </html>
